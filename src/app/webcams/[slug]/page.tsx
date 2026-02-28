@@ -1,5 +1,6 @@
 import { getWebcamArticle, getWebcamArticleSlugs } from "@/data/webcam-articles";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 
@@ -88,6 +89,9 @@ export default async function ArticlePage({ params }: PageProps) {
           />
         </div>
       </section>
+
+      {/* Comments */}
+      <Comments pagePath={`/webcams/${slug}`} siteName="thegadgetpick" />
 
       {/* Back to Comparison */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">

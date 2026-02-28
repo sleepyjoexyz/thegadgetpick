@@ -3,6 +3,7 @@ import {
   getAllSpeakerArticleSlugs,
 } from "@/data/speaker-articles";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 
@@ -256,6 +257,9 @@ export default async function SpeakerArticlePage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+
+      {/* Comments */}
+      <Comments pagePath={`/speakers/${slug}`} siteName="thegadgetpick" />
     </article>
   );
 }

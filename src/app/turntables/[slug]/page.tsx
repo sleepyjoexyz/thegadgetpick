@@ -3,6 +3,7 @@ import {
   getTurntableArticleSlugs,
 } from "@/data/turntable-articles";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 
@@ -211,6 +212,9 @@ export default async function ArticlePage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+
+      {/* Comments */}
+      <Comments pagePath={`/turntables/${slug}`} siteName="thegadgetpick" />
     </article>
   );
 }
