@@ -7,6 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
+import { notFound } from "next/navigation";
 
 interface PageProps {
   params: Promise<{
@@ -37,6 +38,9 @@ export async function generateMetadata(
   return {
     title: `${article.title} | The Gadget Pick`,
     description: article.description,
+    alternates: {
+      canonical: `https://thegadgetpick.com/monitors/${slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.description,
@@ -51,16 +55,7 @@ export default async function ArticlePage({ params }: PageProps) {
   const article = getMonitorArticle(slug);
 
   if (!article) {
-    return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-2xl font-bold text-gray-900">Article not found</h1>
-        <p className="text-gray-600 mt-4">
-          <Link href="/monitors" className="text-blue-600 hover:underline">
-            Back to comparisons
-          </Link>
-        </p>
-      </div>
-    );
+    notFound();
   }
 
   return (

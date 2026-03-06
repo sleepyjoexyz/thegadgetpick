@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
+import { notFound } from "next/navigation";
 
 interface PageProps {
   params: Promise<{
@@ -33,6 +34,9 @@ export async function generateMetadata(
   return {
     title: `${article.title} | The Gadget Pick`,
     description: article.excerpt,
+    alternates: {
+      canonical: `https://thegadgetpick.com/microphones/${slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.excerpt,
@@ -47,16 +51,7 @@ export default async function ArticlePage({ params }: PageProps) {
   const article = getMicrophoneArticle(slug);
 
   if (!article) {
-    return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-2xl font-bold text-gray-900">Article not found</h1>
-        <p className="text-gray-600 mt-4">
-          <Link href="/microphones" className="text-blue-600 hover:underline">
-            Back to microphones comparison
-          </Link>
-        </p>
-      </div>
-    );
+    notFound();
   }
 
   return (
