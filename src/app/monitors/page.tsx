@@ -71,7 +71,7 @@ export default function MonitorsComparison() {
         { name: 'Monitors', url: 'https://thegadgetpick.com/monitors' }
       ]} />
       <ProductListSchema
-        products={filteredMonitors.map(p => ({
+        products={filteredProducts.map(p => ({
           name: p.model,
           brand: p.brand,
           price: p.price,
