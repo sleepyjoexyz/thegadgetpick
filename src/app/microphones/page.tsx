@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { microphones } from "@/data/microphones";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
+import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 export default function MicrophonesComparison() {
   const [micTypeFilter, setMicTypeFilter] = useState<string>("all");
@@ -61,6 +62,21 @@ export default function MicrophonesComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Microphones', url: 'https://thegadgetpick.com/microphones' }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.summary
+        }))}
+        categoryName="Microphones"
+        categoryUrl="https://thegadgetpick.com/microphones"
+      />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

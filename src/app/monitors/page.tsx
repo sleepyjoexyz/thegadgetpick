@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { monitors } from "@/data/monitors";
 import { getAmazonLink } from "@/lib/utils";
 import Link from "next/link";
+import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 export default function MonitorsComparison() {
   const [panelType, setPanelType] = useState<string>("all");
@@ -65,6 +66,21 @@ export default function MonitorsComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Monitors', url: 'https://thegadgetpick.com/monitors' }
+      ]} />
+      <ProductListSchema
+        products={filteredMonitors.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.summary
+        }))}
+        categoryName="Monitors"
+        categoryUrl="https://thegadgetpick.com/monitors"
+      />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

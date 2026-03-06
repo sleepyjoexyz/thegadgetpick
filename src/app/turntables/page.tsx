@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { turntables } from "@/data/turntables";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
+import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 export default function TurnTablesComparison() {
   const [driveTypeFilter, setDriveTypeFilter] = useState<string>("all");
@@ -59,6 +60,21 @@ export default function TurnTablesComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Turntables', url: 'https://thegadgetpick.com/turntables' }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.summary
+        }))}
+        categoryName="Turntables"
+        categoryUrl="https://thegadgetpick.com/turntables"
+      />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

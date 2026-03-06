@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { travelAdapters } from "@/data/travel-adapters";
 import { travelAdapterArticles } from "@/data/travel-adapter-articles";
 import Link from "next/link";
+import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 function formatPrice(price: number): string {
   return `$${price.toFixed(0)}`;
@@ -63,6 +64,21 @@ export default function TravelAdaptersComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Travel Adapters', url: 'https://thegadgetpick.com/travel-adapters' }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.summary
+        }))}
+        categoryName="Travel Adapters"
+        categoryUrl="https://thegadgetpick.com/travel-adapters"
+      />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

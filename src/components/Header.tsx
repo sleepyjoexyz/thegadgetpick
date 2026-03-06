@@ -19,7 +19,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" aria-label="Main navigation">
             {/* Audio Dropdown */}
             <div className="relative group">
               <button className="text-gray-700 hover:text-blue-600 font-medium">
@@ -98,6 +98,8 @@ export default function Header() {
           <button
             className="md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? (
               <span className="text-2xl text-gray-700">✕</span>

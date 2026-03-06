@@ -6,6 +6,7 @@ import { webcams } from "@/data/webcams";
 import { getWebcamArticleSlugs } from "@/data/webcam-articles";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
+import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 export default function WebcamsComparison() {
   const [resolutionFilter, setResolutionFilter] = useState<string>("all");
@@ -66,6 +67,21 @@ export default function WebcamsComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Webcams', url: 'https://thegadgetpick.com/webcams' }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.summary
+        }))}
+        categoryName="Webcams"
+        categoryUrl="https://thegadgetpick.com/webcams"
+      />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

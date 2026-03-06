@@ -7,6 +7,7 @@ import Comments from "@/components/Comments";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
+import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 interface PageProps {
   params: Promise<{
@@ -63,6 +64,18 @@ export default async function ArticlePage({ params }: PageProps) {
 
   return (
     <article className="bg-white">
+      <ArticleSchema
+        title={article.title}
+        description={article.excerpt}
+        url={`https://thegadgetpick.com/noise-canceling-headphones/${slug}`}
+        datePublished="2025-01-01"
+        dateModified="2026-03-01"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Noise-Canceling Headphones', url: 'https://thegadgetpick.com/noise-canceling-headphones' },
+        { name: article.title, url: `https://thegadgetpick.com/noise-canceling-headphones/${slug}` }
+      ]} />
       {/* Breadcrumbs */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

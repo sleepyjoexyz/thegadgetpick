@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { headphones } from "@/data/headphones";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
+import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 export default function HeadphonesComparison() {
   const [typeFilter, setTypeFilter] = useState<string>("all");
@@ -66,6 +67,21 @@ export default function HeadphonesComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Headphones', url: 'https://thegadgetpick.com/headphones' }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.summary
+        }))}
+        categoryName="Headphones"
+        categoryUrl="https://thegadgetpick.com/headphones"
+      />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs

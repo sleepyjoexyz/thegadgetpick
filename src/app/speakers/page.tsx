@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { speakers, Speaker } from "@/data/speakers";
 import { getAmazonLink, formatPrice, formatRating } from "@/lib/utils";
 import Link from "next/link";
+import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 type SpeakerType = "bookshelf" | "portable" | "soundbar" | "studio-monitor" | "smart";
 
@@ -65,6 +66,21 @@ export default function SpeakersPage() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Speakers', url: 'https://thegadgetpick.com/speakers' }
+      ]} />
+      <ProductListSchema
+        products={filteredSpeakers.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.summary
+        }))}
+        categoryName="Speakers"
+        categoryUrl="https://thegadgetpick.com/speakers"
+      />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs items={[{ label: "Speakers", href: "/speakers" }]} />

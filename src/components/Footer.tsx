@@ -110,13 +110,21 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
             <p className="text-gray-400 text-sm">
               © 2026 The Gadget Pick. All rights reserved.
             </p>
             <p className="text-gray-400 text-xs">
               We may earn a commission when you buy through our links. Read our affiliate disclosure.
             </p>
+          </div>
+          <div className="flex flex-col md:flex-row gap-6 text-sm">
+            <Link href="/privacy" className="text-gray-400 hover:text-blue-400 transition">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="text-gray-400 hover:text-blue-400 transition">
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>

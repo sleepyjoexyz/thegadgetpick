@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { powerBanks } from "@/data/power-banks";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
+import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 
 export default function PowerBanksComparison() {
   const [capacityMin, setCapacityMin] = useState<string>("0");
@@ -92,6 +93,21 @@ export default function PowerBanksComparison() {
 
   return (
     <div className="bg-white">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://thegadgetpick.com' },
+        { name: 'Power Banks', url: 'https://thegadgetpick.com/power-banks' }
+      ]} />
+      <ProductListSchema
+        products={filteredProducts.map(p => ({
+          name: p.model,
+          brand: p.brand,
+          price: p.price,
+          rating: p.rating,
+          description: p.summary
+        }))}
+        categoryName="Power Banks"
+        categoryUrl="https://thegadgetpick.com/power-banks"
+      />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         <Breadcrumbs
