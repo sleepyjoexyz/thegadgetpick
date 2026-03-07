@@ -108,16 +108,27 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
-            <p className="text-gray-400 text-sm">
-              © 2026 The Gadget Pick. All rights reserved.
-            </p>
-            <p className="text-gray-400 text-xs">
-              We may earn a commission when you buy through our links. Read our affiliate disclosure.
+        {/* Affiliate & AI Disclosure */}
+        <div className="border-t border-gray-800 pt-8 mb-8 space-y-4">
+          <div>
+            <p className="font-semibold text-gray-300 mb-2">Affiliate Disclosure</p>
+            <p className="text-xs text-gray-500">
+              We may earn a commission when you buy through our links. This helps support our research and enables us to provide independent, unbiased product comparisons.
             </p>
           </div>
+          <div>
+            <p className="font-semibold text-gray-300 mb-2">AI Disclosure</p>
+            <p className="text-xs text-gray-500">
+              This website was prepared with AI-assisted research. It is provided for informational purposes only and does not constitute legal, financial, or investment advice. All data should be independently verified before use.
+            </p>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-gray-800 pt-8">
+          <p className="text-gray-400 text-sm mb-4">
+            © 2026 The Gadget Pick. All rights reserved.
+          </p>
           <div className="flex flex-col md:flex-row gap-6 text-sm">
             <Link href="/privacy" className="text-gray-400 hover:text-blue-400 transition">
               Privacy Policy
