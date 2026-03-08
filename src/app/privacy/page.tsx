@@ -117,7 +117,7 @@ export default function PrivacyPolicy() {
             <p className="mt-4">
               <strong>The Gadget Pick</strong><br />
               Email: privacy@thegadgetpick.com<br />
-              Website: https://thegadgetpick.com
+              Website: https://www.thegadgetpick.com
             </p>
           </section>
 

@@ -61,8 +61,8 @@ export default function TurntablesContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Turntables', url: 'https://thegadgetpick.com/turntables' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Turntables', url: 'https://www.thegadgetpick.com/turntables' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -73,7 +73,7 @@ export default function TurntablesContent() {
           description: p.summary
         }))}
         categoryName="Turntables"
-        categoryUrl="https://thegadgetpick.com/turntables"
+        categoryUrl="https://www.thegadgetpick.com/turntables"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

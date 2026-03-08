@@ -4,13 +4,13 @@ export const metadata: Metadata = {
   title: 'Best Mice Compared 2025-2026 | The Gadget Pick',
   description: 'Compare top mice side-by-side with detailed specs, prices, and ratings. Gaming to productivity options.',
   alternates: {
-    canonical: 'https://thegadgetpick.com/mice',
+    canonical: 'https://www.thegadgetpick.com/mice',
   },
   openGraph: {
     title: 'Best Mice Compared 2025-2026 | The Gadget Pick',
     description: 'Compare top mice with specs and ratings. Gaming, productivity, and ergonomic options.',
     type: 'website',
-    url: 'https://thegadgetpick.com/mice',
+    url: 'https://www.thegadgetpick.com/mice',
   },
 };
 

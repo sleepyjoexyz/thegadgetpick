@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   title: 'The Gadget Pick — Data-Driven Audio, PC & Travel Tech Comparisons',
   description: 'Compare audio gear, PC peripherals, and travel tech with data-driven reviews and buying guides. Explore headphones, speakers, monitors, keyboards, luggage, and more.',
   alternates: {
-    canonical: 'https://thegadgetpick.com',
+    canonical: 'https://www.thegadgetpick.com',
   },
   openGraph: {
     title: 'The Gadget Pick — Data-Driven Audio, PC & Travel Tech Comparisons',
     description: 'Compare audio gear, PC peripherals, and travel tech with data-driven reviews and buying guides.',
     type: 'website',
-    url: 'https://thegadgetpick.com',
+    url: 'https://www.thegadgetpick.com',
   },
 };
 

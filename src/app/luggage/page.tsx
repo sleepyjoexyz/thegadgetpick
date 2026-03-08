@@ -60,8 +60,8 @@ export default function LuggageContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Luggage', url: 'https://thegadgetpick.com/luggage' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Luggage', url: 'https://www.thegadgetpick.com/luggage' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -72,7 +72,7 @@ export default function LuggageContent() {
           description: p.summary
         }))}
         categoryName="Luggage"
-        categoryUrl="https://thegadgetpick.com/luggage"
+        categoryUrl="https://www.thegadgetpick.com/luggage"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

@@ -65,8 +65,8 @@ export default function TravelAdaptersContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Travel Adapters', url: 'https://thegadgetpick.com/travel-adapters' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Travel Adapters', url: 'https://www.thegadgetpick.com/travel-adapters' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -77,7 +77,7 @@ export default function TravelAdaptersContent() {
           description: p.summary
         }))}
         categoryName="Travel Adapters"
-        categoryUrl="https://thegadgetpick.com/travel-adapters"
+        categoryUrl="https://www.thegadgetpick.com/travel-adapters"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

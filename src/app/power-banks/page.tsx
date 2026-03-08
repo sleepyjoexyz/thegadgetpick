@@ -94,8 +94,8 @@ export default function PowerBanksContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Power Banks', url: 'https://thegadgetpick.com/power-banks' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Power Banks', url: 'https://www.thegadgetpick.com/power-banks' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -106,7 +106,7 @@ export default function PowerBanksContent() {
           description: p.summary
         }))}
         categoryName="Power Banks"
-        categoryUrl="https://thegadgetpick.com/power-banks"
+        categoryUrl="https://www.thegadgetpick.com/power-banks"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

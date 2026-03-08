@@ -64,8 +64,8 @@ export default function MiceContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Mice', url: 'https://thegadgetpick.com/mice' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Mice', url: 'https://www.thegadgetpick.com/mice' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -76,7 +76,7 @@ export default function MiceContent() {
           description: p.summary
         }))}
         categoryName="Mice"
-        categoryUrl="https://thegadgetpick.com/mice"
+        categoryUrl="https://www.thegadgetpick.com/mice"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

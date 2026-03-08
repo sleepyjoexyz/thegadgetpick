@@ -78,8 +78,8 @@ export default function NoiseCancelingHeadphonesContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Noise-Canceling Headphones', url: 'https://thegadgetpick.com/noise-canceling-headphones' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Noise-Canceling Headphones', url: 'https://www.thegadgetpick.com/noise-canceling-headphones' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -90,7 +90,7 @@ export default function NoiseCancelingHeadphonesContent() {
           description: p.summary
         }))}
         categoryName="Noise-Canceling Headphones"
-        categoryUrl="https://thegadgetpick.com/noise-canceling-headphones"
+        categoryUrl="https://www.thegadgetpick.com/noise-canceling-headphones"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

@@ -36,13 +36,13 @@ export async function generateMetadata(
     title: `${article.title} | The Gadget Pick`,
     description: article.description,
     alternates: {
-      canonical: `https://thegadgetpick.com/mice/${slug}`,
+      canonical: `https://www.thegadgetpick.com/mice/${slug}`,
     },
     openGraph: {
       title: article.title,
       description: article.description,
       type: "article",
-      url: `https://thegadgetpick.com/mice/${slug}`,
+      url: `https://www.thegadgetpick.com/mice/${slug}`,
     },
   };
 }
@@ -60,14 +60,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.description}
-        url={`https://thegadgetpick.com/mice/${slug}`}
+        url={`https://www.thegadgetpick.com/mice/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Mice', url: 'https://thegadgetpick.com/mice' },
-        { name: article.title, url: `https://thegadgetpick.com/mice/${slug}` }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Mice', url: 'https://www.thegadgetpick.com/mice' },
+        { name: article.title, url: `https://www.thegadgetpick.com/mice/${slug}` }
       ]} />
       {/* Breadcrumbs */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

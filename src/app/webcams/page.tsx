@@ -68,8 +68,8 @@ export default function WebcamsContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Webcams', url: 'https://thegadgetpick.com/webcams' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Webcams', url: 'https://www.thegadgetpick.com/webcams' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -80,7 +80,7 @@ export default function WebcamsContent() {
           description: p.summary
         }))}
         categoryName="Webcams"
-        categoryUrl="https://thegadgetpick.com/webcams"
+        categoryUrl="https://www.thegadgetpick.com/webcams"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

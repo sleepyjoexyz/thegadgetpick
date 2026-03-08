@@ -67,8 +67,8 @@ export default function MonitorsContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Monitors', url: 'https://thegadgetpick.com/monitors' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Monitors', url: 'https://www.thegadgetpick.com/monitors' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -79,7 +79,7 @@ export default function MonitorsContent() {
           description: p.summary
         }))}
         categoryName="Monitors"
-        categoryUrl="https://thegadgetpick.com/monitors"
+        categoryUrl="https://www.thegadgetpick.com/monitors"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

@@ -68,8 +68,8 @@ export default function KeyboardsContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Keyboards', url: 'https://thegadgetpick.com/keyboards' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Keyboards', url: 'https://www.thegadgetpick.com/keyboards' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -80,7 +80,7 @@ export default function KeyboardsContent() {
           description: p.summary
         }))}
         categoryName="Keyboards"
-        categoryUrl="https://thegadgetpick.com/keyboards"
+        categoryUrl="https://www.thegadgetpick.com/keyboards"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

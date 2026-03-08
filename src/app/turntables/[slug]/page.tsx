@@ -39,13 +39,13 @@ export async function generateMetadata(
     title: `${article.title} | The Gadget Pick`,
     description: article.excerpt,
     alternates: {
-      canonical: `https://thegadgetpick.com/turntables/${slug}`,
+      canonical: `https://www.thegadgetpick.com/turntables/${slug}`,
     },
     openGraph: {
       title: article.title,
       description: article.excerpt,
       type: "article",
-      url: `https://thegadgetpick.com/turntables/${slug}`,
+      url: `https://www.thegadgetpick.com/turntables/${slug}`,
     },
   };
 }
@@ -63,14 +63,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.excerpt}
-        url={`https://thegadgetpick.com/turntables/${slug}`}
+        url={`https://www.thegadgetpick.com/turntables/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Turntables', url: 'https://thegadgetpick.com/turntables' },
-        { name: article.title, url: `https://thegadgetpick.com/turntables/${slug}` }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Turntables', url: 'https://www.thegadgetpick.com/turntables' },
+        { name: article.title, url: `https://www.thegadgetpick.com/turntables/${slug}` }
       ]} />
       {/* Breadcrumbs */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

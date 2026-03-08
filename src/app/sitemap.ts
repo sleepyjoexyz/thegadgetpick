@@ -12,7 +12,7 @@ import { getPowerBankArticleSlugs } from '@/data/power-bank-articles';
 import { getTravelAdapterArticleSlugs } from '@/data/travel-adapter-articles';
 import { getNCHeadphoneArticleSlugs } from '@/data/nc-headphone-articles';
 
-const baseUrl = 'https://thegadgetpick.com';
+const baseUrl = 'https://www.thegadgetpick.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [

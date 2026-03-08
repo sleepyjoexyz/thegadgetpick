@@ -67,8 +67,8 @@ export default function SpeakersContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Speakers', url: 'https://thegadgetpick.com/speakers' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Speakers', url: 'https://www.thegadgetpick.com/speakers' }
       ]} />
       <ProductListSchema
         products={filteredSpeakers.map(p => ({
@@ -79,7 +79,7 @@ export default function SpeakersContent() {
           description: p.summary
         }))}
         categoryName="Speakers"
-        categoryUrl="https://thegadgetpick.com/speakers"
+        categoryUrl="https://www.thegadgetpick.com/speakers"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

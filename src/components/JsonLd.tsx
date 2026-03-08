@@ -9,12 +9,12 @@ export function WebSiteSchema() {
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           name: 'The Gadget Pick',
-          url: 'https://thegadgetpick.com',
+          url: 'https://www.thegadgetpick.com',
           description: 'Data-driven audio, PC peripheral, and travel tech product comparisons',
           publisher: {
             '@type': 'Organization',
             name: 'The Gadget Pick',
-            url: 'https://thegadgetpick.com',
+            url: 'https://www.thegadgetpick.com',
           },
         }),
       }}
@@ -75,7 +75,7 @@ export function ArticleSchema({
           publisher: {
             '@type': 'Organization',
             name: 'The Gadget Pick',
-            url: 'https://thegadgetpick.com',
+            url: 'https://www.thegadgetpick.com',
           },
         }),
       }}

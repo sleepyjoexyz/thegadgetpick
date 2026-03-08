@@ -39,13 +39,13 @@ export async function generateMetadata(
     title: `${article.title} | The Gadget Pick`,
     description: article.excerpt,
     alternates: {
-      canonical: `https://thegadgetpick.com/noise-canceling-headphones/${slug}`,
+      canonical: `https://www.thegadgetpick.com/noise-canceling-headphones/${slug}`,
     },
     openGraph: {
       title: article.title,
       description: article.excerpt,
       type: "article",
-      url: `https://thegadgetpick.com/noise-canceling-headphones/${slug}`,
+      url: `https://www.thegadgetpick.com/noise-canceling-headphones/${slug}`,
     },
   };
 }
@@ -67,14 +67,14 @@ export default async function ArticlePage({ params }: PageProps) {
       <ArticleSchema
         title={article.title}
         description={article.excerpt}
-        url={`https://thegadgetpick.com/noise-canceling-headphones/${slug}`}
+        url={`https://www.thegadgetpick.com/noise-canceling-headphones/${slug}`}
         datePublished="2025-01-01"
         dateModified="2026-03-01"
       />
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Noise-Canceling Headphones', url: 'https://thegadgetpick.com/noise-canceling-headphones' },
-        { name: article.title, url: `https://thegadgetpick.com/noise-canceling-headphones/${slug}` }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Noise-Canceling Headphones', url: 'https://www.thegadgetpick.com/noise-canceling-headphones' },
+        { name: article.title, url: `https://www.thegadgetpick.com/noise-canceling-headphones/${slug}` }
       ]} />
       {/* Breadcrumbs */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">

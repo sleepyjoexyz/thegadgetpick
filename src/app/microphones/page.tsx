@@ -63,8 +63,8 @@ export default function MicrophonesContent() {
   return (
     <div className="bg-white">
       <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://thegadgetpick.com' },
-        { name: 'Microphones', url: 'https://thegadgetpick.com/microphones' }
+        { name: 'Home', url: 'https://www.thegadgetpick.com' },
+        { name: 'Microphones', url: 'https://www.thegadgetpick.com/microphones' }
       ]} />
       <ProductListSchema
         products={filteredProducts.map(p => ({
@@ -75,7 +75,7 @@ export default function MicrophonesContent() {
           description: p.summary
         }))}
         categoryName="Microphones"
-        categoryUrl="https://thegadgetpick.com/microphones"
+        categoryUrl="https://www.thegadgetpick.com/microphones"
       />
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
