@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { ncHeadphones } from "@/data/noise-canceling-headphones";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { getNCHeadphoneArticleSlugs } from "@/data/nc-headphone-articles";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
@@ -112,6 +113,93 @@ export default function NoiseCancelingHeadphonesContent() {
         <p className="text-lg text-gray-600">
           Compare premium, good, and budget ANC headphones optimized for travel and flying.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect ANC Headphones"
+          subtitle="Quick questions to find the right noise cancellation level and form factor"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-200", label: "Under $200", icon: "💵" },
+                { value: "200-350", label: "$200 - $350", icon: "💳" },
+                { value: "350-500", label: "$350 - $500", icon: "💎" },
+                { value: "500+", label: "$500+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-200") return product.price < 200;
+                if (value === "200-350") return product.price >= 200 && product.price < 350;
+                if (value === "350-500") return product.price >= 350 && product.price < 500;
+                if (value === "500+") return product.price >= 500;
+                return true;
+              },
+            },
+            {
+              id: "ancLevel",
+              question: "ANC strength needed? 🔇",
+              options: [
+                { value: "premium", label: "Premium", description: "Best-in-class noise cancellation", icon: "👑" },
+                { value: "good", label: "Good", description: "Excellent ANC, great value", icon: "⭐" },
+                { value: "basic", label: "Basic", description: "Solid ANC, budget-friendly", icon: "✓" },
+                { value: "any", label: "Any level", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.ancLevel === value;
+              },
+            },
+            {
+              id: "formFactor",
+              question: "Form factor preference? 🎧",
+              options: [
+                { value: "over-ear", label: "Over-Ear", description: "Best comfort, soundstage", icon: "🎧" },
+                { value: "on-ear", label: "On-Ear", description: "Compact, portable", icon: "👂" },
+                { value: "earbuds", label: "Earbuds", description: "True wireless, discrete", icon: "✨" },
+                { value: "any", label: "Any form factor", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.formFactor === value;
+              },
+            },
+            {
+              id: "features",
+              question: "Key features important? ⚙️",
+              options: [
+                { value: "multipoint-transparency", label: "Multipoint + Transparency mode", icon: "🔄" },
+                { value: "quick-charge", label: "Quick charge (10 min = hours)", icon: "⚡" },
+                { value: "app", label: "Companion app for customization", icon: "📱" },
+                { value: "any", label: "Features flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "multipoint-transparency") return product.multipoint && product.transparencyMode;
+                if (value === "quick-charge") return product.quickCharge && product.quickCharge !== "None";
+                if (value === "app") return product.hasApp;
+                return true;
+              },
+            },
+          ]}
+          products={ncHeadphones}
+          resultConfig={{
+            displayFields: [
+              { label: "Form Factor", getValue: (p) => p.formFactor },
+              { label: "ANC Level", getValue: (p) => p.ancLevel },
+              { label: "Battery", getValue: (p) => `${p.batteryHours}h (${p.batteryWithAnc}h w/ ANC)` },
+              { label: "Multipoint", getValue: (p) => p.multipoint ? "Yes" : "No" },
+              { label: "Transparency", getValue: (p) => p.transparencyMode ? "Yes" : "No" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Filters */}

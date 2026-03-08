@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { powerBanks } from "@/data/power-banks";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -131,6 +132,101 @@ export default function PowerBanksContent() {
           regulations. Find the perfect power bank for your lifestyle: daily commute, weekend travel,
           or extended expeditions.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Power Bank"
+          subtitle="Quick questions to find the right capacity and features"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-50", label: "Under $50", icon: "💵" },
+                { value: "50-100", label: "$50 - $100", icon: "💳" },
+                { value: "100-150", label: "$100 - $150", icon: "💎" },
+                { value: "150+", label: "$150+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-50") return product.price < 50;
+                if (value === "50-100") return product.price >= 50 && product.price < 100;
+                if (value === "100-150") return product.price >= 100 && product.price < 150;
+                if (value === "150+") return product.price >= 150;
+                return true;
+              },
+            },
+            {
+              id: "useCase",
+              question: "What will you charge? 📱",
+              options: [
+                { value: "phone", label: "Phone only", description: "10000-20000 mAh", icon: "📱" },
+                { value: "phone-tablet", label: "Phone + Tablet", description: "20000-30000 mAh", icon: "📲" },
+                { value: "laptop", label: "Laptop + Devices", description: "40000+ mAh, high wattage", icon: "💻" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "phone") return product.capacityMah <= 20000;
+                if (value === "phone-tablet") return product.capacityMah > 20000 && product.capacityMah < 40000;
+                if (value === "laptop") return product.capacityMah >= 40000;
+                return true;
+              },
+            },
+            {
+              id: "ports",
+              question: "Port preference? 🔌",
+              options: [
+                { value: "multiport", label: "Multi-port (2+ USB-C/A)", icon: "🔌" },
+                { value: "usbc-primary", label: "USB-C primary", icon: "⚡" },
+                { value: "any", label: "Any ports work", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "multiport") return product.usbCPorts + product.usbAPorts >= 2;
+                if (value === "usbc-primary") return product.usbCPorts > 0;
+                return true;
+              },
+            },
+            {
+              id: "features",
+              question: "Must-have features? ⚙️",
+              options: [
+                { value: "fast-charging", label: "Fast charging", icon: "⚡" },
+                { value: "wireless", label: "Wireless charging", icon: "📡" },
+                { value: "airline", label: "Airline approved", icon: "✈️" },
+                { value: "display", label: "LED/Digital display", icon: "📊" },
+                { value: "any", label: "Any/none specific", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "fast-charging") return product.fastCharging;
+                if (value === "wireless") return product.wirelessCharging;
+                if (value === "airline") return product.airlineApproved;
+                if (value === "display") return product.displayType && product.displayType !== "None";
+                return true;
+              },
+            },
+          ]}
+          products={powerBanks}
+          resultConfig={{
+            displayFields: [
+              { label: "Capacity", getValue: (p) => `${p.capacityMah.toLocaleString()} mAh` },
+              { label: "Output", getValue: (p) => `${p.outputWatts}W` },
+              { label: "Ports", getValue: (p) => p.ports },
+              { label: "Fast Charge", getValue: (p) => p.fastCharging ? "Yes" : "No" },
+              { label: "Airline Safe", getValue: (p) => p.airlineApproved ? "Yes" : "No" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
+      </section>
+
+      {/* Links */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row gap-4 mb-8">
           <Link
             href="/power-banks/capacity-guide"

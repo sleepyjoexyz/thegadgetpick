@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { mice } from "@/data/mice";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -101,6 +102,94 @@ export default function MiceContent() {
           ratings to find the perfect mouse for your setup. Our methodology is based on
           manufacturer specifications, user feedback, and hands-on testing.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Mouse"
+          subtitle="Quick questions to narrow down your ideal pointing device"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-50", label: "Under $50", icon: "💵" },
+                { value: "50-100", label: "$50 - $100", icon: "💳" },
+                { value: "100-200", label: "$100 - $200", icon: "💎" },
+                { value: "200+", label: "$200+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-50") return product.price < 50;
+                if (value === "50-100") return product.price >= 50 && product.price < 100;
+                if (value === "100-200") return product.price >= 100 && product.price < 200;
+                if (value === "200+") return product.price >= 200;
+                return true;
+              },
+            },
+            {
+              id: "useCase",
+              question: "Primary use case? 🎯",
+              options: [
+                { value: "gaming", label: "Gaming", description: "High DPI, competitive", icon: "🎮" },
+                { value: "productivity", label: "Productivity", description: "All-day comfort, precision", icon: "💼" },
+                { value: "ergonomic", label: "Ergonomic", description: "Hand health, support", icon: "🤚" },
+                { value: "travel", label: "Travel", description: "Portable, compact", icon: "✈️" },
+                { value: "any", label: "Any", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.mouseType === value;
+              },
+            },
+            {
+              id: "connectivity",
+              question: "Wireless or wired? 📡",
+              options: [
+                { value: "wireless", label: "Wireless", description: "Freedom, up to 70h battery", icon: "📡" },
+                { value: "wired", label: "Wired", description: "No latency, always powered", icon: "🔌" },
+                { value: "any", label: "Doesn't matter", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "wireless") return product.wireless;
+                if (value === "wired") return !product.wireless;
+                return true;
+              },
+            },
+            {
+              id: "weight",
+              question: "Mouse weight preference? ⚖️",
+              options: [
+                { value: "light", label: "Ultra-light (<150g)", description: "Fast, precise movements", icon: "⚡" },
+                { value: "medium", label: "Medium (150-200g)", description: "Balanced feel", icon: "⚖️" },
+                { value: "heavy", label: "Heavy (>200g)", description: "Control, stability", icon: "💪" },
+                { value: "any", label: "Any weight", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "light") return product.weightGrams < 150;
+                if (value === "medium") return product.weightGrams >= 150 && product.weightGrams <= 200;
+                if (value === "heavy") return product.weightGrams > 200;
+                return true;
+              },
+            },
+          ]}
+          products={mice}
+          resultConfig={{
+            displayFields: [
+              { label: "Type", getValue: (p) => p.mouseType },
+              { label: "DPI", getValue: (p) => `${p.dpiMax.toLocaleString()}` },
+              { label: "Weight", getValue: (p) => `${p.weightGrams}g` },
+              { label: "Battery", getValue: (p) => p.batteryHours > 0 ? `${p.batteryHours}h` : "Wired" },
+              { label: "Wireless", getValue: (p) => p.wireless ? "Yes" : "Wired" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Filters Section */}

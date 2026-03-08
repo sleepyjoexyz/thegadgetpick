@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { luggage } from "@/data/luggage";
 import { Luggage } from "@/data/luggage";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -94,6 +95,98 @@ export default function LuggageContent() {
         <p className="text-lg text-gray-600 mb-6">
           We've analyzed 14 luggage options across carry-on, checked, backpack, and duffel categories. Compare specifications, materials, features, prices, and ratings to find the perfect travel bag for your needs.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Luggage"
+          subtitle="Quick questions to narrow down your ideal travel bag"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-150", label: "Under $150", icon: "💵" },
+                { value: "150-300", label: "$150 - $300", icon: "💳" },
+                { value: "300-500", label: "$300 - $500", icon: "💎" },
+                { value: "500+", label: "$500+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-150") return product.price < 150;
+                if (value === "150-300") return product.price >= 150 && product.price < 300;
+                if (value === "300-500") return product.price >= 300 && product.price < 500;
+                if (value === "500+") return product.price >= 500;
+                return true;
+              },
+            },
+            {
+              id: "type",
+              question: "Luggage type? ✈️",
+              options: [
+                { value: "carry-on", label: "Carry-On", description: "Flight-compliant, compact", icon: "🎒" },
+                { value: "checked", label: "Checked", description: "Large capacity, checked baggage", icon: "📦" },
+                { value: "backpack", label: "Backpack", description: "Hands-free, adventure-ready", icon: "🎒" },
+                { value: "duffel", label: "Duffel", description: "Flexible, lightweight", icon: "💼" },
+                { value: "any", label: "Any type", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.luggageType === value;
+              },
+            },
+            {
+              id: "mobility",
+              question: "Mobility preference? 🛞",
+              options: [
+                { value: "4-wheel", label: "4-wheel spinner", description: "360° rotation, easy rolling", icon: "🛼" },
+                { value: "2-wheel", label: "2-wheel", description: "Tilting, classic design", icon: "🛹" },
+                { value: "backpack", label: "No wheels (backpack)", description: "Hands-free, lightweight", icon: "🎒" },
+                { value: "any", label: "Any/Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "4-wheel") return product.wheels === 4;
+                if (value === "2-wheel") return product.wheels === 2;
+                if (value === "backpack") return product.wheels === 0;
+                return true;
+              },
+            },
+            {
+              id: "features",
+              question: "Important features? ⚙️",
+              options: [
+                { value: "expandable", label: "Expandable", description: "Extra capacity when needed", icon: "📏" },
+                { value: "tsa-lock", label: "TSA Lock", description: "Security + airport screening", icon: "🔒" },
+                { value: "usb", label: "USB Port", description: "Built-in charging", icon: "🔌" },
+                { value: "lifetime", label: "Lifetime Warranty", description: "Long-term protection", icon: "♾️" },
+                { value: "any", label: "Features flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "expandable") return product.expandable;
+                if (value === "tsa-lock") return product.tsa_lock;
+                if (value === "usb") return product.usbPort;
+                if (value === "lifetime") return product.warrantyYears === "Lifetime";
+                return true;
+              },
+            },
+          ]}
+          products={luggage}
+          resultConfig={{
+            displayFields: [
+              { label: "Type", getValue: (p) => p.luggageType },
+              { label: "Size", getValue: (p) => p.sizeInches },
+              { label: "Weight", getValue: (p) => `${p.weightLbs} lbs` },
+              { label: "Capacity", getValue: (p) => `${p.capacityLiters}L` },
+              { label: "Wheels", getValue: (p) => p.wheels > 0 ? `${p.wheels} wheels` : "None" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Filters */}

@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { turntables } from "@/data/turntables";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -98,6 +99,98 @@ export default function TurntablesContent() {
           connectivity, and ratings to find the perfect vinyl player for your
           listening needs. Our methodology is based on manufacturer
           specifications, real-world performance, and vinyl enthusiast analysis.
+        </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Turntable"
+          subtitle="Quick questions to narrow down your ideal vinyl player"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-200", label: "Under $200", icon: "💵" },
+                { value: "200-500", label: "$200 - $500", icon: "💳" },
+                { value: "500-1000", label: "$500 - $1000", icon: "💎" },
+                { value: "1000+", label: "$1000+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-200") return product.price < 200;
+                if (value === "200-500") return product.price >= 200 && product.price < 500;
+                if (value === "500-1000") return product.price >= 500 && product.price < 1000;
+                if (value === "1000+") return product.price >= 1000;
+                return true;
+              },
+            },
+            {
+              id: "driveType",
+              question: "Drive type preference? 🎚️",
+              options: [
+                { value: "direct-drive", label: "Direct Drive", description: "Better speed control, DJ-ready", icon: "⚡" },
+                { value: "belt-drive", label: "Belt Drive", description: "Quiet, low vibration, audiophile choice", icon: "🎵" },
+                { value: "any", label: "Either is fine", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.driveType === value;
+              },
+            },
+            {
+              id: "features",
+              question: "Essential features? ⚙️",
+              options: [
+                { value: "preamp-usb", label: "Built-in preamp + USB", description: "Ready to use + record", icon: "🔌" },
+                { value: "preamp", label: "Built-in preamp", description: "Connect directly to speakers", icon: "📡" },
+                { value: "bluetooth", label: "Bluetooth output", description: "Wireless speakers/headphones", icon: "📡" },
+                { value: "auto", label: "Auto-return + dust cover", description: "Convenience features", icon: "🛡️" },
+                { value: "any", label: "Basic features OK", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "preamp-usb") return product.builtInPreamp && product.usbOutput;
+                if (value === "preamp") return product.builtInPreamp;
+                if (value === "bluetooth") return product.bluetoothOutput;
+                if (value === "auto") return product.automaticReturn && product.dustCover;
+                return true;
+              },
+            },
+            {
+              id: "useCase",
+              question: "Primary use? 🎵",
+              options: [
+                { value: "casual", label: "Casual listening", description: "Simple setup, great sound", icon: "🎧" },
+                { value: "serious", label: "Serious listening", description: "Audiophile grade, detail", icon: "👑" },
+                { value: "dj", label: "DJ/Scratching", description: "Direct drive, pitch control", icon: "🎙️" },
+                { value: "any", label: "Flexible use", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "casual") return product.price < 500;
+                if (value === "serious") return product.price >= 500;
+                if (value === "dj") return product.driveType === "direct-drive";
+                return true;
+              },
+            },
+          ]}
+          products={turntables}
+          resultConfig={{
+            displayFields: [
+              { label: "Drive Type", getValue: (p) => p.driveType === "belt-drive" ? "Belt" : "Direct" },
+              { label: "Speeds", getValue: (p) => p.speeds },
+              { label: "Preamp", getValue: (p) => p.builtInPreamp ? "Built-in" : "External" },
+              { label: "USB", getValue: (p) => p.usbOutput ? "Yes" : "No" },
+              { label: "Bluetooth", getValue: (p) => p.bluetoothOutput ? "Yes" : "No" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
+      </section>
         </p>
       </section>
 

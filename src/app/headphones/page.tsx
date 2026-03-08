@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { headphones } from "@/data/headphones";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -105,6 +106,97 @@ export default function HeadphonesContent() {
           to find the perfect headphones for music, gaming, or studio work. Our methodology is
           based on manufacturer specifications, real-world testing, and audiophile analysis.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Headphones"
+          subtitle="Answer a few quick questions to narrow down your options"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-200", label: "Under $200", icon: "💵" },
+                { value: "200-400", label: "$200 - $400", icon: "💳" },
+                { value: "400-800", label: "$400 - $800", icon: "💎" },
+                { value: "800+", label: "$800+", icon: "👑" },
+                { value: "any", label: "Any price", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-200") return product.price < 200;
+                if (value === "200-400") return product.price >= 200 && product.price < 400;
+                if (value === "400-800") return product.price >= 400 && product.price < 800;
+                if (value === "800+") return product.price >= 800;
+                return true;
+              },
+            },
+            {
+              id: "formFactor",
+              question: "What form factor do you prefer? 🎧",
+              options: [
+                { value: "over-ear", label: "Over-Ear", description: "Larger soundstage, all-day comfort", icon: "🎧" },
+                { value: "earbuds", label: "Earbuds", description: "Portable, discrete, true wireless", icon: "✨" },
+                { value: "in-ear", label: "In-Ear", description: "Isolation, professional grade", icon: "👂" },
+                { value: "any", label: "No preference", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.type === value;
+              },
+            },
+            {
+              id: "ancBattery",
+              question: "Noise cancellation & battery life? 🔋",
+              options: [
+                { value: "anc-wireless", label: "ANC + 20+ hrs battery", icon: "🔇" },
+                { value: "wireless", label: "Wireless, no ANC needed", icon: "📡" },
+                { value: "wired", label: "Wired (best quality)", icon: "🔌" },
+                { value: "any", label: "Flexible on these", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "anc-wireless") return product.anc && product.wireless && product.batteryHours >= 20;
+                if (value === "wireless") return product.wireless;
+                if (value === "wired") return !product.wireless;
+                return true;
+              },
+            },
+            {
+              id: "useCase",
+              question: "Primary use case? 🎵",
+              options: [
+                { value: "music", label: "Critical Listening", description: "Audiophile, hi-fi audio", icon: "🎵" },
+                { value: "gaming", label: "Gaming", description: "Low latency, immersive", icon: "🎮" },
+                { value: "studio", label: "Studio/Mixing", description: "Flat response, accuracy", icon: "🎚️" },
+                { value: "travel", label: "Travel", description: "Compact, portable", icon: "✈️" },
+                { value: "any", label: "General use", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "music" && product.codec && product.codec.includes("LDAC")) return true;
+                if (value === "studio" && product.impedanceOhms >= 20 && product.frequencyResponse) return true;
+                if (value === "gaming" && product.type === "over-ear" && product.microphone) return true;
+                if (value === "travel" && (product.type === "earbuds" || product.foldable)) return true;
+                return value === "any";
+              },
+            },
+          ]}
+          products={headphones}
+          resultConfig={{
+            displayFields: [
+              { label: "Type", getValue: (p) => p.type },
+              { label: "Driver", getValue: (p) => p.driverSize },
+              { label: "Battery", getValue: (p) => p.batteryHours > 0 ? `${p.batteryHours}h` : "Wired" },
+              { label: "Codec", getValue: (p) => p.codec },
+              { label: "Weight", getValue: (p) => `${p.weightGrams}g` },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Filters Section */}

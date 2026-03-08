@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { speakers, Speaker } from "@/data/speakers";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { getAmazonLink, formatPrice, formatRating } from "@/lib/utils";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -96,6 +97,97 @@ export default function SpeakersContent() {
           soundbar, studio monitor, and smart speakers. Compare specifications,
           prices, and features to find the perfect speaker for your needs.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Speaker"
+          subtitle="Quick questions to narrow down your speaker type and features"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-200", label: "Under $200", icon: "💵" },
+                { value: "200-500", label: "$200 - $500", icon: "💳" },
+                { value: "500-1000", label: "$500 - $1000", icon: "💎" },
+                { value: "1000+", label: "$1000+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-200") return product.price < 200;
+                if (value === "200-500") return product.price >= 200 && product.price < 500;
+                if (value === "500-1000") return product.price >= 500 && product.price < 1000;
+                if (value === "1000+") return product.price >= 1000;
+                return true;
+              },
+            },
+            {
+              id: "type",
+              question: "Speaker type? 🔊",
+              options: [
+                { value: "portable", label: "Portable", description: "Wireless, on-the-go", icon: "🎒" },
+                { value: "bookshelf", label: "Bookshelf", description: "Desktop/home listening", icon: "📚" },
+                { value: "soundbar", label: "Soundbar", description: "TV/home theater", icon: "📺" },
+                { value: "studio-monitor", label: "Studio Monitor", description: "Professional audio", icon: "🎚️" },
+                { value: "smart", label: "Smart Speaker", description: "Voice control, multi-room", icon: "🎤" },
+                { value: "any", label: "Any type", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.speakerType === value;
+              },
+            },
+            {
+              id: "connectivity",
+              question: "Connectivity preference? 📡",
+              options: [
+                { value: "bluetooth", label: "Wireless (Bluetooth)", description: "Mobile-friendly", icon: "📡" },
+                { value: "wifi", label: "WiFi (Smart/Multi-room)", description: "Whole-home audio", icon: "🌐" },
+                { value: "both", label: "Both Bluetooth & WiFi", icon: "🔄" },
+                { value: "any", label: "Any/Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "bluetooth") return product.bluetooth && !product.wifi;
+                if (value === "wifi") return product.wifi && !product.bluetooth;
+                if (value === "both") return product.bluetooth && product.wifi;
+                return true;
+              },
+            },
+            {
+              id: "features",
+              question: "Important features? ⚙️",
+              options: [
+                { value: "waterproof", label: "Waterproof/Outdoor-ready", icon: "💦" },
+                { value: "multiroom", label: "Multi-room capability", icon: "🏠" },
+                { value: "stereo", label: "True stereo sound", icon: "🎵" },
+                { value: "any", label: "Features flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "waterproof") return product.waterproof && product.waterproof !== "None";
+                if (value === "multiroom") return product.multiRoom;
+                if (value === "stereo") return product.stereo;
+                return true;
+              },
+            },
+          ]}
+          products={speakers}
+          resultConfig={{
+            displayFields: [
+              { label: "Type", getValue: (p) => p.speakerType },
+              { label: "Wattage", getValue: (p) => `${p.wattage}W` },
+              { label: "Wireless", getValue: (p) => p.wireless ? "Yes" : "Wired" },
+              { label: "Waterproof", getValue: (p) => p.waterproof && p.waterproof !== "None" ? "Yes" : "No" },
+              { label: "Multi-room", getValue: (p) => p.multiRoom ? "Yes" : "No" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Inline Filters */}

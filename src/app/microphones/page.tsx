@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { microphones } from "@/data/microphones";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -101,6 +102,96 @@ export default function MicrophonesContent() {
           Our methodology is based on manufacturer specifications, real-world testing, and
           professional audio engineering standards.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Microphone"
+          subtitle="Answer a few questions to get personalized microphone recommendations"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-100", label: "Under $100", icon: "💵" },
+                { value: "100-300", label: "$100 - $300", icon: "💳" },
+                { value: "300-600", label: "$300 - $600", icon: "💎" },
+                { value: "600+", label: "$600+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-100") return product.price < 100;
+                if (value === "100-300") return product.price >= 100 && product.price < 300;
+                if (value === "300-600") return product.price >= 300 && product.price < 600;
+                if (value === "600+") return product.price >= 600;
+                return true;
+              },
+            },
+            {
+              id: "useCase",
+              question: "What's your primary use? 🎙️",
+              options: [
+                { value: "usb-streaming", label: "USB Streaming/Podcasting", description: "Plug-and-play, no interface needed", icon: "🔴" },
+                { value: "xlr-studio", label: "XLR Studio/Professional", description: "Audio interface integration", icon: "🎚️" },
+                { value: "hybrid", label: "USB/XLR Hybrid", description: "Both options available", icon: "🔀" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "usb-streaming") return product.connectionType === "USB" || product.connectionType === "USB/XLR";
+                if (value === "xlr-studio") return product.connectionType === "XLR" || product.connectionType === "USB/XLR";
+                if (value === "hybrid") return product.connectionType === "USB/XLR";
+                return true;
+              },
+            },
+            {
+              id: "micType",
+              question: "Microphone type? 🔊",
+              options: [
+                { value: "condenser", label: "Condenser", description: "Sensitive, detailed, bright", icon: "✨" },
+                { value: "dynamic", label: "Dynamic", description: "Rugged, low feedback, stage-ready", icon: "💪" },
+                { value: "ribbon", label: "Ribbon", description: "Warm, smooth, professional", icon: "🎞️" },
+                { value: "usb", label: "USB All-in-One", description: "Simple setup, no interface needed", icon: "🔌" },
+                { value: "any", label: "Any type", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.micType === value;
+              },
+            },
+            {
+              id: "features",
+              question: "Important features? ⚙️",
+              options: [
+                { value: "mute-headphone", label: "Mute button + headphone jack", icon: "🔇" },
+                { value: "shock-pop", label: "Shock mount + pop filter included", icon: "🎤" },
+                { value: "gain-control", label: "Gain control", icon: "🎚️" },
+                { value: "any", label: "Features not critical", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "mute-headphone") return product.hasMuteButton && product.hasHeadphoneJack;
+                if (value === "shock-pop") return product.shockMountIncluded && product.popFilterIncluded;
+                if (value === "gain-control") return product.hasGainControl;
+                return true;
+              },
+            },
+          ]}
+          products={microphones}
+          resultConfig={{
+            displayFields: [
+              { label: "Type", getValue: (p) => p.micType },
+              { label: "Connection", getValue: (p) => p.connectionType },
+              { label: "Polar Pattern", getValue: (p) => p.polarPattern.split("(")[0].trim() },
+              { label: "Sample Rate", getValue: (p) => p.sampleRate },
+              { label: "Mute Button", getValue: (p) => p.hasMuteButton ? "Yes" : "No" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Filters Section */}

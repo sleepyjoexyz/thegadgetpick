@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { monitors } from "@/data/monitors";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { getAmazonLink } from "@/lib/utils";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -101,6 +102,114 @@ export default function MonitorsContent() {
         <p className="text-lg text-gray-600 mb-6">
           We've analyzed 14 premium monitors across gaming, creative work, productivity, and ultrawide displays. Compare specifications, features, prices, and ratings to find the monitor that matches your workflow. Our methodology is based on manufacturer specs, panel technology, color accuracy, refresh rates, and real-world performance testing.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Monitor"
+          subtitle="Answer a few questions to get personalized monitor recommendations"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-300", label: "Under $300", icon: "💵" },
+                { value: "300-600", label: "$300 - $600", icon: "💳" },
+                { value: "600-1200", label: "$600 - $1200", icon: "💎" },
+                { value: "1200+", label: "$1200+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-300") return product.price < 300;
+                if (value === "300-600") return product.price >= 300 && product.price < 600;
+                if (value === "600-1200") return product.price >= 600 && product.price < 1200;
+                if (value === "1200+") return product.price >= 1200;
+                return true;
+              },
+            },
+            {
+              id: "useCase",
+              question: "Primary use case? 🎯",
+              options: [
+                { value: "gaming", label: "Gaming", description: "High refresh, fast response", icon: "🎮" },
+                { value: "creative", label: "Creative Work", description: "Color accuracy, wide gamut", icon: "🎨" },
+                { value: "office", label: "Productivity", description: "Efficiency, multitasking", icon: "📊" },
+                { value: "ultrawide", label: "Ultrawide", description: "Panoramic view, immersive", icon: "📺" },
+                { value: "any", label: "General use", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.useCase === value;
+              },
+            },
+            {
+              id: "size",
+              question: "Screen size preference? 📏",
+              options: [
+                { value: "24-27", label: "24-27 inches", description: "Compact, desk-friendly", icon: "📱" },
+                { value: "27-34", label: "27-34 inches", description: "Immersive, spacious", icon: "🖥️" },
+                { value: "34+", label: "34+ inches", description: "Ultrawide, panoramic", icon: "📺" },
+                { value: "any", label: "Any size", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "24-27") return product.screenSize >= 24 && product.screenSize <= 27;
+                if (value === "27-34") return product.screenSize > 27 && product.screenSize <= 34;
+                if (value === "34+") return product.screenSize > 34;
+                return true;
+              },
+            },
+            {
+              id: "panelTech",
+              question: "Panel technology preference? ⚡",
+              options: [
+                { value: "ips", label: "IPS", description: "Color accuracy, wide viewing angles", icon: "📐" },
+                { value: "va", label: "VA", description: "High contrast, deep blacks", icon: "🌑" },
+                { value: "oled", label: "OLED", description: "Perfect blacks, best contrast", icon: "✨" },
+                { value: "tn", label: "TN", description: "Fast response, budget-friendly", icon: "⚡" },
+                { value: "any", label: "Any panel", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "ips") return product.panelType === "IPS";
+                if (value === "va") return product.panelType === "VA";
+                if (value === "oled") return product.panelType === "OLED";
+                if (value === "tn") return product.panelType === "TN";
+                return true;
+              },
+            },
+            {
+              id: "refresh",
+              question: "Refresh rate important? 🔄",
+              options: [
+                { value: "60", label: "60Hz (standard)", description: "Smooth for everyday use", icon: "📊" },
+                { value: "120", label: "120Hz+", description: "Gaming, fast-paced content", icon: "🎮" },
+                { value: "144", label: "144Hz+", description: "Competitive gaming", icon: "⚡" },
+                { value: "any", label: "Doesn't matter", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "60") return product.refreshRate >= 60;
+                if (value === "120") return product.refreshRate >= 120;
+                if (value === "144") return product.refreshRate >= 144;
+                return true;
+              },
+            },
+          ]}
+          products={monitors}
+          resultConfig={{
+            displayFields: [
+              { label: "Size", getValue: (p) => `${p.screenSize}"` },
+              { label: "Resolution", getValue: (p) => p.resolution },
+              { label: "Panel", getValue: (p) => p.panelType },
+              { label: "Refresh", getValue: (p) => `${p.refreshRate}Hz` },
+              { label: "Response", getValue: (p) => p.responseTime },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Filters */}

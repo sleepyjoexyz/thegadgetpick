@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { webcams } from "@/data/webcams";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { getWebcamArticleSlugs } from "@/data/webcam-articles";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
@@ -102,6 +103,92 @@ export default function WebcamsContent() {
         <p className="text-lg text-gray-600 mb-6">
           We've compared 13 premium webcams across all types and price points. Explore 4K versus 1080p, frame rates from 30fps to 60fps, autofocus options, HDR capability, and specialized features. Find the perfect webcam for video conferencing, streaming, content creation, or professional presentations. Our analysis covers resolution, fps, field of view, low-light performance, microphone quality, privacy shutters, and real-world performance for different use cases.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Webcam"
+          subtitle="Quick questions to find the right resolution and features"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-100", label: "Under $100", icon: "💵" },
+                { value: "100-200", label: "$100 - $200", icon: "💳" },
+                { value: "200-350", label: "$200 - $350", icon: "💎" },
+                { value: "350+", label: "$350+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-100") return product.price < 100;
+                if (value === "100-200") return product.price >= 100 && product.price < 200;
+                if (value === "200-350") return product.price >= 200 && product.price < 350;
+                if (value === "350+") return product.price >= 350;
+                return true;
+              },
+            },
+            {
+              id: "resolution",
+              question: "Resolution needed? 📹",
+              options: [
+                { value: "1080p", label: "1080p", description: "Video calls, streaming", icon: "📺" },
+                { value: "2k", label: "2K", description: "Sharp video, detail", icon: "📷" },
+                { value: "4k", label: "4K", description: "Ultra-high definition", icon: "🎬" },
+                { value: "any", label: "Any resolution", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.resolution === value;
+              },
+            },
+            {
+              id: "fps",
+              question: "Frame rate requirement? ⚡",
+              options: [
+                { value: "30", label: "30fps", description: "Standard video calls", icon: "📱" },
+                { value: "60", label: "60fps", description: "Smooth motion, streaming", icon: "🎮" },
+                { value: "any", label: "Either works", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.fps === parseInt(value);
+              },
+            },
+            {
+              id: "features",
+              question: "Important features? ⚙️",
+              options: [
+                { value: "autofocus-hdr", label: "Autofocus + HDR", description: "Auto-adjust to lighting", icon: "📸" },
+                { value: "autofocus", label: "Autofocus", description: "Sharp focus on movement", icon: "🎯" },
+                { value: "hdr", label: "HDR", description: "Better in low/bright light", icon: "☀️" },
+                { value: "any", label: "Basic features OK", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "autofocus-hdr") return product.autofocus && product.hdr;
+                if (value === "autofocus") return product.autofocus;
+                if (value === "hdr") return product.hdr;
+                return true;
+              },
+            },
+          ]}
+          products={webcams}
+          resultConfig={{
+            displayFields: [
+              { label: "Resolution", getValue: (p) => p.resolution },
+              { label: "FPS", getValue: (p) => `${p.fps}fps` },
+              { label: "FOV", getValue: (p) => `${p.fieldOfView}°` },
+              { label: "Autofocus", getValue: (p) => p.autofocus ? "Yes" : "No" },
+              { label: "HDR", getValue: (p) => p.hdr ? "Yes" : "No" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Filters Section */}

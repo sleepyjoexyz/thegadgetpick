@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { keyboards } from "@/data/keyboards";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { getKeyboardArticleSlugs } from "@/data/keyboard-articles";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
@@ -102,6 +103,110 @@ export default function KeyboardsContent() {
         <p className="text-lg text-gray-600 mb-6">
           We've compared 14 premium keyboards across all types and price points. Explore mechanical versus membrane, hot-swappable designs, wireless options, and layouts from 60% compact to full-size. Find the perfect keyboard for programming, gaming, or typing. Our analysis covers switch types, ergonomics, customization, and real-world performance.
         </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Keyboard"
+          subtitle="Answer a few questions to discover your ideal typing experience"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-100", label: "Under $100", icon: "💵" },
+                { value: "100-200", label: "$100 - $200", icon: "💳" },
+                { value: "200-350", label: "$200 - $350", icon: "💎" },
+                { value: "350+", label: "$350+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-100") return product.price < 100;
+                if (value === "100-200") return product.price >= 100 && product.price < 200;
+                if (value === "200-350") return product.price >= 200 && product.price < 350;
+                if (value === "350+") return product.price >= 350;
+                return true;
+              },
+            },
+            {
+              id: "switchType",
+              question: "Switch type preference? ⌨️",
+              options: [
+                { value: "mechanical", label: "Mechanical", description: "Tactile, customizable, durable", icon: "🎮" },
+                { value: "membrane", label: "Membrane", description: "Quiet, reliable, budget-friendly", icon: "🤐" },
+                { value: "optical", label: "Optical", description: "Gaming-focused, responsive", icon: "⚡" },
+                { value: "topre", label: "Topre", description: "Premium, unique feel", icon: "✨" },
+                { value: "any", label: "No preference", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.keyboardType === value;
+              },
+            },
+            {
+              id: "layout",
+              question: "Desk space & portability? 🖥️",
+              options: [
+                { value: "full-size", label: "Full-Size", description: "All keys, numpad included", icon: "📏" },
+                { value: "tenkeyless", label: "Tenkeyless (87 keys)", description: "More space, still full features", icon: "📐" },
+                { value: "compact", label: "Compact (75% / 65% / 60%)", description: "Portable, minimal footprint", icon: "🎒" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "full-size") return product.layout === "full-size";
+                if (value === "tenkeyless") return product.layout === "tenkeyless";
+                if (value === "compact") return ["75%", "65%", "60%"].includes(product.layout);
+                return true;
+              },
+            },
+            {
+              id: "connectivity",
+              question: "Wireless or wired? 📡",
+              options: [
+                { value: "wireless", label: "Wireless", description: "Freedom of movement", icon: "📡" },
+                { value: "wired", label: "Wired", description: "Best latency, always responsive", icon: "🔌" },
+                { value: "any", label: "Either works", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "wireless") return product.wireless;
+                if (value === "wired") return !product.wireless;
+                return true;
+              },
+            },
+            {
+              id: "customization",
+              question: "Hot-swappable & lighting? 💡",
+              options: [
+                { value: "hot-swap-rgb", label: "Hot-swap + RGB", description: "Full customization, RGB lighting", icon: "🌈" },
+                { value: "hot-swap", label: "Hot-swap only", description: "Switch customization, no lighting", icon: "🔧" },
+                { value: "fixed", label: "Fixed switches", description: "Pre-built, no customization", icon: "🔒" },
+                { value: "any", label: "Doesn't matter", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "hot-swap-rgb") return product.hotSwappable && product.rgbLighting;
+                if (value === "hot-swap") return product.hotSwappable;
+                if (value === "fixed") return !product.hotSwappable;
+                return true;
+              },
+            },
+          ]}
+          products={keyboards}
+          resultConfig={{
+            displayFields: [
+              { label: "Type", getValue: (p) => p.keyboardType },
+              { label: "Layout", getValue: (p) => p.layout },
+              { label: "Switches", getValue: (p) => p.switchType },
+              { label: "Wireless", getValue: (p) => p.wireless ? "Yes" : "Wired" },
+              { label: "Hot-Swap", getValue: (p) => p.hotSwappable ? "Yes" : "No" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
       </section>
 
       {/* Filters Section */}

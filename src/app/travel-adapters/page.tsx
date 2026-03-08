@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { travelAdapters } from "@/data/travel-adapters";
+import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { travelAdapterArticles } from "@/data/travel-adapter-articles";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
@@ -98,6 +99,98 @@ export default function TravelAdaptersContent() {
         </h1>
         <p className="text-lg text-gray-600 mb-6">
           We've analyzed 13 travel adapters, voltage converters, USB chargers, and power strips for international travel. Compare specifications, countries covered, USB ports, wattage, surge protection, and pricing. Find the perfect adapter for any destination—from universal 200+ country solutions to specialized GaN fast chargers.
+        </p>
+      </section>
+
+      {/* Product Finder */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ProductFinder
+          title="Find Your Perfect Travel Adapter"
+          subtitle="Quick questions to find the right adapter for your destinations"
+          steps={[
+            {
+              id: "budget",
+              question: "What's your budget? 💰",
+              options: [
+                { value: "under-30", label: "Under $30", icon: "💵" },
+                { value: "30-60", label: "$30 - $60", icon: "💳" },
+                { value: "60-100", label: "$60 - $100", icon: "💎" },
+                { value: "100+", label: "$100+", icon: "👑" },
+                { value: "any", label: "Flexible", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "under-30") return product.price < 30;
+                if (value === "30-60") return product.price >= 30 && product.price < 60;
+                if (value === "60-100") return product.price >= 60 && product.price < 100;
+                if (value === "100+") return product.price >= 100;
+                return true;
+              },
+            },
+            {
+              id: "adapterType",
+              question: "Adapter type needed? ✈️",
+              options: [
+                { value: "universal", label: "Universal (worldwide)", description: "200+ countries", icon: "🌍" },
+                { value: "regional", label: "Regional", description: "Specific continent/region", icon: "🗺️" },
+                { value: "converter", label: "Voltage converter", description: "Step-down 220V → 110V", icon: "⚡" },
+                { value: "charger", label: "USB charger", description: "Multi-port fast charging", icon: "🔌" },
+                { value: "any", label: "Any type", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "any") return true;
+                return product.adapterType === value;
+              },
+            },
+            {
+              id: "charging",
+              question: "Charging needs? 🔋",
+              options: [
+                { value: "pd-fast", label: "PD Fast Charging", description: "USB-C Power Delivery", icon: "⚡" },
+                { value: "gan", label: "GaN Technology", description: "Compact, efficient", icon: "🚀" },
+                { value: "multiport", label: "Multi-port", description: "Charge multiple devices", icon: "🔌" },
+                { value: "any", label: "Basic charging fine", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "pd-fast") return product.pdFastCharging;
+                if (value === "gan") return product.ganTech;
+                if (value === "multiport") return true; // Most have multiple outlets
+                return true;
+              },
+            },
+            {
+              id: "features",
+              question: "Special requirements? ⚙️",
+              options: [
+                { value: "voltage", label: "Voltage converter (110V ↔ 220V)", icon: "⚡" },
+                { value: "compact", label: "Ultra-compact design", description: "Space-saving", icon: "🎒" },
+                { value: "surge", label: "Surge protection", description: "Device protection", icon: "⛔" },
+                { value: "any", label: "No special needs", icon: "🎯" },
+              ],
+              filterFn: (product, value) => {
+                if (value === "voltage") return product.voltageConverter;
+                if (value === "compact") return true; // Size varies
+                if (value === "surge") return true; // Assume built-in
+                return true;
+              },
+            },
+          ]}
+          products={travelAdapters}
+          resultConfig={{
+            displayFields: [
+              { label: "Type", getValue: (p) => p.adapterType },
+              { label: "USB Ports", getValue: (p) => p.usbPorts || "—" },
+              { label: "PD Charging", getValue: (p) => p.pdFastCharging ? "Yes" : "No" },
+              { label: "GaN Tech", getValue: (p) => p.ganTech ? "Yes" : "No" },
+              { label: "Voltage Conv", getValue: (p) => p.voltageConverter ? "Yes" : "No" },
+            ],
+            getName: (p) => `${p.brand} ${p.model}`,
+            getPrice: (p) => p.price,
+            getRating: (p) => p.rating,
+            getSummary: (p) => p.summary,
+            getAsin: (p) => p.amazonAsin,
+          }}
+        />
+      </section>
         </p>
       </section>
 
