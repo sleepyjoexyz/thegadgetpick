@@ -78,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/nc-headphones`,
+      url: `${baseUrl}/noise-canceling-headphones`,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
@@ -187,7 +187,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const ncHeadphoneSlugs = getNCHeadphoneArticleSlugs();
   ncHeadphoneSlugs.forEach((slug) => {
     urls.push({
-      url: `${baseUrl}/nc-headphones/${slug}`,
+      url: `${baseUrl}/noise-canceling-headphones/${slug}`,
       changeFrequency: 'monthly',
       priority: 0.8,
     });
