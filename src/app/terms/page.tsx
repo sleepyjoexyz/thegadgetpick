@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service | The Gadget Pick',
   description: 'Review the terms and conditions for using The Gadget Pick website.',
+  alternates: {
+    canonical: 'https://www.thegadgetpick.com/terms',
+  },
 };
 
 export default function TermsOfService() {

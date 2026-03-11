@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | The Gadget Pick',
   description: 'Learn how The Gadget Pick collects, uses, and protects your personal information.',
+  alternates: {
+    canonical: 'https://www.thegadgetpick.com/privacy',
+  },
 };
 
 export default function PrivacyPolicy() {
