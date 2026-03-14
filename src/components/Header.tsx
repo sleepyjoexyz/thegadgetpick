@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-blue-600 hover:text-blue-700">
             The Gadget Pick
@@ -29,14 +29,8 @@ export default function Header() {
                 <Link href="/headphones" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 first:rounded-t-lg">
                   Headphones
                 </Link>
-                <Link href="/speakers" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                <Link href="/speakers" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 last:rounded-b-lg">
                   Speakers
-                </Link>
-                <Link href="/turntables" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
-                  Turntables
-                </Link>
-                <Link href="/microphones" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 last:rounded-b-lg">
-                  Microphones
                 </Link>
               </div>
             </div>
@@ -68,17 +62,11 @@ export default function Header() {
                 Travel Tech
               </button>
               <div className="absolute left-0 mt-0 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <Link href="/luggage" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 first:rounded-t-lg">
-                  Luggage
-                </Link>
-                <Link href="/power-banks" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                <Link href="/power-banks" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 first:rounded-t-lg">
                   Power Banks
                 </Link>
-                <Link href="/travel-adapters" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                <Link href="/travel-adapters" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 last:rounded-b-lg">
                   Travel Adapters
-                </Link>
-                <Link href="/nc-headphones" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 last:rounded-b-lg">
-                  Noise-Canceling Headphones
                 </Link>
               </div>
             </div>
@@ -128,12 +116,6 @@ export default function Header() {
                   <Link href="/speakers" className="block text-gray-600 hover:text-blue-600">
                     Speakers
                   </Link>
-                  <Link href="/turntables" className="block text-gray-600 hover:text-blue-600">
-                    Turntables
-                  </Link>
-                  <Link href="/microphones" className="block text-gray-600 hover:text-blue-600">
-                    Microphones
-                  </Link>
                 </div>
               )}
             </div>
@@ -174,17 +156,11 @@ export default function Header() {
               </button>
               {travelDropdownOpen && (
                 <div className="pl-4 space-y-2 mt-2">
-                  <Link href="/luggage" className="block text-gray-600 hover:text-blue-600">
-                    Luggage
-                  </Link>
                   <Link href="/power-banks" className="block text-gray-600 hover:text-blue-600">
                     Power Banks
                   </Link>
                   <Link href="/travel-adapters" className="block text-gray-600 hover:text-blue-600">
                     Travel Adapters
-                  </Link>
-                  <Link href="/nc-headphones" className="block text-gray-600 hover:text-blue-600">
-                    Noise-Canceling Headphones
                   </Link>
                 </div>
               )}

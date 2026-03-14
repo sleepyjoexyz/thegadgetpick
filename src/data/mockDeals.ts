@@ -1,0 +1,178 @@
+export interface Deal {
+  id: string;
+  title: string;
+  category: 'Headphones' | 'Speakers' | 'Monitors' | 'Keyboards' | 'Mice' | 'Webcams' | 'Power Banks' | 'Travel Adapters';
+  originalPrice: number;
+  dealPrice: number;
+  percentOff: number;
+  source: string;
+  sourceUrl: string;
+  amazonUrl: string;
+  timeLeft: string;
+  imageAlt: string;
+}
+
+export const mockDeals: Deal[] = [
+  // Headphones
+  {
+    id: 'hp-001',
+    title: 'Sony WH-1000XM5 Wireless Headphones',
+    category: 'Headphones',
+    originalPrice: 399.99,
+    dealPrice: 299.99,
+    percentOff: 25,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '12h left',
+    imageAlt: 'Sony WH-1000XM5',
+  },
+  {
+    id: 'hp-002',
+    title: 'Apple AirPods Pro (2nd Gen)',
+    category: 'Headphones',
+    originalPrice: 249.99,
+    dealPrice: 179.99,
+    percentOff: 28,
+    source: 'Slickdeals',
+    sourceUrl: 'https://slickdeals.net',
+    amazonUrl: '#',
+    timeLeft: '6h left',
+    imageAlt: 'Apple AirPods Pro',
+  },
+  // Speakers
+  {
+    id: 'sp-001',
+    title: 'JBL Flip 6 Portable Bluetooth Speaker',
+    category: 'Speakers',
+    originalPrice: 149.99,
+    dealPrice: 99.99,
+    percentOff: 33,
+    source: 'Reddit',
+    sourceUrl: 'https://reddit.com',
+    amazonUrl: '#',
+    timeLeft: '18h left',
+    imageAlt: 'JBL Flip 6',
+  },
+  {
+    id: 'sp-002',
+    title: 'Sonos Roam SL Portable Speaker',
+    category: 'Speakers',
+    originalPrice: 199.99,
+    dealPrice: 149.99,
+    percentOff: 25,
+    source: 'Slickdeals',
+    sourceUrl: 'https://slickdeals.net',
+    amazonUrl: '#',
+    timeLeft: '3h left',
+    imageAlt: 'Sonos Roam SL',
+  },
+  // Monitors
+  {
+    id: 'mon-001',
+    title: 'Dell S2721DGF 27-inch Gaming Monitor',
+    category: 'Monitors',
+    originalPrice: 299.99,
+    dealPrice: 229.99,
+    percentOff: 23,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '9h left',
+    imageAlt: 'Dell S2721DGF',
+  },
+  {
+    id: 'mon-002',
+    title: 'LG 27GP850 27-inch 144Hz Monitor',
+    category: 'Monitors',
+    originalPrice: 349.99,
+    dealPrice: 269.99,
+    percentOff: 23,
+    source: 'Newegg',
+    sourceUrl: 'https://newegg.com',
+    amazonUrl: '#',
+    timeLeft: '14h left',
+    imageAlt: 'LG 27GP850',
+  },
+  // Keyboards
+  {
+    id: 'kb-001',
+    title: 'Keychron K2 Mechanical Keyboard',
+    category: 'Keyboards',
+    originalPrice: 89.99,
+    dealPrice: 59.99,
+    percentOff: 33,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '2h left',
+    imageAlt: 'Keychron K2',
+  },
+  {
+    id: 'kb-002',
+    title: 'Corsair K95 Platinum XT Mechanical',
+    category: 'Keyboards',
+    originalPrice: 199.99,
+    dealPrice: 149.99,
+    percentOff: 25,
+    source: 'Slickdeals',
+    sourceUrl: 'https://slickdeals.net',
+    amazonUrl: '#',
+    timeLeft: '20h left',
+    imageAlt: 'Corsair K95',
+  },
+  // Mice
+  {
+    id: 'ms-001',
+    title: 'Logitech G Pro X Superlight Mouse',
+    category: 'Mice',
+    originalPrice: 129.99,
+    dealPrice: 89.99,
+    percentOff: 30,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '8h left',
+    imageAlt: 'Logitech G Pro X',
+  },
+  {
+    id: 'ms-002',
+    title: 'SteelSeries Rival 5 Gaming Mouse',
+    category: 'Mice',
+    originalPrice: 49.99,
+    dealPrice: 34.99,
+    percentOff: 30,
+    source: 'Newegg',
+    sourceUrl: 'https://newegg.com',
+    amazonUrl: '#',
+    timeLeft: '22h left',
+    imageAlt: 'SteelSeries Rival 5',
+  },
+  // Webcams
+  {
+    id: 'wc-001',
+    title: 'Logitech C920 Pro HD Webcam',
+    category: 'Webcams',
+    originalPrice: 79.99,
+    dealPrice: 54.99,
+    percentOff: 31,
+    source: 'Amazon',
+    sourceUrl: 'https://amazon.com',
+    amazonUrl: '#',
+    timeLeft: '11h left',
+    imageAlt: 'Logitech C920',
+  },
+  {
+    id: 'wc-002',
+    title: 'Elgato Cam Link 4K Webcam',
+    category: 'Webcams',
+    originalPrice: 199.99,
+    dealPrice: 149.99,
+    percentOff: 25,
+    source: 'Slickdeals',
+    sourceUrl: 'https://slickdeals.net',
+    amazonUrl: '#',
+    timeLeft: '5h left',
+    imageAlt: 'Elgato Cam Link 4K',
+  },
+];
