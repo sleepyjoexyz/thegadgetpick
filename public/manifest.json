@@ -1,0 +1,21 @@
+{
+  "name": "The Gadget Pick",
+  "short_name": "GadgetPick",
+  "description": "Data-Driven Audio, PC & Travel Tech Comparisons",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#3B82F6",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
