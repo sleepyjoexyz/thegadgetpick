@@ -6,6 +6,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import MarkdownContent from "@/components/MarkdownContent";
+import CrossCategoryLinks from "@/components/CrossCategoryLinks";
 
 interface PageProps {
   params: Promise<{
@@ -127,7 +128,11 @@ export default async function ArticlePage({ params }: PageProps) {
       </section>
 
       {/* Comments */}
-      <Comments pagePath={`/power-banks/${slug}`} siteName="thegadgetpick" />
+      
+      {/* Cross-Category Links */}
+      <CrossCategoryLinks currentCategory="power-banks" />
+
+<Comments pagePath={`/power-banks/${slug}`} siteName="thegadgetpick" />
 
       {/* Back to Comparison */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

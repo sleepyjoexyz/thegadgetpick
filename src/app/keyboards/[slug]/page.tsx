@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import CrossCategoryLinks from "@/components/CrossCategoryLinks";
 
 interface PageProps {
   params: Promise<{
@@ -183,7 +184,11 @@ export default async function ArticlePage({ params }: PageProps) {
       </section>
 
       {/* Comments */}
-      <Comments pagePath={`/keyboards/${slug}`} siteName="thegadgetpick" />
+      
+      {/* Cross-Category Links */}
+      <CrossCategoryLinks currentCategory="keyboards" />
+
+<Comments pagePath={`/keyboards/${slug}`} siteName="thegadgetpick" />
     </article>
   );
 }

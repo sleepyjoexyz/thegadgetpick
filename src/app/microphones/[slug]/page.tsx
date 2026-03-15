@@ -6,6 +6,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import MarkdownContent from "@/components/MarkdownContent";
+import CrossCategoryLinks from "@/components/CrossCategoryLinks";
 
 interface PageProps {
   params: Promise<{
@@ -128,7 +129,11 @@ export default async function ArticlePage({ params }: PageProps) {
       </section>
 
       {/* Comments */}
-      <Comments pagePath={`/microphones/${slug}`} siteName="thegadgetpick" />
+      
+      {/* Cross-Category Links */}
+      <CrossCategoryLinks currentCategory="microphones" />
+
+<Comments pagePath={`/microphones/${slug}`} siteName="thegadgetpick" />
     </article>
   );
 }
