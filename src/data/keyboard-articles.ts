@@ -473,7 +473,6 @@ Hot-swappable technology represents a paradigm shift from disposable keyboards t
 
 Starting with hot-swappable keyboards positions you within this vibrant ecosystem. You'll discover that changing switches isn't just functional customization — it's a form of personal expression and ongoing experimentation that makes keyboards endlessly engaging.`,
   },
-,
   "best-mechanical-keyboard-for-programming": {
     slug: "best-mechanical-keyboard-for-programming",
     title: "Best Mechanical Keyboard for Programming in 2026: Quiet, Comfortable, and Productive",

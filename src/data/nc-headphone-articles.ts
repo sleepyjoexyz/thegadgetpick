@@ -567,7 +567,6 @@ export const ncHeadphoneArticles: Record<string, NCHeadphoneArticle> = {
 
 <p>Followed consistently, these practices allow you to enjoy noise-canceling headphones safely for decades without hearing loss.</p>`,
   },
-,
   "sony-wh1000xm5-vs-bose-qc-ultra": {
     slug: "sony-wh1000xm5-vs-bose-qc-ultra",
     title: "Sony WH-1000XM5 vs Bose QC Ultra Headphones: 2026 Noise Cancelling Showdown",
