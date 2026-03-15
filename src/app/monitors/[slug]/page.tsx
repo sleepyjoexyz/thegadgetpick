@@ -9,6 +9,7 @@ import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import MarkdownContent from "@/components/MarkdownContent";
 
 interface PageProps {
   params: Promise<{
@@ -94,100 +95,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Article Content */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="prose prose-lg max-w-none text-gray-700">
-          {article.content.split("\n\n").map((paragraph, i) => {
-            if (paragraph.startsWith("##")) {
-              const heading = paragraph.replace("## ", "");
-              return (
-                <h2 key={i} className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  {heading}
-                </h2>
-              );
-            }
-            if (paragraph.startsWith("###")) {
-              const heading = paragraph.replace("### ", "");
-              return (
-                <h3 key={i} className="text-xl font-bold text-gray-900 mt-6 mb-3">
-                  {heading}
-                </h3>
-              );
-            }
-            if (paragraph.startsWith("-")) {
-              const items = paragraph.split("\n").map((item) => item.replace(/^-\s/, ""));
-              return (
-                <ul key={i} className="list-disc list-inside mb-4 space-y-2">
-                  {items.map((item, j) => (
-                    <li key={j} className="text-gray-700">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              );
-            }
-            if (paragraph.match(/^\d+\./)) {
-              const items = paragraph.split("\n").map((item) => item.replace(/^\d+\.\s/, ""));
-              return (
-                <ol key={i} className="list-decimal list-inside mb-4 space-y-2">
-                  {items.map((item, j) => (
-                    <li key={j} className="text-gray-700">
-                      {item}
-                    </li>
-                  ))}
-                </ol>
-              );
-            }
-            if (paragraph.includes("|")) {
-              // Table detection
-              const lines = paragraph.split("\n").filter((line) => line.trim());
-              if (lines.length > 2) {
-                const headers = lines[0].split("|").map((h) => h.trim()).filter(Boolean);
-                const rows = lines.slice(2).map((line) =>
-                  line.split("|").map((cell) => cell.trim()).filter(Boolean)
-                );
-                return (
-                  <div key={i} className="overflow-x-auto mb-4">
-                    <table className="w-full text-sm border-collapse border border-gray-300">
-                      <thead className="bg-gray-100">
-                        <tr>
-                          {headers.map((header, j) => (
-                            <th
-                              key={j}
-                              className="border border-gray-300 px-4 py-2 text-left font-bold"
-                            >
-                              {header}
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {rows.map((row, rowIdx) => (
-                          <tr
-                            key={rowIdx}
-                            className={rowIdx % 2 === 0 ? "bg-white" : "bg-gray-50"}
-                          >
-                            {row.map((cell, cellIdx) => (
-                              <td
-                                key={cellIdx}
-                                className="border border-gray-300 px-4 py-2"
-                              >
-                                {cell}
-                              </td>
-                            ))}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                );
-              }
-            }
-            return (
-              <p key={i} className="text-gray-700 mb-4">
-                {paragraph}
-              </p>
-            );
-          })}
-        </div>
+        <MarkdownContent content={article.content} />
       </section>
 
       {/* Recommended Products */}
