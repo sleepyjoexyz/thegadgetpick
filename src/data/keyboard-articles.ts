@@ -708,14 +708,77 @@ Keychron K4 Pro (75%) or Leopold FC980M (full-size). Both include dedicated arro
 
 **If you refuse to compromise on navigation access and work at a stationary desk, choose the Leopold FC980M.** Full-size keyboards are underrated—the dedicated numpad and arrow keys streamline workflows for developers who manage data or frequently use terminal navigation shortcuts.
 
-Quiet mechanical keyboards are no longer a luxury—they're a professional necessity in shared work environments. Choose one based on your layout preferences, wireless requirements, and budget. All options above deliver on the promise of silence while maintaining the tactile satisfaction that makes mechanical keyboards beloved by programmers.
+Quiet mechanical keyboards are no longer a luxury—they're a professional necessity in shared work environments. Choose one based on your layout preferences, wireless requirements, and budget. All options above deliver on the promise of silence while maintaining the tactile satisfaction that makes mechanical keyboards beloved by programmers.`
+  },
+  "how-to-choose-first-mechanical-keyboard": {
+    slug: "how-to-choose-first-mechanical-keyboard",
+    title: "How to Choose Your First Mechanical Keyboard: A Beginner's Guide",
+    description: "Learn how to select your first mechanical keyboard by understanding switch types, layouts, materials, and budgets. A complete guide for beginners.",
+    category: "Keyboards",
+    content: `## Understanding Switch Types
 
----
-\`\`\`
+Mechanical keyboard switches come in three main flavors: linear, tactile, and clicky. Each feels completely different under your fingers.
 
----
+**Linear Switches** move straight down and up without any bump or sound. They feel smooth and consistent. Popular linear switches include Cherry MX Red (light, smooth), Gateron Yellow (medium weight, very smooth), and Akko Matcha Green (heavier, premium feel). Linear switches are ideal if you game frequently or want the smoothest typing experience.
 
-\`\`\``
+**Tactile Switches** have a noticeable bump in the middle of the keystroke that tells you the key registered. Cherry MX Brown is the classic (subtle bump, no sound), while Zealios and Durock switches offer more pronounced bumps. Tactile switches are perfect for general typing because the bump helps you type faster and more accurately.
+
+**Clicky Switches** combine the tactile bump with an audible click sound. Cherry MX Blue is the standard (crisp click, 50-60dB). Be aware: clicky switches are loud. If you share an office or live with others, your coworkers and housemates will hear every keystroke.
+
+## Keyboard Layouts Explained
+
+**Full-Size (104 keys)** includes everything: letters, number pad, function row, arrow keys. Best for data entry or if you use the numpad daily. Takes up serious desk space.
+
+**Tenkeyless or TKL (87 keys)** removes the numpad but keeps arrow keys and all other functions. This is the sweet spot for most people. About 30% smaller than full-size.
+
+**75% (84 keys)** compresses the function row and arrow keys into the main grid. Good if desk space is tight but you still want full features.
+
+**65% (68 keys)** removes the function row and arrow cluster. Arrow keys hide behind function layers. Compact and portable, but requires learning some key combinations.
+
+**60% (61 keys)** removes almost everything except letters, numbers, and essential punctuation. Best for minimalists or people who remapped their keyboard layout.
+
+Choose based on your desk space and work style. Unsure? Start with TKL or 75%.
+
+## Wireless vs. Wired
+
+**Wired keyboards** are always connected, never lag, never need charging. Consistently responsive and cheaper. **Wireless keyboards** (2.4 GHz or Bluetooth) offer freedom and cleaner aesthetics. Modern wireless is fast enough for gaming. Trade-offs: weekly or monthly charging and $20-50 more cost.
+
+## Hot-Swappable vs. Soldered Switches
+
+**Soldered switches** are permanently attached. You need a soldering iron to replace them. **Hot-swappable keyboards** have individual sockets for each switch. You can pop switches out and swap them in seconds. For first-time buyers spending over $80, hot-swap is worth the investment.
+
+## Keycap Materials: ABS vs. PBT
+
+**ABS plastic** is cheaper but develops a shiny, slippery patina after months of use. **PBT plastic** resists shine and stays matte for years. Denser, sounds better, feels more premium. Costs $10-30 more per set but transforms the feel of any keyboard.
+
+## Budget Tiers
+
+**Under $50** — Budget membrane-hybrid keyboards. Fine for casual use, not true mechanical feel. **$50-100** — Entry-level mechanical (Royal Kludge, Akko, Keychron). Usually soldered, ABS caps, but genuine mechanical switches. **$100-150** — Mid-range with hot-swap, better build quality, more layout options. PBT keycaps become common. **$150+** — Premium boards with superior stabilizers, lubed switches, aluminum frames. Worth it if you type 8+ hours daily.
+
+## First Keyboard Recommendations
+
+**Typing and Writing** — Keychron Pro (75%, hot-swap, under $120). Linear or tactile switches, wireless, plug-and-play. **Gaming** — Corsair K70 PRO or Glorious GMMK Pro ($100-150). **Compact Minimalist** — Keychron K6 (65%, wireless, $80). **Best All-Around** — Leopold FC750R (TKL, $120-140). Legendary build quality. **Budget Pick** — Akko 3084B Plus (75%, hot-swap, $60-80).
+
+## Common Mistakes to Avoid
+
+Buying based on RGB lighting alone. Choosing clicky if you share a workspace. Going too small (60%) without experience with layers. Not checking key rollover for gaming. Ignoring stabilizer quality on large keys.
+
+## FAQ
+
+**Q: Are mechanical keyboards worth it for typing?**
+Yes. The tactile feedback, customizable feel, and build quality result in faster, more accurate typing for most people.
+
+**Q: Can I use a mechanical keyboard for gaming and work?**
+Absolutely. Many people use the same keyboard for both. Linear switches are fastest, but tactile switches are more versatile for mixed use.
+
+**Q: How long do mechanical keyboards last?**
+Years. Quality switches have 50-100 million keypress ratings. A good mechanical keyboard will outlast several laptops.
+
+**Q: Do I need to lube my switches?**
+Not required. Lubing makes switches smoother and quieter but is a hobby upgrade, not necessary for beginners.
+
+**Q: Can I replace just the switches?**
+Only if your keyboard is hot-swappable. If soldered, you need a soldering iron. Strong reason to buy hot-swap keyboards.`
   },
 
 };

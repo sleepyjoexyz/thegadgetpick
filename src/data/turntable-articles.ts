@@ -625,6 +625,89 @@ Once you have solid fundamentals, upgrading from entry-level to mid-range cartri
 
 Plan upgrades over years, not months. The best upgrade is patience, learning your current setup, and upgrading when the current cartridge truly shows limitations.`,
   },
+  "how-to-set-up-turntable-for-beginners": {
+    slug: "how-to-set-up-turntable-for-beginners",
+    title: "How to Set Up a Turntable for the First Time: Beginner's Guide",
+    excerpt: "Step-by-step guide to setting up your first turntable. Covers arm balance, anti-skate, phono connection, needle drop technique, and maintenance.",
+    author: "The Gadget Pick Team",
+    publishedAt: "2026-03-15",
+    updatedAt: "2026-03-15",
+    readingTime: 7,
+    content: `## Unboxing and Placement
+
+Remove all packaging including transit bolts that lock the tonearm during shipping. Missing these bolts can damage the cartridge immediately. Choose a level surface (verify with a bubble level) and isolate from vibration. Don't place your turntable on a shelf directly above speakers. Allow air circulation and keep away from heat and direct sunlight.
+
+## Counterweight and Tracking Force
+
+The counterweight is the most critical adjustment.
+
+**Understanding Tracking Force** — The tonearm's weight pressing the stylus into the record groove, measured in grams. Typical range: 1.5-2.5 grams. Too light and the needle skips. Too heavy and the needle gouges the groove.
+
+**Step 1: Balance the Arm** — With turntable off and no record, lift the tonearm and turn the counterweight until the arm hovers level (parallel to the platter). This is your zero point.
+
+**Step 2: Set Tracking Force** — Turn the counterweight's gram scale to match your cartridge's recommended force (usually in the manual). Most cartridges default to 1.5-2 grams. If unknown, start at 1.8 grams.
+
+**Step 3: Verify** — Place the tonearm over a record without playback. The stylus should engage gently into the groove.
+
+## Anti-Skate Adjustment
+
+Anti-skate counteracts the force pulling the tonearm toward the center during playback.
+
+Find the anti-skate dial on the tonearm base (numbered 0-3 or 0-5). Set it equal to your tracking force. If tracking force is 1.8g, set anti-skate to 1.8. Test by playing a record and listening for channel imbalance: left channel quieter = increase anti-skate; right channel quieter = decrease it.
+
+## Connecting to Speakers
+
+**Phono vs. Line Level** — Records generate a tiny signal. Speakers expect a much hotter signal. A preamp boosts the signal from phono to line level.
+
+**Built-in Preamp** — Many modern turntables include one. You can connect directly to powered speakers via RCA cables. Fine for beginners.
+
+**External Preamp** — Better sound and more control ($100-500). Skip for now unless serious about vinyl.
+
+**Turntable to Receiver** — Connect to the receiver's PHONO input (not AUX). The receiver's built-in preamp handles the boost.
+
+**Cable Quality** — Use shielded RCA cables to prevent hum. Mid-grade cables ($10-20) work well.
+
+**PHONO/LINE Switch** — Check your turntable's back for this switch. Set to PHONO if connecting to an amplifier with its own preamp. Set to LINE if connecting to powered speakers. Wrong setting = hum or distortion.
+
+## Cleaning Records
+
+**Dry Brush** — A carbon fiber brush ($15-30) removes surface dust. Brush in the direction of the grooves while the record spins. Do this every time before playing.
+
+**Liquid Cleaning** — For deep cleaning, use record-specific cleaner solution and microfiber cloth. Spray lightly, wipe gently with the grooves, let dry. Avoid household cleaners.
+
+## Proper Needle Drop Technique
+
+Use the arm lift lever to raise the tonearm. Position over your target groove. Lower gently using the lift lever for smooth, controlled descent. Never lower the tonearm by hand; this scratches records.
+
+## Storing and Maintaining Records
+
+Store records upright like books (horizontal stacking causes warping). Maintain 65-75 degrees F and 40-50% humidity. Use protective dust sleeves. Replace stylus after 1000-1500 hours of playing.
+
+## Upgrading Path
+
+Phase 1: Turntable + speakers + cleaning brush. Phase 2: Better turntable and external preamp ($300-800). Phase 3: Cartridge upgrade (Ortofon 2M Bronze, Nagaoka MP-110, $100-300) — often the most cost-effective improvement. Phase 4: Speaker upgrade ($500+). Phase 5: Tube amplifiers, isolation platforms (bottomless hobby).
+
+## Common Mistakes
+
+Not removing shipping bolts. Setting tracking force too high. Placing turntable on a resonant surface. Using wrong phono/line setting. Dropping tonearm manually. Not cleaning records before playing.
+
+## FAQ
+
+**Q: Do I need an expensive turntable for good sound?**
+Not for beginners. A $200-300 turntable sounds great when properly set up. Placement and setup matter more than price.
+
+**Q: How often should I replace the stylus?**
+Every 1000-1500 hours. Casual listeners replace every 2-3 years. Heavy listeners replace yearly.
+
+**Q: Can I play 45 RPM records on a 33 RPM turntable?**
+Most turntables have a 33/45 speed switch. Check your manual.
+
+**Q: What's the difference between a cartridge and a stylus?**
+The stylus (needle) touches the groove. The cartridge holds the stylus. Replace the stylus regularly; cartridges last years.
+
+**Q: Does vinyl actually sound better than digital?**
+Subjective. Vinyl has a warm, analog quality many prefer. Digital is more neutral and consistent. Both sound excellent when well-engineered.`
+  },
 };
 
 export function getTurntableArticleSlugs(): string[] {

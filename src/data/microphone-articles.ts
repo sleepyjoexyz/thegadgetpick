@@ -788,6 +788,93 @@ The **Elgato Wave 3** is the better USB microphone for most content creators in 
 The **Blue Yeti** remains the right choice if you need pickup pattern versatility — especially for two-person podcasts, stereo recording, or multi-purpose use. Its iconic design and proven track record make it a safe bet at $129.
 
 Both microphones deliver audio quality that far exceeds the built-in microphone on any laptop or headset, and either will dramatically improve your content's production value.` },
+  "how-to-record-podcast-at-home": {
+    slug: "how-to-record-podcast-at-home",
+    title: "How to Record a Podcast at Home: Complete Setup Guide",
+    excerpt: "Complete setup guide for recording podcasts at home. Equipment checklist, room treatment, software, recording technique, and post-production basics.",
+    author: "The Gadget Pick Team",
+    publishedAt: "2026-03-15",
+    updatedAt: "2026-03-15",
+    readingTime: 8,
+    content: `## Equipment Checklist
+
+**Microphone** — USB microphones (Blue Yeti, Audio-Technica AT2020USB+) cost $80-150 and work plug-and-play. XLR microphones (Shure SM7B, Electro-Voice RE20) offer better sound but require an audio interface. For first-time podcasters, start USB.
+
+**Headphones** — Closed-back headphones let you monitor recording in real-time. Sony WH-1000XM5 or Audio-Technica ATH-M50X ($100-200) work well. Catches mouth noise, background hum, and audio drops mid-recording.
+
+**Pop Filter** — A $15-30 screen that reduces harsh plosive sounds. Mount between you and the microphone. Non-negotiable.
+
+**Boom Arm or Mic Stand** — Keeps your microphone positioned at mouth level, 6-8 inches from your lips. Boom arms ($30-80) mount to your desk and prevent handling noise.
+
+**Audio Interface (XLR only)** — USB audio interfaces (Focusrite Scarlett 2i2) convert XLR to digital. Minimum $100. Skip if using USB microphones.
+
+## Room Treatment Basics
+
+Your room acoustics matter more than your microphone. Untreated rooms sound echoey and hollow.
+
+Clap loudly in your recording space. If the clap echoes, your room has reflections that will end up in your podcast as hollow reverb. Soft materials absorb sound: carpets, curtains, rugs, couches, bookshelves, and blankets. Record in a small room or closet if possible. Hang blankets behind your microphone to dampen reflections. Seal gaps under doors and around windows with weatherstripping.
+
+## Recording Software
+
+**Audacity (Free)** — Open-source, cross-platform, zero learning curve. Record locally, built-in noise reduction, basic editing. Perfect for solo podcasts.
+
+**GarageBand (Mac)** — Included with macOS. Simple interface, good built-in effects.
+
+**Riverside.fm (Remote Interviews)** — Cloud-based ($20-40/month). Records each participant separately at full quality. Game-changer for multi-guest podcasts.
+
+**Adobe Audition** — Professional ($14.99/month). Powerful editing, spectral display, batch processing.
+
+Start with Audacity or GarageBand. Upgrade to Riverside for guest interviews.
+
+## Recording Settings
+
+**Sample Rate** — 44.1 kHz is standard (CD quality). 48 kHz for video podcasts. Never lower than 44.1 kHz. **Bit Depth** — 16-bit minimum, 24-bit preferred. **File Format** — WAV for recording, MP3 for export. **Mono vs. Stereo** — Record in mono. A single voice doesn't need stereo, and mono files are smaller.
+
+## Recording Technique
+
+**Mic Positioning** — 6-8 inches from lips, slightly off-axis (angled down). Too close: extreme bass boost and plosives. Too far: thin, distant sound.
+
+**Gain Staging** — Set input level so peaks hit around -6dB to -3dB. Not silent (below -12dB) and not clipping (red meters).
+
+**Speaking Technique** — Speak clearly and at consistent volume. Avoid sudden loud bursts and mumbling. Practice content once before recording.
+
+**Room Tone** — Record 10-15 seconds of silence at the start. Captures ambient noise for algorithmic removal later.
+
+## Post-Production Basics
+
+**Noise Reduction** — In Audacity: analyze 3-5 seconds of silent room tone, then apply noise reduction (50-70%) to the entire track. Aggressive noise reduction sounds unnatural; subtle is better.
+
+**Compression** — Even out volume levels. Gentle compression (4:1 ratio, -20dB threshold) so quiet parts stay audible and loud parts don't distort.
+
+**Normalization** — Boost overall level so peaks reach -3dB. Professional loudness without distortion.
+
+**Editing** — Cut out long pauses, ums, false starts, dead air. Total editing: 30-60 minutes per episode depending on recording quality.
+
+## Publishing Workflow
+
+Record and save raw audio. Apply noise reduction, compression, normalization. Export as MP3 (128 kbps). Upload to a podcast host (Buzzsprout, Podbean, Anchor). Fill in episode metadata. The host distributes to Apple Podcasts, Spotify, Google Podcasts automatically.
+
+## Common Mistakes
+
+Recording in the wrong room (kitchens with tile are worst). Gain too high (clipping is permanent). Using earbuds instead of headphones. Skipping noise reduction. Not preheating the mic (run it 5 minutes before recording for consistent levels).
+
+## FAQ
+
+**Q: Do I need a USB microphone or XLR?**
+Start with USB ($80-150). If you need flexibility or multiple microphones later, upgrade to XLR.
+
+**Q: How do I reduce background noise?**
+First: physically reduce noise (turn off AC, close windows). Second: apply noise reduction in post-production.
+
+**Q: Can I record on my laptop without external equipment?**
+Technically yes, but laptop microphones are low quality and pick up keyboard noise. At minimum, invest in a USB microphone.
+
+**Q: How long should podcast episodes be?**
+30-45 minutes is standard for best listener retention.
+
+**Q: What bitrate should I use for exporting?**
+128 kbps MP3 is industry standard.`
+  },
 };
 
 export function getMicrophoneArticle(slug: string): MicrophoneArticle | null {

@@ -1076,14 +1076,69 @@ No. USB-C monitors connect directly to your MacBook's ports. Adding an external 
 
 **For smallest desks or secondary monitors, choose the Dell S2423HN** at ~$310. The 24" 1440p is sharp and professional; the only caveat is 65W charging (suitable for Air, tight for 16" Pro).
 
-USB-C monitors eliminate cable clutter and simplify MacBook productivity setups. Investing in the right monitor accelerates workflow, improves ergonomics, and justifies the expense over the monitor's 5+ year lifespan. Choose based on your MacBook model (Air vs Pro), desk size, and creative needs.
+USB-C monitors eliminate cable clutter and simplify MacBook productivity setups. Investing in the right monitor accelerates workflow, improves ergonomics, and justifies the expense over the monitor's 5+ year lifespan. Choose based on your MacBook model (Air vs Pro), desk size, and creative needs.`
+  },
+  "how-to-calibrate-monitor-for-accurate-colors": {
+    slug: "how-to-calibrate-monitor-for-accurate-colors",
+    title: "How to Calibrate Your Monitor for Accurate Colors (Free Methods)",
+    description: "Master monitor calibration using free tools and built-in OS utilities. Learn color theory basics and calibrate your display for photo, video, and web work.",
+    category: "Monitors",
+    content: `## Why Calibration Matters
 
----
-\`\`\`
+Your monitor's factory settings are tuned for the store display room, not your office. Brightness is cranked up, contrast is extreme, and colors are skewed toward eye-catching rather than accurate. Calibration corrects this so photos you edit look right on other screens and in print, video color grades translate across devices, and web design colors match your intent.
 
----
+## Color Basics
 
-\`\`\``
+**Brightness** is how much light the screen produces. For office work, 80-120 cd/m2 is standard. **Contrast** is the difference between blacks and whites. Proper contrast sits around 50-75% of maximum. **Gamma** describes how the monitor transitions from black to white. Gamma 2.2 is standard. **Color temperature** is measured in Kelvin. Daylight is around 6500K (neutral). Higher values are cool/blueish, lower values are warm/reddish.
+
+## Step 1: Prepare Your Monitor
+
+Let your monitor warm up for at least 30 minutes before calibrating. Calibrate in your actual working conditions with consistent ambient lighting. Start from factory defaults.
+
+## Step 2: Windows Display Color Calibration
+
+Press Windows key, type "calibrate color" and select "Calibrate display color." Follow the guided steps to adjust brightness (barely distinguish the black square in gray area), contrast (white square visible but not blown out), gamma (gray squares blend with black background), and color balance (neutralize color casts). Save the new ICC profile. Takes 10-15 minutes.
+
+## Step 3: macOS Display Calibrator
+
+Apple menu, System Preferences, Displays, Color, click Calibrate. Follow on-screen instructions for brightness, contrast, and color balance. Choose D65 white point (6500K standard). Name and save your profile.
+
+## Step 4: Online Calibration Tests
+
+Use lagom.nl/lcd-test/ to verify calibration with test patterns for gray ramp, color gradients, contrast, and dead pixels. Eizo Monitor Test checks color visibility and distinction. Run these after OS calibration to verify results.
+
+## Color Spaces
+
+**sRGB** is standard for web, general displays, and consumer work. Most monitors render sRGB well. **Adobe RGB** is larger, used in professional photo and video. Not all monitors support full Adobe RGB. **Display P3** is Apple's color space for newer Macs and iPhones. Most professional work defaults to sRGB.
+
+## When You Need Hardware Calibration
+
+Professional photo editing for prints or color-critical clients, multi-monitor setups needing consistency, and long-term accuracy tracking all benefit from hardware calibrators (X-Rite ColorMunki, i1Display Pro, $200-400). For casual photography and web design, free methods suffice.
+
+## Settings by Use Case
+
+**Web Design** — sRGB, brightness 100 cd/m2, 6500K, gamma 2.2. **Photo Editing** — sRGB for web, Adobe RGB for print. Brightness 80-100 cd/m2. **Video Grading** — Rec. 709, brightness 50-80 cd/m2, 6500K. **General Office** — sRGB, 100-120 cd/m2, 6500K.
+
+## Common Mistakes
+
+Calibrating in wrong lighting conditions. Setting brightness too low. Ignoring color temperature shifts from room lighting. Forgetting to save and load your profile. Comparing to uncalibrated monitors (that's success, not a problem).
+
+## FAQ
+
+**Q: How often should I recalibrate?**
+Every 3-4 months for color-critical work. Monthly for older monitors. Casual use: yearly.
+
+**Q: Will calibration slow down my monitor?**
+No. Calibration only adjusts color and brightness settings, not performance.
+
+**Q: Do multiple monitors need separate calibration?**
+Yes. Each monitor has different characteristics. Calibrate each individually.
+
+**Q: What if my monitor has limited adjustment controls?**
+Use OS calibration tools and ICC profiles. Software color management compensates for hardware limitations.
+
+**Q: Can calibration make an old monitor look like new?**
+Partially. Calibration corrects color and tone but can not recover resolution, brightness headroom, or color gamut.`
   },
 
 };
