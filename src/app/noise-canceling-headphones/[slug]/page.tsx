@@ -68,8 +68,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.excerpt}
         url={`https://www.thegadgetpick.com/noise-canceling-headphones/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },

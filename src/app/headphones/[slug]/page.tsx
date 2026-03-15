@@ -62,8 +62,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.description}
         url={`https://www.thegadgetpick.com/headphones/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
@@ -94,78 +94,31 @@ export default async function ArticlePage({ params }: PageProps) {
         <MarkdownContent content={article.content} />
       </section>
 
-      {/* Related Comparison CTA */}
-      <section className="bg-blue-50 border-y border-blue-200 py-12 my-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Compare All Headphones
-          </h2>
-          <p className="text-gray-600 mb-6">
-            See the full comparison table with all 14 headphones, specifications, prices, and
-            ratings.
-          </p>
-          <Link
-            href="/headphones"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded font-medium hover:bg-blue-700 transition-colors"
-          >
-            View Comparison Table
-          </Link>
-        </div>
-      </section>
-
       {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          More Headphone Guides
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link href="/headphones/open-back-vs-closed-back-headphones">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Open-Back vs Closed-Back Headphones
-              </h3>
-              <p className="text-sm text-gray-600">
-                Understand soundstage, noise isolation, and which design suits your listening
-                environment.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/headphones/best-headphones-under-200">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Best Headphones Under $200
-              </h3>
-              <p className="text-sm text-gray-600">
-                The sweet spot for audio quality and value. Premium sound without luxury
-                pricing.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/headphones/headphone-driver-types-explained">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Headphone Driver Types Explained
-              </h3>
-              <p className="text-sm text-gray-600">
-                Dynamic, planar magnetic, balanced armature, and electrostatic drivers
-                explained.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/headphones/wireless-vs-wired-headphones-sound-quality">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Wireless vs Wired: Sound Quality Truth
-              </h3>
-              <p className="text-sm text-gray-600">
-                Do wireless headphones sacrifice audio quality? Audiophile analysis of
-                Bluetooth codecs.
-              </p>
-            </div>
-          </Link>
+          {getAllHeadphoneArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getHeadphoneArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/headphones/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
+                >
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.description}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 

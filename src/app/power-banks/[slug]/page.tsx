@@ -62,8 +62,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.excerpt}
         url={`https://www.thegadgetpick.com/power-banks/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
@@ -100,52 +100,29 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">More Power Bank Guides</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {slug !== "capacity-guide" && (
-            <Link
-              href="/power-banks/capacity-guide"
-              className="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition"
-            >
-              <h3 className="font-bold text-gray-900 mb-2">Capacity Guide</h3>
-              <p className="text-sm text-gray-600">
-                mAh vs. Wh and real-world charging counts
-              </p>
-            </Link>
-          )}
-          {slug !== "fast-charging-explained" && (
-            <Link
-              href="/power-banks/fast-charging-explained"
-              className="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition"
-            >
-              <h3 className="font-bold text-gray-900 mb-2">Fast Charging Standards</h3>
-              <p className="text-sm text-gray-600">
-                USB PD, Quick Charge, and PPS explained
-              </p>
-            </Link>
-          )}
-          {slug !== "airline-rules" && (
-            <Link
-              href="/power-banks/airline-rules"
-              className="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition"
-            >
-              <h3 className="font-bold text-gray-900 mb-2">Airline Rules</h3>
-              <p className="text-sm text-gray-600">
-                TSA limits and international policies
-              </p>
-            </Link>
-          )}
-          {slug !== "best-for-laptops" && (
-            <Link
-              href="/power-banks/best-for-laptops"
-              className="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition"
-            >
-              <h3 className="font-bold text-gray-900 mb-2">Best for Laptops</h3>
-              <p className="text-sm text-gray-600">
-                MacBook and Windows laptop charging
-              </p>
-            </Link>
-          )}
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {getPowerBankArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getPowerBankArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/power-banks/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
+                >
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.excerpt}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 

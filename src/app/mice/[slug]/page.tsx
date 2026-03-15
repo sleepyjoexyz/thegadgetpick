@@ -62,8 +62,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.description}
         url={`https://www.thegadgetpick.com/mice/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
@@ -94,55 +94,31 @@ export default async function ArticlePage({ params }: PageProps) {
         <MarkdownContent content={article.content} />
       </section>
 
-      {/* Related Comparison CTA */}
-      <section className="bg-blue-50 border-y border-blue-200 py-12 my-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Compare All Mice
-          </h2>
-          <p className="text-gray-600 mb-6">
-            See the full comparison table with all 14 mice, specifications, prices, and
-            ratings.
-          </p>
-          <Link
-            href="/mice"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded font-medium hover:bg-blue-700 transition-colors"
-          >
-            View Comparison Table
-          </Link>
-        </div>
-      </section>
-
       {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          More Mouse Guides
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link href="/mice/gaming-vs-productivity">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">Gaming vs Productivity Mice</h3>
-              <p className="text-sm text-gray-600">Understand the fundamental differences between gaming and productivity mice. Learn how design and ergonomics diverge.</p>
-            </div>
-          </Link>
-          <Link href="/mice/best-ergonomic-mice">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">Best Ergonomic Mice</h3>
-              <p className="text-sm text-gray-600">Find the perfect ergonomic mouse to reduce wrist strain and RSI. Compare vertical, trackball, and contoured designs.</p>
-            </div>
-          </Link>
-          <Link href="/mice/dpi-sensitivity-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">DPI and Sensitivity Guide</h3>
-              <p className="text-sm text-gray-600">Master DPI and mouse sensitivity settings. Learn why higher isn't always better and find your optimal sensitivity.</p>
-            </div>
-          </Link>
-          <Link href="/mice/wireless-latency-myth">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">Wireless vs Wired: Latency Reality</h3>
-              <p className="text-sm text-gray-600">Wireless mice latency isn't a barrier anymore. Compare modern 2.4GHz and Bluetooth technology.</p>
-            </div>
-          </Link>
+          {getMouseArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getMouseArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/mice/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
+                >
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.description}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 

@@ -61,8 +61,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.description}
         url={`https://www.thegadgetpick.com/keyboards/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
@@ -141,55 +141,29 @@ export default async function ArticlePage({ params }: PageProps) {
 
       {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">More Keyboard Guides</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link
-            href="/keyboards/mechanical-vs-membrane"
-            className="block p-6 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-lg transition-all"
-          >
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Mechanical vs Membrane Keyboards
-            </h3>
-            <p className="text-gray-600 text-sm">
-              Compare mechanical and membrane keyboards to understand which is best for your needs.
-            </p>
-          </Link>
-
-          <Link
-            href="/keyboards/best-for-programming"
-            className="block p-6 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-lg transition-all"
-          >
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Best Keyboards for Programming in 2025
-            </h3>
-            <p className="text-gray-600 text-sm">
-              Find the ideal keyboard for programming with excellent tactile feedback and ergonomics.
-            </p>
-          </Link>
-
-          <Link
-            href="/keyboards/switch-types-explained"
-            className="block p-6 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-lg transition-all"
-          >
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Keyboard Switch Types Explained
-            </h3>
-            <p className="text-gray-600 text-sm">
-              Understand the differences between linear, tactile, and clicky mechanical switches.
-            </p>
-          </Link>
-
-          <Link
-            href="/keyboards/hot-swappable-guide"
-            className="block p-6 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-lg transition-all"
-          >
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Hot-Swappable Keyboards: A Beginner's Guide
-            </h3>
-            <p className="text-gray-600 text-sm">
-              Learn what hot-swappable keyboards are and why they enable endless customization.
-            </p>
-          </Link>
+          {getKeyboardArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getKeyboardArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/keyboards/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
+                >
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.description}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 

@@ -70,8 +70,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.excerpt}
         url={`https://www.thegadgetpick.com/travel-adapters/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
@@ -114,48 +114,32 @@ export default async function ArticlePage({ params }: PageProps) {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {relatedArticles.map((related) => (
-            <div
-              key={related.slug}
-              className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="text-lg font-bold text-gray-900 mb-2">
+          {getTravelAdapterArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = travelAdapterArticles.find((a) => a.slug === relatedSlug);
+              if (!related) return null;
+              return (
                 <Link
-                  href={`/travel-adapters/${related.slug}`}
-                  className="hover:text-blue-600"
+                  key={relatedSlug}
+                  href={`/travel-adapters/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
                 >
-                  {related.title}
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.excerpt}
+                  </p>
                 </Link>
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">{related.excerpt}</p>
-              <div className="flex items-center justify-between">
-                <Link
-                  href={`/travel-adapters/${related.slug}`}
-                  className="text-blue-600 hover:underline text-sm font-medium"
-                >
-                  Read guide →
-                </Link>
-                <span className="text-xs text-gray-500">
-                  {related.readingTime} min read
-                </span>
-              </div>
-            </div>
-          ))}
+              );
+            })}
         </div>
       </section>
 
       {/* Comments */}
       <Comments pagePath={`/travel-adapters/${slug}`} siteName="thegadgetpick" />
-
-      {/* Back to Comparison */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <Link
-          href="/travel-adapters"
-          className="inline-block text-blue-600 hover:underline font-medium"
-        >
-          ← Back to Travel Adapters Comparison
-        </Link>
-      </section>
     </article>
   );
 }

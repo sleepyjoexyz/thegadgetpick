@@ -61,8 +61,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.excerpt}
         url={`https://www.thegadgetpick.com/luggage/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
@@ -201,73 +201,31 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Related Comparison CTA */}
-      <section className="bg-blue-50 border-y border-blue-200 py-12 my-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Compare All Luggage
-          </h2>
-          <p className="text-gray-600 mb-6">
-            See the full comparison table with all 14 luggage options, specs, and prices.
-          </p>
-          <Link
-            href="/luggage"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded font-medium hover:bg-blue-700 transition-colors"
-          >
-            View Comparison Table
-          </Link>
-        </div>
-      </section>
-
       {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          More Luggage Guides
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link href="/luggage/hardside-vs-softside">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Hardside vs Softside Luggage
-              </h3>
-              <p className="text-sm text-gray-600">
-                Compare rigid and flexible luggage construction for your travel needs.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/luggage/carry-on-size-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Carry-On Size Guide
-              </h3>
-              <p className="text-sm text-gray-600">
-                Learn airline carry-on rules to avoid gate checks and baggage fees.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/luggage/packing-tips">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Smart Packing Tips
-              </h3>
-              <p className="text-sm text-gray-600">
-                Master efficient packing techniques for carry-on travel.
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/luggage/best-for-business-travel">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-gray-900 mb-2">
-                Best for Business Travel
-              </h3>
-              <p className="text-sm text-gray-600">
-                Find luggage built with executive features and durability.
-              </p>
-            </div>
-          </Link>
+          {getLuggageArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getLuggageArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/luggage/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
+                >
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.excerpt}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 

@@ -66,8 +66,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.description}
         url={`https://www.thegadgetpick.com/monitors/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
@@ -99,45 +99,32 @@ export default async function ArticlePage({ params }: PageProps) {
       </section>
 
       {/* Recommended Products */}
+
+      {/* Related Articles */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          Featured Products
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {monitors.slice(0, 4).map((product) => (
-            <div key={product.id} className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                {product.brand} {product.model}
-              </h3>
-              <p className="text-gray-600 mb-3">{product.summary}</p>
-              <div className="flex justify-between items-center mb-4">
-                <span className="text-2xl font-bold text-gray-900">
-                  ${product.price}
-                </span>
-                <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                  {product.screenSize}" {product.resolution}
-                </span>
-              </div>
-              {product.amazonAsin && (
-                <a
-                  href={`https://amazon.com/dp/${product.amazonAsin}?tag=rogeti02-20`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
+          {getAllMonitorArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getMonitorArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/monitors/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
                 >
-                  View on Amazon
-                </a>
-              )}
-            </div>
-          ))}
-        </div>
-        <div className="mt-8 text-center">
-          <Link
-            href="/monitors"
-            className="inline-block bg-gray-200 text-gray-900 px-6 py-3 rounded-lg hover:bg-gray-300 transition-colors font-medium"
-          >
-            View All Monitors
-          </Link>
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.description}
+                  </p>
+                </Link>
+              );
+            })}
         </div>
       </section>
 

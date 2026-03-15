@@ -61,8 +61,8 @@ export default async function ArticlePage({ params }: PageProps) {
         title={article.title}
         description={article.description}
         url={`https://www.thegadgetpick.com/webcams/${slug}`}
-        datePublished="2025-01-01"
-        dateModified="2026-03-01"
+        datePublished="2026-03-15"
+        dateModified="2026-03-15"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
@@ -99,18 +99,36 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Related Articles */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {getWebcamArticleSlugs()
+            .filter((s) => s !== slug)
+            .slice(0, 4)
+            .map((relatedSlug) => {
+              const related = getWebcamArticle(relatedSlug);
+              if (!related) return null;
+              return (
+                <Link
+                  key={relatedSlug}
+                  href={`/webcams/${relatedSlug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-md transition"
+                >
+                  <h3 className="font-semibold text-blue-600 hover:underline">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {related.description}
+                  </p>
+                </Link>
+              );
+            })}
+        </div>
+      </section>
+
       {/* Comments */}
       <Comments pagePath={`/webcams/${slug}`} siteName="thegadgetpick" />
-
-      {/* Back to Comparison */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <Link
-          href="/webcams"
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          Back to Webcams Comparison
-        </Link>
-      </section>
     </article>
   );
 }
