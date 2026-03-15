@@ -453,7 +453,7 @@ export default function MiceContent() {
                 </div>
                 {product.amazonAsin && (
                   <a
-                    href={`https://amazon.com/dp/${product.amazonAsin}`}
+                    href={`https://amazon.com/dp/${product.amazonAsin}?tag=rogeti02-20`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-4 w-full text-center bg-blue-600 text-white px-4 py-2 rounded font-medium hover:bg-blue-700 transition-colors"
