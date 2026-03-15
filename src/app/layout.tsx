@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'The Gadget Pick — Data-Driven Audio, PC & Travel Tech Comparisons',
   description: 'Compare audio gear, PC peripherals, and travel tech with data-driven reviews and buying guides. Explore headphones, speakers, monitors, keyboards, luggage, and more.',
   metadataBase: new URL('https://www.thegadgetpick.com'),
+  alternates: {
+    canonical: 'https://www.thegadgetpick.com',
+  },
   keywords: [
     'headphones',
     'speakers',
