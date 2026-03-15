@@ -780,6 +780,96 @@ export const travelAdapterArticles: TravelAdapterArticle[] = [
 
 <p>Tech packing for international travel is about consolidation: one universal adapter, one multi-port charger, redundant cables. For trips under 5 days, pack minimally—original phone charger + adapter. For longer trips, invest in a GaN charger and power bank. Organize cables with velcro ties, keep everything in a dedicated pouch, and test once before you leave. Done right, you'll have fully charged devices and save 1-2 lbs of luggage weight compared to traditional packing.</p>`,
   },
+  {
+    slug: "best-compact-travel-adapter-2026",
+    title: "Best Compact Travel Adapter for International Travel 2026",
+    excerpt: "Find the best compact universal travel adapter for 2026. We compare GaN chargers, outlet compatibility, USB-C ports, and which packs smallest.",
+    content: `<h2>Why Your Travel Adapter Choice Matters</h2>
+
+<p>The days of bulky, unreliable travel adapters are over. Modern GaN (Gallium Nitride) travel adapters combine universal outlet compatibility with fast USB-C charging in packages smaller than a deck of cards. The right adapter replaces your laptop charger, phone charger, and outlet converter — all in one device under 200 grams.</p>
+
+<p>We tested the best compact travel adapters for 2026, focusing on size, charging speed, outlet coverage, and build quality for frequent international travelers.</p>
+
+<h2>Quick Verdict</h2>
+
+<p><strong>The Zendure Passport III is the best overall travel adapter for 2026.</strong> It covers 200+ countries with a 65W USB-C PD port (charges laptops), weighs just 186g, and has a clever retractable plug design that protects prongs during travel. For budget travelers, the <strong>Epicka Universal Adapter</strong> at $25 covers the basics with USB-A and USB-C ports at a fraction of the price.</p>
+
+<h2>What to Look For</h2>
+
+<p><strong>Outlet Compatibility:</strong> The world uses approximately 15 plug types. A good universal adapter covers at least Types A/B (US, Japan), C/E/F (Europe), G (UK, Singapore), I (Australia, China). Look for "200+ countries" coverage.</p>
+
+<p><strong>USB-C Power Delivery (PD):</strong> If you carry a USB-C laptop (MacBook, Dell XPS, ThinkPad), an adapter with 65W+ USB-C PD replaces your laptop charger entirely. This is the single biggest space saver for international travelers.</p>
+
+<p><strong>GaN Technology:</strong> Gallium Nitride chargers run cooler and smaller than traditional silicon chargers at the same wattage. A 65W GaN adapter is roughly half the size of a 65W silicon charger.</p>
+
+<p><strong>Safety Certifications:</strong> Look for FCC, CE, and RoHS certification. A built-in fuse and surge protection are essential — foreign outlet voltage varies from 100V (Japan) to 240V (UK, Europe, Australia).</p>
+
+<h2>Top Picks</h2>
+
+<h3>1. Zendure Passport III — Best Overall ($59)</h3>
+
+<p>The Zendure Passport III is the most complete travel adapter we tested. Its 65W USB-C PD port charges a MacBook Air or 14-inch MacBook Pro at full speed. A second USB-C port (30W) handles your phone while a USB-A port covers legacy devices. Total combined output is 65W.</p>
+
+<p>The retractable plug design is the best in class — all plug types fold flush into the body, so nothing snags in your bag. The adapter covers 200+ countries including the tricky Type H (Israel) and Type N (Brazil/South Africa) outlets that many adapters miss.</p>
+
+<p>Build quality is excellent: matte finish, compact form factor (roughly 66mm x 66mm x 58mm), and a reassuring weight of 186g. Safety features include auto-resetting fuse, child safety shutters, and grounding support.</p>
+
+<p><strong>Pros:</strong> 65W USB-C PD, retractable plugs, 200+ countries, compact and well-built<br/>
+<strong>Cons:</strong> Premium price, combined output limited to 65W when using multiple ports</p>
+
+<h3>2. EPICKA Universal Adapter — Best Budget ($25)</h3>
+
+<p>The EPICKA has been Amazon's best-selling travel adapter for years, and the latest version adds a USB-C port alongside 4 USB-A ports and an AC outlet. It covers 150+ countries with Types A, C, G, and I plugs.</p>
+
+<p>At $25, it is a fraction of the price of premium options. The USB-C port provides 18W (enough for phones, not laptops), and the 4 USB-A ports let a family charge multiple devices simultaneously. Total output is 2.4A shared across USB-A ports.</p>
+
+<p><strong>Pros:</strong> $25, proven reliability, 4 USB-A ports, AC outlet passthrough<br/>
+<strong>Cons:</strong> Only 18W USB-C (no laptop charging), manual plug sliders, runs warm, no GaN</p>
+
+<h3>3. Twelve South PlugBug Travel — Best for Apple Users ($55)</h3>
+
+<p>The PlugBug Travel takes a unique approach: it integrates a universal travel adapter with a 30W USB-C charger in a compact package designed to match Apple's aesthetic. The slide-on design attaches to Apple power adapters, turning your MacBook charger into a world-ready dual charger.</p>
+
+<p><strong>Pros:</strong> Integrates with Apple chargers, clean design, 30W USB-C<br/>
+<strong>Cons:</strong> 30W max (not standalone laptop charging), fewer country plugs, Apple-centric</p>
+
+<h2>Comparison Table</h2>
+
+<table>
+<tr><th>Feature</th><th>Zendure Passport III</th><th>EPICKA Universal</th><th>Twelve South PlugBug</th></tr>
+<tr><td>Price</td><td>~$59</td><td>~$25</td><td>~$55</td></tr>
+<tr><td>USB-C Max</td><td>65W PD</td><td>18W</td><td>30W</td></tr>
+<tr><td>USB-A Ports</td><td>1</td><td>4</td><td>0</td></tr>
+<tr><td>Countries</td><td>200+</td><td>150+</td><td>~100</td></tr>
+<tr><td>GaN</td><td>Yes</td><td>No</td><td>No</td></tr>
+<tr><td>Weight</td><td>186g</td><td>168g</td><td>99g</td></tr>
+<tr><td>Laptop Charging</td><td>Yes (65W)</td><td>No</td><td>Limited (30W)</td></tr>
+</table>
+
+<h2>FAQ</h2>
+
+<p><strong>Q: Can I use a travel adapter to convert voltage?</strong><br/>
+A: No. Travel adapters change the plug shape only — they do NOT convert voltage. Most modern electronics (laptops, phones, cameras) have built-in voltage converters (100-240V input). Check your device's power brick label before using it abroad. Hair dryers and curling irons often need a separate voltage converter.</p>
+
+<p><strong>Q: Is one adapter enough for a trip to multiple countries?</strong><br/>
+A: Yes, if you buy a universal adapter with sufficient country coverage. The Zendure and EPICKA both handle Europe, UK, Asia, and Australia with a single unit.</p>
+
+<p><strong>Q: Will 65W USB-C charge a 16-inch MacBook Pro?</strong><br/>
+A: It will charge it, but slowly (the 16-inch needs 96W for full-speed charging). For daily use — plugging in overnight or during a work session — 65W is adequate.</p>
+
+<p><strong>Q: Are travel adapters allowed on airplanes?</strong><br/>
+A: Yes, all travel adapters are carry-on and checked-bag safe. They contain no batteries.</p>
+
+<h2>Final Verdict</h2>
+
+<p>The <strong>Zendure Passport III</strong> is the best travel adapter for anyone who wants one device to replace their laptop charger, phone charger, and outlet adapter across 200+ countries. At $59, it pays for itself by eliminating the need for separate chargers.</p>
+
+<p>The <strong>EPICKA Universal</strong> is the smart budget choice at $25 — perfect for families or travelers who just need outlet compatibility with basic USB charging. And the <strong>Twelve South PlugBug</strong> is ideal for Apple users who want seamless integration with their existing MacBook charger.</p>`,
+    publishedAt: "2026-03-15",
+    updatedAt: "2026-03-15",
+    author: "The Gadget Pick Team",
+    readingTime: 8,
+  },
 ];
 
 export function getTravelAdapterArticleSlugs(): string[] {
