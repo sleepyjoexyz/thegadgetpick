@@ -845,6 +845,48 @@ For premium sound quality and longevity, Bose SoundLink Flex ($299) is worth the
 
 Choose based on your use case: short pool parties need IP65+ and party mode; all-day gatherings need 18+ hour battery and multiple speaker pairing capability. Most owners find that a single quality outdoor speaker ($150-300) covers 90% of summer entertaining needs.`,
   },
+  "best-bluetooth-speaker-pool-beach-waterproof-2026": {
+    slug: "best-bluetooth-speaker-pool-beach-waterproof-2026",
+    title: "Best Waterproof Bluetooth Speakers for Pool and Beach (2026)",
+    description: "IP67-rated Bluetooth speakers that survive pool parties, beach sand, and summer rain. Tested for sound quality outdoors, battery life, and true waterproofing.",
+    category: "speakers",
+    content: `## Indoor Speaker Reviews Do Not Apply Outdoors
+
+Most speaker reviews test in rooms where walls reflect sound back to the listener. Outdoors, sound disperses in every direction with no reflections. A speaker that sounds rich and full in a living room can sound thin and quiet at a pool party. Outdoor performance depends on different qualities: maximum volume without distortion, bass presence in open air, 360-degree sound dispersion, and resistance to water, sand, and UV exposure.
+
+## What Makes a Speaker Pool and Beach Ready
+
+### IP Rating Explained
+IP67 means fully submersible in 1 meter of water for 30 minutes and completely dust-proof. IP68 extends submersion depth or duration. IPX7 is waterproof but not dust-rated. For pool and beach use, IP67 is the minimum — you need both water and sand protection.
+
+### Sound Profile for Outdoors
+Bass drivers need to push more air outdoors to produce audible low frequencies. Passive radiators or dual-driver designs maintain bass presence in open environments. Treble carries further outdoors, so speakers that sound balanced indoors may sound harsh at the beach. The best outdoor speakers have slightly boosted bass tuning.
+
+### Battery Life
+Outdoor sessions run longer than indoor listening. A pool party or beach day lasts 4-8 hours. Speakers need battery to match, ideally with enough reserve that you are not monitoring charge level during a gathering.
+
+### Floatability
+Some speakers float, which is relevant for pool use. A sinking speaker at the bottom of a pool is technically waterproof but practically useless.
+
+## Top Picks for Pool and Beach
+
+### JBL Charge 5
+The default outdoor speaker for good reason. IP67 waterproof and dustproof. The dedicated bass radiator maintains low-end presence outdoors where smaller speakers lose all bass. 20 hours of battery life covers any event plus the next morning. The USB-A output port doubles as a phone charger in emergencies. It does not float, but the rugged build survives drops onto pool decks and being buried in beach bags.
+
+### Ultimate Ears WONDERBOOM 3
+Designed specifically for water environments. IP67 rated and it floats. The 360-degree sound pattern works well for pool gatherings where listeners surround the speaker. The Outdoor Boost EQ mode increases volume and adjusts frequency response specifically for open-air listening. 14-hour battery life is adequate for a full day. The compact size (4 inches tall) fits in a cup holder or beach bag pocket. Reduced bass compared to the JBL Charge 5, but the convenience factor is hard to beat.
+
+### Bose SoundLink Flex
+The flattest, most packable design of the three. IP67 with a utility loop for clipping to a bag or beach chair. The PositionIQ technology detects speaker orientation and adjusts EQ accordingly — standing upright, laying on its back, or hanging from a loop each produce optimized sound. Bose's tuning delivers surprisingly deep bass from the compact form factor. 12-hour battery life is the shortest here but sufficient for a day trip.
+
+## Sand and Salt Water Care
+
+Rinse speakers with fresh water after every salt water or sand exposure. Salt crystals lodge in speaker grilles and corrode driver components over time despite IP ratings. Do not use compressed air to clean sand from grilles — it pushes particles deeper. Instead, run the speaker under a gentle stream of tap water and let it air dry. UV exposure degrades rubber and plastic over time; store speakers in shade or bags between uses.
+
+## Bottom Line
+
+The JBL Charge 5 wins on sound quality and battery life for serious pool parties and beach gatherings. The UE WONDERBOOM 3 is the pool-specific champion because it floats, sounds good in 360 degrees, and fits anywhere. The Bose SoundLink Flex is the most packable for travelers who want premium sound without bulk. All three survive submersion, sand, and the general abuse of summer outdoor use.`,
+  },
 };
 
 export function getSpeakerArticle(slug: string): Article | undefined {
