@@ -4,17 +4,18 @@ export interface DealCategory {
   emoji: string;
   color: string;
   description: string;
+  relatedCategories?: string[];
 }
 
 export const dealCategories: DealCategory[] = [
-  { name: 'Headphones', slug: 'headphones', emoji: '🎧', color: 'blue', description: 'Best headphone deals today — save on Sony, Bose, Apple AirPods & more. Updated daily.' },
-  { name: 'Speakers', slug: 'speakers', emoji: '🔊', color: 'blue', description: 'Best bluetooth speaker deals today — save on JBL, Sony, Bose & more. Updated daily.' },
-  { name: 'Monitors', slug: 'monitors', emoji: '🖥️', color: 'purple', description: 'Best monitor deals today — save on USB-C, 4K, ultrawide displays. Updated daily.' },
-  { name: 'Keyboards', slug: 'keyboards', emoji: '⌨️', color: 'purple', description: 'Best mechanical keyboard deals today — save on gaming & programming keyboards. Updated daily.' },
-  { name: 'Mice', slug: 'mice', emoji: '🖱️', color: 'purple', description: 'Best mouse deals today — save on ergonomic, gaming & wireless mice. Updated daily.' },
-  { name: 'Webcams', slug: 'webcams', emoji: '📷', color: 'cyan', description: 'Best webcam deals today — save on 4K, streaming & conference webcams. Updated daily.' },
-  { name: 'Power Banks', slug: 'power-banks', emoji: '🔋', color: 'yellow', description: 'Best power bank deals today — save on portable chargers & battery packs. Updated daily.' },
-  { name: 'Travel Adapters', slug: 'travel-adapters', emoji: '🔌', color: 'yellow', description: 'Best travel adapter deals today — save on universal adapters & converters. Updated daily.' },
+  { name: "Headphones", slug: "headphones", emoji: "🎘", color: "blue", description: "Best headphone deals today — save on Sony, Bose, Apple AirPods & more. Updated daily.", relatedCategories: ["headphones", "noise-canceling-headphones"] },
+  { name: "Speakers", slug: "speakers", emoji: "🔊", color: "blue", description: "Best bluetooth speaker deals today — save on JBL, Sony, Bose & more. Updated daily.", relatedCategories: ["speakers"] },
+  { name: "Monitors", slug: "monitors", emoji: "🖥️", color: "purple", description: "Best monitor deals today — save on USB-C, 4K, ultrawide displays. Updated daily.", relatedCategories: ["monitors"] },
+  { name: "Keyboards", slug: "keyboards", emoji: "⌨️", color: "purple", description: "Best mechanical keyboard deals today — save on gaming & programming keyboards. Updated daily.", relatedCategories: ["keyboards"] },
+  { name: "Mice", slug: "mice", emoji: "🖡️", color: "purple", description: "Best mouse deals today — save on ergonomic, gaming & wireless mice. Updated daily.", relatedCategories: ["mice"] },
+  { name: "Webcams", slug: "webcams", emoji: "📷", color: "cyan", description: "Best webcam deals today — save on 4K, streaming & conference webcams. Updated daily.", relatedCategories: ["webcams"] },
+  { name: "Power Banks", slug: "power-banks", emoji: "🔋", color: "yellow", description: "Best power bank deals today — save on portable chargers & battery packs. Updated daily.", relatedCategories: ["power-banks"] },
+  { name: "Travel Adapters", slug: "travel-adapters", emoji: "🔌", color: "yellow", description: "Best travel adapter deals today — save on universal adapters & converters. Updated daily.", relatedCategories: ["travel-adapters"] },
 ];
 
 export function getCategoryBySlug(slug: string): DealCategory | undefined {

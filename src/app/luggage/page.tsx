@@ -8,6 +8,7 @@ import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/Prod
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import DealsBanner from '@/components/DealsBanner';
 
 export default function LuggageContent() {
   const [luggageType, setLuggageType] = useState<string>("all");
@@ -96,6 +97,9 @@ export default function LuggageContent() {
           We've analyzed 14 luggage options across carry-on, checked, backpack, and duffel categories. Compare specifications, materials, features, prices, and ratings to find the perfect travel bag for your needs.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

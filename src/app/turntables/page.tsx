@@ -7,6 +7,7 @@ import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/Prod
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import DealsBanner from '@/components/DealsBanner';
 
 export default function TurntablesContent() {
   const [driveTypeFilter, setDriveTypeFilter] = useState<string>("all");
@@ -101,6 +102,9 @@ export default function TurntablesContent() {
           specifications, real-world performance, and vinyl enthusiast analysis.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

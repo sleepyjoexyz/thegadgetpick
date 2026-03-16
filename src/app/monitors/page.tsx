@@ -7,6 +7,7 @@ import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/Prod
 import { getAmazonLink } from "@/lib/utils";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import DealsBanner from '@/components/DealsBanner';
 
 export default function MonitorsContent() {
   const [panelType, setPanelType] = useState<string>("all");
@@ -103,6 +104,9 @@ export default function MonitorsContent() {
           We've analyzed 14 premium monitors across gaming, creative work, productivity, and ultrawide displays. Compare specifications, features, prices, and ratings to find the monitor that matches your workflow. Our methodology is based on manufacturer specs, panel technology, color accuracy, refresh rates, and real-world performance testing.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

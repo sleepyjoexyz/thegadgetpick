@@ -7,6 +7,7 @@ import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/Prod
 import { getAmazonLink, formatPrice, formatRating } from "@/lib/utils";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import DealsBanner from '@/components/DealsBanner';
 
 type SpeakerType = "bookshelf" | "portable" | "soundbar" | "studio-monitor" | "smart";
 
@@ -98,6 +99,9 @@ export default function SpeakersContent() {
           prices, and features to find the perfect speaker for your needs.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

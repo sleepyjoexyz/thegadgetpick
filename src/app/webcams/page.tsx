@@ -8,6 +8,7 @@ import { getWebcamArticleSlugs } from "@/data/webcam-articles";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import DealsBanner from '@/components/DealsBanner';
 
 export default function WebcamsContent() {
   const [resolutionFilter, setResolutionFilter] = useState<string>("all");
@@ -104,6 +105,9 @@ export default function WebcamsContent() {
           We've compared 13 premium webcams across all types and price points. Explore 4K versus 1080p, frame rates from 30fps to 60fps, autofocus options, HDR capability, and specialized features. Find the perfect webcam for video conferencing, streaming, content creation, or professional presentations. Our analysis covers resolution, fps, field of view, low-light performance, microphone quality, privacy shutters, and real-world performance for different use cases.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

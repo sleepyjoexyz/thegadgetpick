@@ -7,6 +7,7 @@ import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/Prod
 import { travelAdapterArticles } from "@/data/travel-adapter-articles";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
+import DealsBanner from '@/components/DealsBanner';
 
 function formatPrice(price: number): string {
   return `$${price.toFixed(0)}`;
@@ -101,6 +102,9 @@ export default function TravelAdaptersContent() {
           We've analyzed 13 travel adapters, voltage converters, USB chargers, and power strips for international travel. Compare specifications, countries covered, USB ports, wattage, surge protection, and pricing. Find the perfect adapter for any destination—from universal 200+ country solutions to specialized GaN fast chargers.
         </p>
       </section>
+      <DealsBanner />
+
+
 
       {/* Product Finder */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
