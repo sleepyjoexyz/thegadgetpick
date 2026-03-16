@@ -590,6 +590,225 @@ The "wireless mice have too much latency" myth is technologically obsolete in 20
 
 Choose wireless or wired based on preference, ergonomics, and ecosystem compatibility — not outdated latency concerns. Modern wireless technology solved the latency problem years ago.`,
   },
+
+    "best-wireless-mouse-mac-windows-2026": {
+    slug: "best-wireless-mouse-mac-windows-2026",
+    title: "Best Wireless Mouse for Mac and Windows 2026: Ergonomic Picks",
+    description: "Find the best cross-platform wireless mice for Mac and Windows. Compare ergonomic options, connectivity, and features for productivity and gaming in 2026.",
+    category: "mice",
+    content: `## Introduction
+
+A great wireless mouse is productivity's unsung hero. You use it thousands of times daily. The difference between a great mouse and a mediocre one is the difference between ease and constant frustration.
+
+This guide covers the best cross-platform wireless mice for both Mac and Windows in 2026, focusing on ergonomic design, reliable connectivity, multi-device switching, and battery life. Whether you're coding, designing, or just moving through spreadsheets, a great mouse makes it frictionless.
+
+## Why Cross-Platform Matters in 2026
+
+Many professionals now use multiple devices: a MacBook for some work, a Windows PC for others, maybe an iPad for meetings. A truly cross-platform mouse switches between all of them seamlessly. No "is this Mac or Windows" compatibility guessing. Just pick it up and click.
+
+The best cross-platform mice in 2026 use either:
+- **Bluetooth**: Universal protocol, works across all devices
+- **2.4GHz wireless USB dongle**: Universal standard, minimal latency
+
+Both are excellent. Bluetooth is cleaner (no dongle), 2.4GHz is slightly more reliable in crowded networks.
+
+## Best Overall: Logitech MX Master 3S
+
+**Price:** ~$99 | **Connectivity:** 2.4GHz + Bluetooth | **Battery:** 70 days | **Ergonomics:** Excellent
+
+The MX Master 3S is the desktop mouse gold standard. Logitech spent 15 years perfecting it. Works flawlessly on both Mac and Windows.
+
+### Why It Dominates
+
+- **Ergonomic perfection**: Contoured shape fits your hand naturally. No strain after 8-hour work days
+- **Flow technology**: Switch between Mac and Windows machines instantly. Click on one, start typing on another. No lag, no confusion
+- **Thumb wheel**: Side scroll with your thumb. Game-changer for spreadsheets and long documents
+- **Custom buttons**: Program any button to any action. Customize per application
+- **Dual connectivity**: 2.4GHz + Bluetooth. Works with any device
+- **70-day battery**: Charge once a month. No constant charging
+- **Precision tracking**: Logitech's flagship sensor. Smooth, accurate movement
+
+### Realistic Limitations
+
+- **Premium price**: $99 is highest on this list. Justified but not budget-friendly
+- **Learning curve**: All those customizable buttons are powerful but take time to configure
+- **Slightly large**: If you have small hands, test before buying
+
+### Verdict for Mac + Windows
+
+Best overall choice. If you switch between Mac and Windows even occasionally, this mouse pays for itself in time saved. The Flow technology alone justifies the price.
+
+## Best for Mac Users: Apple Magic Mouse 3
+
+**Price:** ~$79 | **Connectivity:** Bluetooth | **Battery:** 1 month | **Ergonomics:** Flat (minimal hand support)
+
+Apple's official mouse integrates seamlessly with macOS and iPadOS. Not as ergonomic as alternatives, but native Apple integration is unbeatable.
+
+### Why Mac Users Choose It
+
+- **Multi-touch gestures**: Two-finger scroll, swiping, pinching all work natively
+- **Seamless macOS integration**: No drivers needed. Plug in, use immediately
+- **iPadOS compatibility**: Magic Mouse works with iPad Pro for cursor-based interaction
+- **Universal Clipboard**: Copy on Mac, paste on iPad using the same mouse
+- **Minimal price premium**: $79 vs $99 for MX Master
+
+### Ergonomic Trade-offs
+
+- **Flat design**: No palm support. Not ideal for long work sessions
+- **Minimal buttons**: Just tracking surface. No extra programmable buttons
+- **Bluetooth only**: No 2.4GHz option
+
+### Verdict for Mac + iPad Users
+
+Best choice if: You're all-in on Apple ecosystem (Mac + iPad) and prioritize integration over ergonomics. The multi-touch gestures are worth it.
+
+## Best for Windows + Mac Hybrid: Microsoft Sculpt Comfort Mouse
+
+**Price:** ~$49 | **Connectivity:** 2.4GHz | **Battery:** ~2 weeks | **Ergonomics:** Very good
+
+Microsoft's offering proves great ergonomic mice don't have to be expensive. Works perfectly on both Mac and Windows.
+
+### Why It's Great for Hybrid Users
+
+- **Excellent ergonomics**: Contoured shape. Thumb rest. Very comfortable for long work
+- **Works anywhere**: 2.4GHz dongle works on any Mac or Windows machine
+- **Budget-friendly**: $49 undercuts premium competitors
+- **Rock-solid build**: Microsoft hardware quality. Durable
+- **Side button**: Single programmable side button for back/forward navigation
+
+### Limitations
+
+- **Single connectivity**: Only 2.4GHz (no Bluetooth option)
+- **Dongle required**: Less clean than Bluetooth-only mice
+- **No multi-device switching**: You manually switch devices, not automatic
+- **Simpler customization**: Limited button programming compared to MX Master
+
+### Verdict for Hybrid Users
+
+Best value choice if: You move between Mac and Windows but don't need Flow-style device switching. Excellent ergonomics at a budget price.
+
+## Best for Minimalists: Logitech MX Anywhere 3S
+
+**Price:** ~$79 | **Connectivity:** 2.4GHz + Bluetooth | **Battery:** 70 days | **Ergonomics:** Good (compact design)
+
+MX Anywhere is the portable version of MX Master—same technology, smaller body. Perfect for remote workers moving between locations.
+
+### Why Minimalists Love It
+
+- **Ultra-portable**: Half the size of full-size mice. Fits in any bag
+- **Same Flow technology**: Instant device switching between Mac and Windows
+- **Dual connectivity**: 2.4GHz + Bluetooth flexibility
+- **Smart wheel**: Thumb wheel clicks or freewheels depending on speed
+- **Customizable buttons**: 6 programmable buttons
+- **70-day battery**: Charge rarely
+
+### Trade-offs
+
+- **Smaller size**: Less comfortable than full-size for all-day use
+- **Higher price for compact**: Premium pricing for portable form factor
+- **Precision trades for portability**: Slightly less stable than full-size
+
+### Verdict for Minimalists
+
+Best choice if: You travel frequently and use Mac + Windows interchangeably. The Flow technology works on a compact body.
+
+## Budget Option: Logitech M705 Marathon
+
+**Price:** ~$39 | **Connectivity:** 2.4GHz | **Battery:** 3 years | **Ergonomics:** Very good
+
+Logitech's budget option proves you don't need to spend $100 for a great mouse. Excellent for students and budget-conscious professionals.
+
+### Budget Highlights
+
+- **Incredible battery life**: 3 years between battery replacements. Fire-and-forget reliability
+- **Works Mac + Windows**: 2.4GHz dongle universal
+- **Solid ergonomics**: Contoured shape. Comfortable for all-day work
+- **Reliable tracking**: Logitech's proven sensor
+- **Side button**: Back/forward navigation
+
+### Budget Sacrifices
+
+- **No Bluetooth**: Only 2.4GHz (dongle required)
+- **No Flow switching**: Single-device focus
+- **No customization**: Fixed button layout
+- **No scroll wheel customization**: Mechanical wheel only
+
+### Verdict for Budget Buyers
+
+Best choice if: You want a reliable, ergonomic mouse without premium features. This is unbeatable at $39.
+
+## Mac vs Windows Mouse Myths (2026 Edition)
+
+### Myth 1: "Macs only work with Apple mice"
+
+**False.** Any wireless mouse with Bluetooth or a 2.4GHz USB-A dongle works on Mac. Apple doesn't lock down peripherals. Choose based on preference, not platform.
+
+### Myth 2: "Windows mice won't work on Mac"
+
+**False.** Again: Bluetooth or 2.4GHz dongle = universal. The only Mac-specific mice are Apple-branded. Everything else is platform-agnostic.
+
+### Myth 3: "Wireless mice have lag on Mac"
+
+**False.** Modern wireless mice (2.4GHz or Bluetooth) have latency < 5ms. Imperceptible to humans. This myth died in 2015.
+
+### Myth 4: "You need a dongle to use wireless mice on Mac"
+
+**False.** Bluetooth mice work fine without a dongle. Bluetooth is built into all Macs since 2008.
+
+## Cross-Platform Mouse Comparison Table
+
+| Model | Price | Connectivity | Battery | Ergonomics | Mac | Windows |
+|-------|-------|--------------|---------|-----------|-----|----------|
+| Logitech MX Master 3S | $99 | 2.4GHz + BT | 70 days | Excellent | 5/5 | 5/5 |
+| Apple Magic Mouse 3 | $79 | Bluetooth | 30 days | Fair | 5/5 | N/A |
+| Microsoft Sculpt | $49 | 2.4GHz | 14 days | Very Good | 4/5 | 5/5 |
+| Logitech MX Anywhere 3S | $79 | 2.4GHz + BT | 70 days | Good | 5/5 | 5/5 |
+| Logitech M705 Marathon | $39 | 2.4GHz | 3 years | Very Good | 4/5 | 4/5 |
+
+## Frequently Asked Questions
+
+**Q: Which wireless mouse is best for Mac?**
+
+A: Apple Magic Mouse 3 for seamless integration. Logitech MX Master 3S for ergonomics + multi-device switching. Both work perfectly on Mac.
+
+**Q: Which wireless mouse is best for Windows?**
+
+A: Logitech MX Master 3S. Best ergonomics, customization, and seamless multi-device switching.
+
+**Q: Do I need a dongle or can I use Bluetooth?**
+
+A: Bluetooth is cleaner (no dongle). 2.4GHz is slightly more reliable in crowded networks. Both work great. Choose based on desk cleanliness preference.
+
+**Q: How do I know if a mouse will work on my Mac?**
+
+A: If it has Bluetooth or a USB 2.4GHz dongle, it works on Mac. No proprietary drivers needed. macOS supports any standard wireless mouse.
+
+**Q: What's the difference between 2.4GHz and Bluetooth wireless mice?**
+
+A: 2.4GHz uses a USB dongle, slightly more reliable, works further away (30+ feet). Bluetooth built-in, no dongle, more convenient, works 30 feet too. Both imperceptible latency (< 5ms). Choice is cosmetic.
+
+**Q: How often do I need to charge a wireless mouse?**
+
+A: Modern mice last 30-70 days per charge. Some last 3 years on AA batteries. Charging is rare (once per month typical).
+
+**Q: Is wireless really as reliable as wired mice now?**
+
+A: Yes. Modern wireless technology is rock-solid. Latency is imperceptible. Reliability is equivalent to wired. Choose wireless for convenience.
+
+## Conclusion
+
+Your choice depends on your setup:
+
+**If you use both Mac and Windows:** Logitech MX Master 3S. The Flow technology alone is worth the premium. Best overall cross-platform mouse.
+
+**If you're Mac + iPad focused:** Apple Magic Mouse 3. Native integration, multi-touch gestures. Worth it for Apple devotees.
+
+**If you move between locations:** Logitech MX Anywhere 3S. Portable, powerful, same Flow tech as MX Master.
+
+**If you're budget-conscious:** Logitech M705 Marathon ($39) or Microsoft Sculpt ($49). Both excellent, tested, reliable.
+
+Stop tolerating a mediocre mouse. A great wireless mouse is one of the cheapest productivity upgrades you can make. Your hands will thank you.`,
+  },
 };
 
 export function getMouseArticle(slug: string): MouseArticle | null {
