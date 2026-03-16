@@ -809,6 +809,79 @@ Your choice depends on your setup:
 
 Stop tolerating a mediocre mouse. A great wireless mouse is one of the cheapest productivity upgrades you can make. Your hands will thank you.`,
   },
+  "logitech-mx-master-vs-apple-magic-mouse-2026": {
+    slug: "logitech-mx-master-vs-apple-magic-mouse-2026",
+    title: "Logitech MX Master 3S vs Apple Magic Mouse: Ergonomics, Productivity, and Value",
+    description: "Compare the Logitech MX Master 3S and Apple Magic Mouse for Mac users. Covers ergonomics, gesture support, battery life, multi-device switching, and workflow efficiency.",
+    category: "mice",
+    content: `## The Mac User's Mouse Decision
+
+Every Mac user faces this choice: stick with Apple's Magic Mouse or switch to Logitech's MX Master 3S? The Magic Mouse ships with every iMac and is Apple's default recommendation. The MX Master 3S is the most popular third-party mouse among Mac power users. They could not be more different in design philosophy.
+
+## Ergonomics
+
+The MX Master 3S has a sculpted, contoured shape that supports your palm at a natural angle. Your hand rests on it rather than hovering over it. The thumb rest provides a stable grip. After 8 hours of use, most people report no hand fatigue.
+
+The Magic Mouse is flat — intentionally so. Apple designed it for gesture input on its glass Multi-Touch surface, which requires a low profile. Your hand sits on top in a more claw-like position. Extended use (4+ hours) commonly causes wrist strain and finger fatigue, especially for people with larger hands.
+
+If you work at a computer 8+ hours daily, the MX Master 3S is dramatically more comfortable. The Magic Mouse works fine for casual use but is poorly suited for all-day productivity.
+
+## Scrolling
+
+The MX Master 3S has a steel MagSpeed scroll wheel with two modes: ratcheted (precise, click-by-click) and free-spinning (flick to scroll thousands of lines instantly). The wheel automatically shifts between modes based on scroll speed. There is also a horizontal scroll wheel on the thumb rest — invaluable for spreadsheets and timelines.
+
+The Magic Mouse has no physical scroll wheel. You scroll by swiping one finger on the glass surface. It feels natural and supports inertial scrolling. However, there is no horizontal scroll gesture without holding Shift, and precision scrolling through long documents is less controlled.
+
+For anyone working in spreadsheets, code editors, or long documents, the MX Master's scroll wheel is a major productivity advantage.
+
+## Buttons and Customization
+
+The MX Master 3S has 7 buttons: left click, right click, middle click (scroll wheel press), forward/back thumb buttons, mode shift button, and a gesture button on the thumb rest. Every button is programmable via Logi Options+ with per-app profiles. You can assign macros, shortcuts, and modifier keys.
+
+The Magic Mouse has 2 buttons (left and right click, though right-click must be enabled in System Preferences). Multi-Touch gestures replace buttons: two-finger swipe for back/forward, two-finger double-tap for Mission Control. No physical buttons for customization.
+
+Power users who rely on custom shortcuts and macros will find the MX Master far more capable. If you prefer gesture-based navigation and minimal buttons, the Magic Mouse's surface works well within Apple's ecosystem.
+
+## Multi-Device Support
+
+The MX Master 3S connects to up to 3 devices simultaneously and switches between them with a button on the bottom. It works via Bluetooth or the included USB-A Logi Bolt receiver. Logitech Flow software lets you move your cursor between two computers seamlessly, dragging files across machines.
+
+The Magic Mouse connects to one device at a time via Bluetooth. Switching requires unpairing and re-pairing or using macOS Bluetooth settings. No multi-device switching button.
+
+If you use multiple computers (work Mac + personal Mac, or Mac + PC), the MX Master's multi-device switching saves significant friction.
+
+## Battery and Charging
+
+The MX Master 3S charges via USB-C and lasts up to 70 days on a full charge. A 1-minute quick charge provides 3 hours of use. The charging port is on the front, so you can use the mouse while charging.
+
+The Magic Mouse charges via Lightning (or USB-C on the 2024+ model) on the bottom of the mouse. You cannot use it while charging. A 2-minute charge provides about 9 hours of use, but the experience of flipping your mouse upside down to charge has been mocked since 2015.
+
+The MX Master wins on every battery metric: longer life, faster useful quick charge, and usable while charging.
+
+## Tracking
+
+The MX Master 3S uses a Darkfield 8,000 DPI sensor that tracks on virtually any surface — glass, marble, wood, fabric. No mousepad needed.
+
+The Magic Mouse uses a laser sensor that works on most surfaces but struggles on glass and highly reflective materials. A mousepad helps on tricky surfaces.
+
+## Price
+
+The Logitech MX Master 3S retails at $99. The Apple Magic Mouse retails at $79 (Lightning) or $99 (USB-C). Comparable pricing, though the Magic Mouse ships free with iMac purchases.
+
+## macOS Integration
+
+The Magic Mouse integrates natively with macOS gestures: Mission Control, Spaces navigation, and Smart Zoom work out of the box with no additional software. It is the only mouse with full macOS gesture support via its Multi-Touch surface.
+
+The MX Master 3S requires Logi Options+ software for full functionality. Gesture support exists (hold gesture button + move mouse) but is less intuitive than the Magic Mouse's touch surface. Basic functions work without software, but you lose customization.
+
+## The Verdict
+
+**Choose the Logitech MX Master 3S if:** you work at a computer all day and value ergonomics, need multi-device support, want programmable buttons and per-app profiles, work heavily in spreadsheets or code, or want the best scroll wheel on any mouse.
+
+**Choose the Apple Magic Mouse if:** you prefer Apple's gesture-based navigation, use your Mac casually (not 8+ hours daily), value aesthetics and minimalism, or want zero-setup macOS integration.
+
+For productivity-focused Mac users, the MX Master 3S is the better mouse by nearly every functional measure. The Magic Mouse remains a valid choice for light use where gesture navigation and Apple ecosystem cohesion matter more than ergonomics.`
+  }
 };
 
 export function getMouseArticle(slug: string): MouseArticle | null {
