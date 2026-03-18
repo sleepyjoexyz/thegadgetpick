@@ -8,6 +8,7 @@ import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
+import ProductImage from "@/components/ProductImage";
 
 export default function TurntablesContent() {
   const [driveTypeFilter, setDriveTypeFilter] = useState<string>("all");
@@ -395,10 +396,10 @@ export default function TurntablesContent() {
               className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
             >
               <div className="aspect-square bg-gray-100 flex items-center justify-center">
-                <img
-                  src={product.imageUrl}
+                <ProductImage
+                  imageUrl={product.imageUrl}
                   alt={product.model}
-                  className="max-h-full max-w-full object-contain p-4"
+                  brand={product.brand}
                 />
               </div>
               <div className="p-4">
