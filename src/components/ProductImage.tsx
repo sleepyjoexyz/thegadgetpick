@@ -15,7 +15,7 @@ export default function ProductImage({
 }: ProductImageProps) {
   const [imageError, setImageError] = useState(false);
 
-  const hasImage = imageUrl && imageUrl.trim() !== "";
+  const hasImage = imageUrl && imageUrl.trim() !== "" && !imageUrl.includes("placeholder");
   const showFallback = imageError || !hasImage;
 
   if (showFallback) {
@@ -38,6 +38,7 @@ export default function ProductImage({
       src={imageUrl}
       alt={alt}
       onError={() => setImageError(true)}
+      onLoad={(e) => { const img = e.target as HTMLImageElement; if (img.naturalWidth === 0) setImageError(true); }}
       className="max-h-full max-w-full object-contain p-4"
     />
   );
