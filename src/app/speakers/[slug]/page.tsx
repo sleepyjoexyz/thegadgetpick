@@ -67,7 +67,7 @@ export default async function SpeakerArticlePage({ params }: PageProps) {
         description={article.description}
         url={`https://www.thegadgetpick.com/speakers/${slug}`}
         datePublished="2026-03-15"
-        dateModified="2026-03-15"
+        dateModified="2026-03-18"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },

@@ -9,9 +9,9 @@ export interface MonitorArticle {
 export const monitorArticles: Record<string, MonitorArticle> = {
   "ips-vs-va-vs-oled-monitors": {
     slug: "ips-vs-va-vs-oled-monitors",
-    title: "IPS vs VA vs OLED Monitors: Panel Technology Explained",
+    title: "IPS vs VA vs OLED: Best Monitor Panel Technology",
     description:
-      "Deep dive into monitor panel technologies. Learn the differences between IPS, VA, and OLED panels, their strengths, weaknesses, and which is best for gaming, creative work, and productivity.",
+      "Compare IPS, VA, and OLED monitor panels. Understand color accuracy, contrast, gaming performance. Choose the best technology for your needs.",
     category: "monitors",
     content: `## Introduction
 
@@ -157,9 +157,9 @@ IPS dominates for professionals and office work because color consistency matter
 
   "best-monitors-for-programming": {
     slug: "best-monitors-for-programming",
-    title: "Best Monitors for Programming: Screen Size, Resolution, and Font Clarity",
+    title: "Best Monitors for Programming: 2026 Guide",
     description:
-      "Find the ideal monitor setup for software development. Learn why screen size matters, which resolutions reduce eye strain, and how to maximize readability for long coding sessions.",
+      "Top monitors for coding and development. See resolution, size, font clarity recommendations. Find your ideal coding setup.",
     category: "monitors",
     content: `## Introduction
 
@@ -373,9 +373,9 @@ The best monitor for programming is a 27" IPS @ 1440p or a 34" IPS ultrawide @ 3
 
   "ultrawide-vs-dual-monitor-setup": {
     slug: "ultrawide-vs-dual-monitor-setup",
-    title: "Ultrawide vs Dual Monitors: Which Setup Is Better for Productivity?",
+    title: "Ultrawide vs Dual Monitors: Productivity Comparison",
     description:
-      "Compare ultrawide monitors to traditional dual-monitor setups. Learn the productivity differences, workspace layout options, and which is right for your workflow.",
+      "Ultrawide or dual monitors? Compare productivity, cost, setup complexity. See which configuration works best for you.",
     category: "monitors",
     content: `## Introduction
 

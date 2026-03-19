@@ -64,7 +64,7 @@ export default async function ArticlePage({ params }: PageProps) {
         description={article.excerpt}
         url={`https://www.thegadgetpick.com/power-banks/${slug}`}
         datePublished="2026-03-15"
-        dateModified="2026-03-15"
+        dateModified="2026-03-18"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.thegadgetpick.com' },
