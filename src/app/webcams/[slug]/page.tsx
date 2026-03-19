@@ -6,6 +6,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import CrossCategoryLinks from "@/components/CrossCategoryLinks";
+import { extractFAQs } from "@/lib/faqUtils";
 
 interface PageProps {
   params: Promise<{
@@ -55,6 +56,8 @@ export default async function ArticlePage({ params }: PageProps) {
   if (!article) {
     notFound();
   }
+
+  const faqs = extractFAQs(article.content);
 
   return (
     <article className="bg-white">
