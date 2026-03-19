@@ -12,7 +12,7 @@ export const electricToothbrushArticles: Record<
 > = {
   "sonic-vs-oscillating-toothbrush": {
     slug: "sonic-vs-oscillating-toothbrush",
-    title: "Sonic vs Oscillating Electric Toothbrushes: Which Cleans Better?",
+    title: "Sonic vs Oscillating Electric Toothbrushes: Which Cleans",
     description:
       "Compare sonic and oscillating electric toothbrush technology. Learn how each works, which cleans better, and which is gentler on gums.",
     category: "electric-toothbrushes",

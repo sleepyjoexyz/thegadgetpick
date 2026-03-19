@@ -712,7 +712,7 @@ Quiet mechanical keyboards are no longer a luxury—they're a professional neces
   },
   "how-to-choose-first-mechanical-keyboard": {
     slug: "how-to-choose-first-mechanical-keyboard",
-    title: "How to Choose Your First Mechanical Keyboard: A Beginner's Guide",
+    title: "How to Choose Your First Mechanical Keyboard: A",
     description: "Learn how to select your first mechanical keyboard by understanding switch types, layouts, materials, and budgets. A complete guide for beginners.",
     category: "Keyboards",
     content: `## Understanding Switch Types
@@ -783,7 +783,7 @@ Only if your keyboard is hot-swappable. If soldered, you need a soldering iron. 
 
   "mechanical-keyboard-too-loud-office": {
     slug: "mechanical-keyboard-too-loud-office",
-    title: "Mechanical Keyboard Too Loud for the Office — Quietest Switches and Fixes",
+    title: "Mechanical Keyboard Too Loud for the Office — Quietest",
     description:
       "Silence your mechanical keyboard for office use. Discover the quietest switches, sound dampening solutions, and recommended quiet boards that don't sacrifice the typing feel.",
     category: "keyboards",
@@ -983,7 +983,7 @@ Stop hiding your love of mechanical keyboards. Upgrade to silent switches, and y
   },
   "mechanical-keyboard-buying-guide-switches-layouts-2026": {
     slug: "mechanical-keyboard-buying-guide-switches-layouts-2026",
-    title: "Mechanical Keyboard Buying Guide 2026: Switches, Layouts, and What to Look For",
+    title: "Mechanical Keyboard Buying Guide 2026: Switches, Layouts,",
     description: "Complete guide to mechanical keyboards — switch types explained (linear, tactile, clicky), hot-swap vs soldered, layouts (full, TKL, 75%, 65%), keycaps, and recommendations for typing, programming, and gaming.",
     category: "keyboards",
     content: `## Introduction

@@ -9,7 +9,7 @@ export interface Article {
 export const speakerArticles: Record<string, Article> = {
   "bookshelf-vs-portable-speakers": {
     slug: "bookshelf-vs-portable-speakers",
-    title: "Bookshelf vs Portable Speakers: Home Audio vs On-the-Go Listening",
+    title: "Bookshelf vs Portable Speakers: Home Audio vs On-the-Go",
     description:
       "Compare bookshelf and portable speakers to understand which is best for your lifestyle and audio needs.",
     category: "speakers",
@@ -257,7 +257,7 @@ No matter your choice, every speaker on this list represents genuine value. You'
 
   "bluetooth-vs-wifi-speakers": {
     slug: "bluetooth-vs-wifi-speakers",
-    title: "Bluetooth vs WiFi Speakers: Latency, Quality, and Multi-Room Audio",
+    title: "Bluetooth vs WiFi Speakers: Latency, Quality, and",
     description:
       "Compare Bluetooth and WiFi speakers to understand latency, audio quality, and multi-room capabilities.",
     category: "speakers",
@@ -420,7 +420,7 @@ The best approach depends on your use case. If you're primarily listening at hom
 
   "studio-monitors-vs-regular-speakers": {
     slug: "studio-monitors-vs-regular-speakers",
-    title: "Studio Monitors vs Regular Speakers: Mixing, Mastering, and Listening",
+    title: "Studio Monitors vs Regular Speakers: Mixing, Mastering,",
     description:
       "Compare studio monitors and regular speakers to understand accuracy, coloration, and when each is appropriate.",
     category: "speakers",

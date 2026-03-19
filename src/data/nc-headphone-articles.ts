@@ -569,7 +569,7 @@ export const ncHeadphoneArticles: Record<string, NCHeadphoneArticle> = {
   },
   "sony-wh1000xm5-vs-bose-qc-ultra": {
     slug: "sony-wh1000xm5-vs-bose-qc-ultra",
-    title: "Sony WH-1000XM5 vs Bose QC Ultra Headphones: 2026 Noise Cancelling Showdown",
+    title: "Sony WH-1000XM5 vs Bose QC Ultra Headphones: 2026 Noise",
     excerpt: "Compare two premium noise-cancelling headphones: Sony WH-1000XM5 vs Bose QuietComfort Ultra. Which offers better ANC, sound quality, comfort, and value?",
     author: "The Gadget Pick Team",
     publishedAt: "2026-03-15",

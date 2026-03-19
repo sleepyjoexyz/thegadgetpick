@@ -811,7 +811,7 @@ Stop tolerating a mediocre mouse. A great wireless mouse is one of the cheapest 
   },
   "logitech-mx-master-vs-apple-magic-mouse-2026": {
     slug: "logitech-mx-master-vs-apple-magic-mouse-2026",
-    title: "Logitech MX Master 3S vs Apple Magic Mouse: Ergonomics, Productivity, and Value",
+    title: "Logitech MX Master 3S vs Apple Magic Mouse: Ergonomics,",
     description: "Compare the Logitech MX Master 3S and Apple Magic Mouse for Mac users. Covers ergonomics, gesture support, battery life, multi-device switching, and workflow efficiency.",
     category: "mice",
     content: `## The Mac User's Mouse Decision

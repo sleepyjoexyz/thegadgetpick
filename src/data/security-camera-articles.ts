@@ -12,7 +12,7 @@ export const securityCameraArticles: Record<
 > = {
   "wired-vs-battery-security-cameras": {
     slug: "wired-vs-battery-security-cameras",
-    title: "Wired vs Battery Security Cameras: Which Setup Is Right for You?",
+    title: "Wired vs Battery Security Cameras: Which Setup Is Right",
     description:
       "Understand the trade-offs between wired and battery security cameras. Compare installation complexity, reliability, maintenance, and costs.",
     category: "security-cameras",
@@ -688,7 +688,7 @@ For most homeowners: Start with outdoor (front door), then add 1-2 interior came
 
   "security-camera-resolution-guide": {
     slug: "security-camera-resolution-guide",
-    title: "1080p vs 2K vs 4K Security Cameras: How Much Resolution Do You Need?",
+    title: "1080p vs 2K vs 4K Security Cameras: How Much Resolution",
     description:
       "Compare security camera resolutions. Understand real-world image quality differences, storage impact, bandwidth requirements, and when each resolution makes sense.",
     category: "security-cameras",

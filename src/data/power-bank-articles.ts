@@ -12,7 +12,7 @@ export interface PowerBankArticle {
 export const powerBankArticles: PowerBankArticle[] = [
   {
     slug: "capacity-guide",
-    title: "Power Bank Capacity Guide: How Many Charges Do You Actually Get?",
+    title: "Power Bank Capacity Guide: How Many Charges Do You",
     excerpt: "Understanding mAh, Wh, and how to calculate real-world charging cycles for your devices.",
     publishedAt: "2024-02-15",
     updatedAt: "2025-02-28",

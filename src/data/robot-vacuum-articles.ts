@@ -9,7 +9,7 @@ export interface Article {
 export const robotVacuumArticles: Record<string, Article> = {
   "lidar-vs-camera-navigation": {
     slug: "lidar-vs-camera-navigation",
-    title: "LiDAR vs Camera Navigation in Robot Vacuums: Which Maps Better?",
+    title: "LiDAR vs Camera Navigation in Robot Vacuums: Which Maps",
     description:
       "Compare LiDAR, camera, and gyroscope navigation systems in robot vacuums to understand which mapping technology works best for your home.",
     category: "robot-vacuums",

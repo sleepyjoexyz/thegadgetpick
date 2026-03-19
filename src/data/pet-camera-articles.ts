@@ -9,7 +9,7 @@ export interface PetCameraArticle {
 export const petCameraArticles: Record<string, PetCameraArticle> = {
   "pet-camera-with-treat-dispenser-guide": {
     slug: "pet-camera-with-treat-dispenser-guide",
-    title: "Pet Cameras with Treat Dispensers: Are They Worth the Premium?",
+    title: "Pet Cameras with Treat Dispensers: Are They Worth the",
     description:
       "Understand whether interactive pet cameras with built-in treat dispensers justify the higher cost. Compare features, training tips, and when this technology actually helps your pet.",
     category: "pet-cameras",
@@ -211,7 +211,7 @@ Start with a basic camera to establish a baseline. If your pet does fine, save t
   },
   "best-pet-cameras-under-100": {
     slug: "best-pet-cameras-under-100",
-    title: "Best Pet Cameras Under $100: Budget Picks That Don't Sacrifice Features",
+    title: "Best Pet Cameras Under $100: Budget Picks That Don't",
     description:
       "Find excellent pet cameras for under $100. Compare resolution, night vision, two-way audio, and app features. Don't pay premium prices when budget models deliver the essentials.",
     category: "pet-cameras",
@@ -759,7 +759,7 @@ For most pet owners working full time, a single pet camera ($50-100) is all you 
   },
   "pet-separation-anxiety-monitoring": {
     slug: "pet-separation-anxiety-monitoring",
-    title: "Using Pet Cameras to Monitor Separation Anxiety: What You Can Learn",
+    title: "Using Pet Cameras to Monitor Separation Anxiety: What You",
     description:
       "Understand how to use pet cameras to identify separation anxiety, what signs to look for in video footage, and how camera data can help your vet or trainer develop a treatment plan.",
     category: "pet-cameras",

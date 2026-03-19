@@ -9,7 +9,7 @@ export interface HeadphoneArticle {
 export const headphoneArticles: Record<string, HeadphoneArticle> = {
   "open-back-vs-closed-back-headphones": {
     slug: "open-back-vs-closed-back-headphones",
-    title: "Open-Back vs Closed-Back Headphones: Soundstage, Isolation & Use Cases",
+    title: "Open-Back vs Closed-Back Headphones: Soundstage,",
     description:
       "Compare open-back and closed-back headphone designs. Understand soundstage, noise isolation, and which design suits your listening needs.",
     category: "headphones",
@@ -167,7 +167,7 @@ For portable, everyday use: closed-back wins. For critical listening and soundst
   },
   "best-headphones-under-200": {
     slug: "best-headphones-under-200",
-    title: "Best Headphones Under $200: Studio Quality Without the Premium Price",
+    title: "Best Headphones Under $200: Studio Quality Without the",
     description:
       "Top headphone picks under $200. Compare wireless, studio-quality, and audiophile options for music, work, and gaming.",
     category: "headphones",
@@ -326,7 +326,7 @@ Spending more than $200 on headphones is a luxury choice, not a necessity. This 
   },
   "headphone-driver-types-explained": {
     slug: "headphone-driver-types-explained",
-    title: "Headphone Driver Types Explained: Dynamic, Planar, BA, and Electrostatic",
+    title: "Headphone Driver Types Explained: Dynamic, Planar, BA,",
     description:
       "Understand headphone driver technology. Compare dynamic, planar magnetic, balanced armature, and electrostatic drivers. Which matters for your listening?",
     category: "headphones",
@@ -562,7 +562,7 @@ Understand the physics. Listen to multiple types. Buy the driver type that match
   },
   "wireless-vs-wired-headphones-sound-quality": {
     slug: "wireless-vs-wired-headphones-sound-quality",
-    title: "Wireless vs Wired Headphones: The Sound Quality Truth from an Audiophile Perspective",
+    title: "Wireless vs Wired Headphones: The Sound Quality Truth",
     description:
       "Do wireless headphones compromise sound quality? Analyze the technical differences, codec compression, and whether wired still wins for audio fidelity.",
     category: "headphones",
@@ -1072,7 +1072,7 @@ Running earbuds are a worthwhile investment for serious athletes. Quality fit (s
   },
   "complete-guide-headphones-types-features-2026": {
     slug: "complete-guide-headphones-types-features-2026",
-    title: "The Complete Guide to Headphones in 2026: Types, Features, and What to Buy",
+    title: "Headphones in 2026: Types, Features, and What to Buy",
     description: "Everything you need to know about headphones — over-ear vs on-ear vs earbuds, wired vs wireless, noise cancelling explained, codec differences, and buying recommendations for every use case.",
     category: "headphones",
     content: `## Introduction
@@ -1188,7 +1188,7 @@ Most people should buy true wireless earbuds as their primary headphones — the
   },
   "sony-wh1000xm5-vs-bose-qc-ultra-2026": {
     slug: "sony-wh1000xm5-vs-bose-qc-ultra-2026",
-    title: "Sony WH-1000XM5 vs Bose QuietComfort Ultra: Which ANC Headphone Wins in 2026?",
+    title: "Sony WH-1000XM5 vs Bose QuietComfort Ultra: Which ANC",
     description: "Compare the Sony WH-1000XM5 and Bose QuietComfort Ultra across noise cancellation, sound quality, comfort, battery life, and features for commuters and remote workers.",
     category: "headphones",
     content: `## The Two Flagships

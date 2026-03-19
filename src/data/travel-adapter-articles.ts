@@ -12,7 +12,7 @@ export interface TravelAdapterArticle {
 export const travelAdapterArticles: TravelAdapterArticle[] = [
   {
     slug: "voltage-guide",
-    title: "World Voltage Guide: Do You Need a Converter or Just an Adapter?",
+    title: "World Voltage Guide: Do You Need a Converter or Just an",
     excerpt:
       "Understanding global voltage differences and when you need a converter vs. a simple plug adapter.",
     publishedAt: "2025-02-01",

@@ -12,7 +12,7 @@ export interface TurntableArticle {
 export const turntableArticles: Record<string, TurntableArticle> = {
   "belt-drive-vs-direct-drive": {
     slug: "belt-drive-vs-direct-drive",
-    title: "Belt-Drive vs Direct-Drive Turntables: Performance, Sound Quality & Use Cases",
+    title: "Belt-Drive vs Direct-Drive Turntables: Performance, Sound",
     excerpt:
       "Understanding the fundamental differences between belt-drive and direct-drive turntables. Which motor design is right for your listening needs?",
     publishedAt: "2025-02-01",
@@ -142,7 +142,7 @@ The best turntable for you depends on how you listen, not on which motor type is
 
   "best-under-300": {
     slug: "best-under-300",
-    title: "Best Turntables Under $300: Audiophile Quality at Accessible Prices",
+    title: "Best Turntables Under $300: Audiophile Quality at",
     excerpt:
       "Discover the best turntables under $300. Compare belt-drive and direct-drive options perfect for beginners and audio enthusiasts.",
     publishedAt: "2025-02-05",
@@ -250,7 +250,7 @@ All of these turntables will deliver satisfying vinyl playback for years. The be
 
   "vinyl-setup-guide": {
     slug: "vinyl-setup-guide",
-    title: "Complete Vinyl Setup Guide for Beginners: From Turntable to Listening",
+    title: "Complete Vinyl Setup Guide for Beginners: From Turntable",
     excerpt:
       "Everything you need to know to set up your first vinyl system. Turntable selection, cartridge basics, speakers, and proper vinyl care.",
     publishedAt: "2025-02-10",
@@ -465,7 +465,7 @@ Most people land in the mid-range. Most vinyl enthusiasts never need the expensi
 
   "cartridge-upgrade-guide": {
     slug: "cartridge-upgrade-guide",
-    title: "When and How to Upgrade Your Turntable Cartridge: Complete Guide",
+    title: "When and How to Upgrade Your Turntable Cartridge:",
     excerpt:
       "Learn why cartridge upgrades matter, how to choose the right cartridge, and step-by-step installation instructions.",
     publishedAt: "2025-02-15",
@@ -627,7 +627,7 @@ Plan upgrades over years, not months. The best upgrade is patience, learning you
   },
   "how-to-set-up-turntable-for-beginners": {
     slug: "how-to-set-up-turntable-for-beginners",
-    title: "How to Set Up a Turntable for the First Time: Beginner's Guide",
+    title: "How to Set Up a Turntable for the First Time: Beginner's",
     excerpt: "Step-by-step guide to setting up your first turntable. Covers arm balance, anti-skate, phono connection, needle drop technique, and maintenance.",
     author: "The Gadget Pick Team",
     publishedAt: "2026-03-15",
