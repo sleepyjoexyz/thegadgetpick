@@ -13,14 +13,6 @@ import { getTurntableArticle, getTurntableArticleSlugs } from "@/data/turntable-
 import { travelAdapterArticles, getTravelAdapterArticleSlugs } from "@/data/travel-adapter-articles";
 import { getLuggageArticle, getLuggageArticleSlugs } from "@/data/luggage-articles";
 import { getPowerBankArticle, getPowerBankArticleSlugs } from "@/data/power-bank-articles";
-import { getPetCameraArticle, getAllPetCameraArticleSlugs } from "@/data/pet-camera-articles";
-import { getSecurityCameraArticle, getAllSecurityCameraArticleSlugs } from "@/data/security-camera-articles";
-import { getRobotVacuumArticle, getAllRobotVacuumArticleSlugs } from "@/data/robot-vacuum-articles";
-import { getAirFryerArticle, getAllAirFryerArticleSlugs } from "@/data/air-fryer-articles";
-import { getAirPurifierArticle, getAllAirPurifierArticleSlugs } from "@/data/air-purifier-articles";
-import { getClimateControlArticle, getAllClimateControlArticleSlugs } from "@/data/climate-control-articles";
-import { getMassageGunArticle, getAllMassageGunArticleSlugs } from "@/data/massage-gun-articles";
-import { getElectricToothbrushArticle, getAllElectricToothbrushArticleSlugs } from "@/data/electric-toothbrush-articles";
 
 interface CrossCategoryLinksProps {
   currentCategory: string;
@@ -48,7 +40,7 @@ const categoryMap: Record<string, CategoryConfig> = {
   },
   "mouse": {
     name: "Mouse",
-    path: "/mouse",
+    path: "/mice",
     getSlugs: getMouseArticleSlugs,
     getArticle: getMouseArticle,
   },
@@ -60,7 +52,7 @@ const categoryMap: Record<string, CategoryConfig> = {
   },
   "nc-headphones": {
     name: "Noise Cancelling Headphones",
-    path: "/nc-headphones",
+    path: "/noise-canceling-headphones",
     getSlugs: getNCHeadphoneArticleSlugs,
     getArticle: getNCHeadphoneArticle,
   },
@@ -106,54 +98,6 @@ const categoryMap: Record<string, CategoryConfig> = {
     getSlugs: getPowerBankArticleSlugs,
     getArticle: getPowerBankArticle,
   },
-  "pet-cameras": {
-    name: "Pet Cameras",
-    path: "/pet-cameras",
-    getSlugs: getAllPetCameraArticleSlugs,
-    getArticle: getPetCameraArticle,
-  },
-  "security-cameras": {
-    name: "Security Cameras",
-    path: "/security-cameras",
-    getSlugs: getAllSecurityCameraArticleSlugs,
-    getArticle: getSecurityCameraArticle,
-  },
-  "robot-vacuums": {
-    name: "Robot Vacuums",
-    path: "/robot-vacuums",
-    getSlugs: getAllRobotVacuumArticleSlugs,
-    getArticle: getRobotVacuumArticle,
-  },
-  "air-fryers": {
-    name: "Air Fryers",
-    path: "/air-fryers",
-    getSlugs: getAllAirFryerArticleSlugs,
-    getArticle: getAirFryerArticle,
-  },
-  "air-purifiers": {
-    name: "Air Purifiers",
-    path: "/air-purifiers",
-    getSlugs: getAllAirPurifierArticleSlugs,
-    getArticle: getAirPurifierArticle,
-  },
-  "climate-control": {
-    name: "Climate Control",
-    path: "/climate-control",
-    getSlugs: getAllClimateControlArticleSlugs,
-    getArticle: getClimateControlArticle,
-  },
-  "massage-guns": {
-    name: "Massage Guns",
-    path: "/massage-guns",
-    getSlugs: getAllMassageGunArticleSlugs,
-    getArticle: getMassageGunArticle,
-  },
-  "electric-toothbrushes": {
-    name: "Electric Toothbrushes",
-    path: "/electric-toothbrushes",
-    getSlugs: getAllElectricToothbrushArticleSlugs,
-    getArticle: getElectricToothbrushArticle,
-  },
 };
 
 const relatedCategories: Record<string, string[]> = {
@@ -166,17 +110,9 @@ const relatedCategories: Record<string, string[]> = {
   "webcams": ["monitors", "microphones", "keyboards"],
   "speakers": ["headphones", "turntables", "nc-headphones"],
   "turntables": ["speakers", "headphones", "nc-headphones"],
-  "travel-adapters": ["luggage", "power-banks", "pet-cameras"],
-  "luggage": ["travel-adapters", "power-banks", "pet-cameras"],
+  "travel-adapters": ["luggage", "power-banks", "keyboards"],
+  "luggage": ["travel-adapters", "power-banks", "speakers"],
   "power-banks": ["travel-adapters", "luggage", "keyboards"],
-  "pet-cameras": ["security-cameras", "webcams", "monitors"],
-  "security-cameras": ["pet-cameras", "robot-vacuums", "webcams"],
-  "robot-vacuums": ["air-purifiers", "security-cameras", "air-fryers"],
-  "air-fryers": ["robot-vacuums", "air-purifiers", "climate-control"],
-  "air-purifiers": ["robot-vacuums", "air-fryers", "climate-control"],
-  "climate-control": ["air-purifiers", "air-fryers", "massage-guns"],
-  "massage-guns": ["electric-toothbrushes", "climate-control", "air-purifiers"],
-  "electric-toothbrushes": ["massage-guns", "air-purifiers", "climate-control"],
 };
 
 export default function CrossCategoryLinks({ currentCategory }: CrossCategoryLinksProps) {
