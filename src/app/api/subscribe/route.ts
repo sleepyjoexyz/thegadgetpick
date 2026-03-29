@@ -122,39 +122,24 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Service is not configured" }, { status: 503 });
     }
 
-    // Check if already subscribed
-    const { data: existingSubscriber, error: checkError } = await supabase
-      .from("email_subscribers")
-      .select("id")
-      .eq("email", trimmedEmail)
-      .eq("site_name", "thegadgetpick")
-      .maybeSingle();
+    // Use RPC to bypass PostgREST schema cache issues
+    const { data, error: rpcError } = await supabase.rpc("subscribe_email", {
+      p_email: trimmedEmail,
+      p_site_name: "thegadgetpick",
+    });
 
-    if (checkError && checkError.code !== "PGRST116") {
-      console.error("Supabase error checking subscriber:", checkError);
-      return NextResponse.json({ error: "Failed to check subscription status" }, { status: 500 });
+    if (rpcError) {
+      console.error("Supabase RPC error:", rpcError);
+      return NextResponse.json({ error: "Failed to save subscription" }, { status: 500 });
     }
 
-    if (existingSubscriber) {
+    const result = data as { status: string; id: string };
+
+    if (result.status === "already_subscribed") {
       return NextResponse.json(
         { success: true, message: "You're already subscribed" },
         { status: 200 }
       );
-    }
-
-    // Insert new subscriber
-    const { error: insertError } = await supabase
-      .from("email_subscribers")
-      .insert({
-        email: trimmedEmail,
-        site_name: "thegadgetpick",
-        subscribed_at: new Date().toISOString(),
-        is_active: true,
-      });
-
-    if (insertError) {
-      console.error("Supabase error inserting subscriber:", insertError);
-      return NextResponse.json({ error: "Failed to save subscription" }, { status: 500 });
     }
 
     // Send welcome email
