@@ -9,6 +9,28 @@ export const metadata: Metadata = {
   title: "Today's Best Tech Deals | The Gadget Pick",
   description: "Browse today's best deals on headphones, monitors, keyboards, and more. Updated daily with the biggest savings.",
   alternates: { canonical: "https://www.thegadgetpick.com/deals" },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.thegadgetpick.com/deals',
+    title: "Today's Best Tech Deals | The Gadget Pick",
+    description: "Browse today's best deals on headphones, monitors, keyboards, and more. Updated daily with the biggest savings.",
+    siteName: 'The Gadget Pick',
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick Deals',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Today's Best Tech Deals | The Gadget Pick",
+    description: "Browse today's best deals on headphones, monitors, keyboards, and more.",
+    images: ['https://www.thegadgetpick.com/og-image.jpg'],
+  },
 };
 
 export default function DealsPage() {
