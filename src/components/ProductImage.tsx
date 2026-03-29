@@ -37,6 +37,7 @@ export default function ProductImage({
     <img
       src={imageUrl}
       alt={alt}
+      loading="lazy"
       onError={() => setImageError(true)}
       onLoad={(e) => { const img = e.target as HTMLImageElement; if (img.naturalWidth === 0) setImageError(true); }}
       className="max-h-full max-w-full object-contain p-4"
