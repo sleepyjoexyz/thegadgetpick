@@ -10,6 +10,7 @@ export interface Deal {
   amazonUrl: string;
   timeLeft: string;
   imageAlt: string;
+  imageUrl: string;
 }
 
 export const mockDeals: Deal[] = [
@@ -24,7 +25,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Wireless+NC+Headphones&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Bose QuietComfort Ultra Wirele"
+    "imageAlt": "Bose QuietComfort Ultra Wirele",
+    "imageUrl": "https://m.media-amazon.com/images/I/61QGxNo09wL._AC_SL300_.jpg"
   },
   {
     "id": "hp-002",
@@ -37,7 +39,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=JBL+Quantum+100+Wired+Over-Ear+Gaming+Headphones&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "JBL Quantum 100 Wired Over-Ear"
+    "imageAlt": "JBL Quantum 100 Wired Over-Ear",
+    "imageUrl": "https://m.media-amazon.com/images/I/61l906x+fZL._AC_SL300_.jpg"
   },
   {
     "id": "hp-003",
@@ -50,7 +53,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Razer+Barracuda+Pro+Wireless+Gaming+Headset&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Razer Barracuda Pro Wireless G"
+    "imageAlt": "Razer Barracuda Pro Wireless G",
+    "imageUrl": "https://m.media-amazon.com/images/I/716a838quEL._AC_SL300_.jpg"
   },
   {
     "id": "sp-001",
@@ -63,7 +67,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Philips+S1509+Portable+Bluetooth+Speaker&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Philips S1509 Portable Bluetoo"
+    "imageAlt": "Philips S1509 Portable Bluetoo",
+    "imageUrl": "https://m.media-amazon.com/images/I/81AWnsjXuTL._AC_SL300_.jpg"
   },
   {
     "id": "sp-002",
@@ -76,7 +81,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Anker+Soundcore+Boom+Go+3i+Waterproof+Speaker&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Anker Soundcore Boom Go 3i Wat"
+    "imageAlt": "Anker Soundcore Boom Go 3i Wat",
+    "imageUrl": "https://m.media-amazon.com/images/I/71VK3QZTr7L._AC_SL300_.jpg"
   },
   {
     "id": "sp-003",
@@ -89,7 +95,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=LG+SC9S+3.1.3-Channel+Soundbar&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "LG SC9S 3.1.3-Channel Soundbar"
+    "imageAlt": "LG SC9S 3.1.3-Channel Soundbar",
+    "imageUrl": "https://m.media-amazon.com/images/I/61gC+hJwcrL._AC_SL300_.jpg"
   },
   {
     "id": "sp-004",
@@ -102,7 +109,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Bowers+and+Wilkins+Zeppelin+Pro+Speaker&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Bowers & Wilkins Zeppelin Pro "
+    "imageAlt": "Bowers & Wilkins Zeppelin Pro ",
+    "imageUrl": "https://m.media-amazon.com/images/I/51aCbi-C+GL._AC_SL300_.jpg"
   },
   {
     "id": "sp-005",
@@ -115,7 +123,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=EWA+A106+Pro+Portable+Bluetooth+Speaker&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "EWA A106 Pro Portable Bluetoot"
+    "imageAlt": "EWA A106 Pro Portable Bluetoot",
+    "imageUrl": "https://m.media-amazon.com/images/I/61FbWdgk2kL._AC_SL300_.jpg"
   },
   {
     "id": "sp-006",
@@ -128,7 +137,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Victrola+Tempo+Bluetooth+Bookshelf+Speakers&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Victrola Tempo Bluetooth Books"
+    "imageAlt": "Victrola Tempo Bluetooth Books",
+    "imageUrl": "https://m.media-amazon.com/images/I/517hfSLKF6L._AC_SL300_.jpg"
   },
   {
     "id": "mn-001",
@@ -141,7 +151,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=LG+32+UltraGear+QHD+Curved+Gaming+Monitor+180Hz&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "LG 32\" UltraGear QHD Curved Ga"
+    "imageAlt": "LG 32\"UltraGear QHD Curved Ga",
+    "imageUrl": "https://m.media-amazon.com/images/I/81pumDl4YHL._AC_SL300_.jpg"
   },
   {
     "id": "mn-002",
@@ -154,7 +165,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=ASUS+ProArt+PA278QV+27+Professional+Monitor&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "ASUS ProArt PA278QV 27\" Profes"
+    "imageAlt": "ASUS ProArt PA278QV 27\"Profes",
+    "imageUrl": "https://m.media-amazon.com/images/I/81CFn-NfutL._AC_SL300_.jpg"
   },
   {
     "id": "mn-003",
@@ -167,7 +179,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=BenQ+SW240+24+Photo+Editing+Monitor&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "BenQ SW240 24\" Photo Editing M"
+    "imageAlt": "BenQ SW240 24\"Photo Editing M",
+    "imageUrl": "https://m.media-amazon.com/images/I/71HLB56Q2ML._AC_SL300_.jpg"
   },
   {
     "id": "mn-004",
@@ -180,7 +193,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Dell+S3722DGM+37+Curved+Gaming+Monitor&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Dell S3722DGM 37\" Curved Gamin"
+    "imageAlt": "Dell S3722DGM 37\"Curved Gamin",
+    "imageUrl": "https://m.media-amazon.com/images/I/71f2tFqlfIL._AC_SL300_.jpg"
   },
   {
     "id": "kb-001",
@@ -193,7 +207,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Kensington+Pro+Fit+Ergonomic+Wireless+Keyboard+++Mouse&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Kensington Pro Fit Ergonomic W"
+    "imageAlt": "Kensington Pro Fit Ergonomic W",
+    "imageUrl": "https://m.media-amazon.com/images/I/71awar2utoL._AC_SL300_.jpg"
   },
   {
     "id": "kb-002",
@@ -206,7 +221,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=8BitDo+Retro+87+RGB+Wireless+Mechanical&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "8BitDo Retro 87 RGB Wireless M"
+    "imageAlt": "8BitDo Retro 87 RGB Wireless M",
+    "imageUrl": "https://m.media-amazon.com/images/I/716LOjB0T6L._AC_SL300_.jpg"
   },
   {
     "id": "kb-003",
@@ -219,7 +235,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Redragon+BK7366+Full+Size+Wired&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Redragon BK7366 Full Size Wire"
+    "imageAlt": "Redragon BK7366 Full Size Wire",
+    "imageUrl": "https://m.media-amazon.com/images/I/615PoBIutGL._AC_SL300_.jpg"
   },
   {
     "id": "kb-004",
@@ -232,7 +249,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Razer+Huntsman+V2+Analog+Gaming+Keyboard&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Razer Huntsman V2 Analog Gamin"
+    "imageAlt": "Razer Huntsman V2 Analog Gamin",
+    "imageUrl": "https://m.media-amazon.com/images/I/514YQ-r7HfL._AC_SL300_.jpg"
   },
   {
     "id": "kb-005",
@@ -245,7 +263,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Logitech+G413+TKL+SE+Wired+Mechanical&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Logitech G413 TKL SE Wired Mec"
+    "imageAlt": "Logitech G413 TKL SE Wired Mec",
+    "imageUrl": "https://m.media-amazon.com/images/I/61U-zlxQmWL._AC_SL300_.jpg"
   },
   {
     "id": "kb-006",
@@ -258,7 +277,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Cherry+65%+MX-LP+2.1+Compact+Wireless&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Cherry 65% MX-LP 2.1 Compact W"
+    "imageAlt": "Cherry 65% MX-LP 2.1 Compact W",
+    "imageUrl": "https://m.media-amazon.com/images/I/51RkWBRqcJL._AC_SL300_.jpg"
   },
   {
     "id": "kb-007",
@@ -271,7 +291,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Corsair+K70+RGB+PRO+Mechanical+w/+Cherry+MX+Speed&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Corsair K70 RGB PRO Mechanical"
+    "imageAlt": "Corsair K70 RGB PRO Mechanical",
+    "imageUrl": "https://m.media-amazon.com/images/I/617LYk+8G2L._AC_SL300_.jpg"
   },
   {
     "id": "mc-001",
@@ -284,7 +305,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Razer+Basilisk+V3+Pro+Wireless+Mouse&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Razer Basilisk V3 Pro Wireless"
+    "imageAlt": "Razer Basilisk V3 Pro Wireless",
+    "imageUrl": "https://m.media-amazon.com/images/I/71L-flqtTwL._AC_SL300_.jpg"
   },
   {
     "id": "mc-002",
@@ -297,7 +319,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Logitech+G305+Lightspeed+Wireless+Mouse&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Logitech G305 Lightspeed Wirel"
+    "imageAlt": "Logitech G305 Lightspeed Wirel",
+    "imageUrl": "https://m.media-amazon.com/images/I/51sg9BLSMTL._AC_SL300_.jpg"
   },
   {
     "id": "wc-001",
@@ -310,7 +333,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Logitech+Brio+101+1080p+USB+Webcam&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Logitech Brio 101 1080p USB We"
+    "imageAlt": "Logitech Brio 101 1080p USB We",
+    "imageUrl": "https://m.media-amazon.com/images/I/51YvZ8Sd4VL._AC_SL300_.jpg"
   },
   {
     "id": "wc-002",
@@ -323,7 +347,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Razer+Kiyo+Pro+X+Streaming+Webcam&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Razer Kiyo Pro X Streaming Web"
+    "imageAlt": "Razer Kiyo Pro X Streaming Web",
+    "imageUrl": "https://m.media-amazon.com/images/I/71fPKPNG76L._AC_SL300_.jpg"
   },
   {
     "id": "wc-003",
@@ -336,7 +361,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Elgato+Facecam+Pro+1080p60+Webcam&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Elgato Facecam Pro 1080p60 Web"
+    "imageAlt": "Elgato Facecam Pro 1080p60 Web",
+    "imageUrl": "https://m.media-amazon.com/images/I/61J7cBOVGWL._AC_SL300_.jpg"
   },
   {
     "id": "pb-001",
@@ -349,7 +375,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=28000mAh+DARAN+100W+LiFePO4+Portable+Power+Station&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "28000mAh DARAN 100W LiFePO4 Po"
+    "imageAlt": "28000mAh DARAN 100W LiFePO4 Po",
+    "imageUrl": "https://m.media-amazon.com/images/I/81mVswgRNlL._AC_SL300_.jpg"
   },
   {
     "id": "pb-002",
@@ -362,7 +389,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Anker+Nano+45W+USB-C+Charger+w/+Smart+Display&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Anker Nano 45W USB-C Charger w"
+    "imageAlt": "Anker Nano 45W USB-C Charger w",
+    "imageUrl": "https://m.media-amazon.com/images/I/51O7hjOd0QL._AC_SL300_.jpg"
   },
   {
     "id": "pb-003",
@@ -375,7 +403,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Anker+PowerCore+Ultra+200W+Power+Bank&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Anker PowerCore Ultra 200W Pow"
+    "imageAlt": "Anker PowerCore Ultra 200W Pow",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Kin0Hx98L._AC_SL300_.jpg"
   },
   {
     "id": "pb-004",
@@ -388,7 +417,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Baseus+Ambage+10000mAh+Power+Bank&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Baseus Ambage 10000mAh Power B"
+    "imageAlt": "Baseus Ambage 10000mAh Power B",
+    "imageUrl": "https://m.media-amazon.com/images/I/61wRAu9rt5L._AC_SL300_.jpg"
   },
   {
     "id": "ta-001",
@@ -401,7 +431,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Anker+PowerExpand+USB+C+Hub+7-in-1&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Anker PowerExpand USB C Hub 7-"
+    "imageAlt": "Anker PowerExpand USB C Hub 7-",
+    "imageUrl": "https://m.media-amazon.com/images/I/71Z9T0VgGyL._AC_SL300_.jpg"
   },
   {
     "id": "ta-002",
@@ -414,7 +445,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Belkin+USB-C+Multiport+Hub+5-in-1&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Belkin USB-C Multiport Hub 5-i"
+    "imageAlt": "Belkin USB-C Multiport Hub 5-i",
+    "imageUrl": "https://m.media-amazon.com/images/I/71InbQtnQpL._AC_SL300_.jpg"
   },
   {
     "id": "ta-003",
@@ -427,7 +459,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=LENTION+USB+C+Hub+7-in-1&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "LENTION USB C Hub 7-in-1"
+    "imageAlt": "LENTION USB C Hub 7-in-1",
+    "imageUrl": "https://m.media-amazon.com/images/I/61y9tvAL+BL._AC_SL300_.jpg"
   },
   {
     "id": "ta-004",
@@ -440,7 +473,8 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Anker+637+Universal+Travel+Adapter&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Anker 637 Universal Travel Ada"
+    "imageAlt": "Anker 637 Universal Travel Ada",
+    "imageUrl": "https://m.media-amazon.com/images/I/61YSuy6Q8UL._AC_SL300_.jpg"
   },
   {
     "id": "ta-005",
@@ -453,6 +487,7 @@ export const mockDeals: Deal[] = [
     "sourceUrl": "https://slickdeals.net/",
     "amazonUrl": "https://www.amazon.com/s?k=Skross+All-in-One+Travel+Adapter&tag=rogeti02-20",
     "timeLeft": "Today only",
-    "imageAlt": "Skross All-in-One Travel Adapt"
+    "imageAlt": "Skross All-in-One Travel Adapt",
+    "imageUrl": "https://m.media-amazon.com/images/I/71I+0hVc-yL._AC_SL300_.jpg"
   }
 ];
