@@ -27,7 +27,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Sony+WH-1000XM5+Noise+Cancelling+Headphones&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Sony WH-1000XM5 Noise Cancelling Headphones',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61BGLYEN-xL._AC_SL300_.jpg',
   },
   {
     id: 'hp-002',
@@ -41,7 +41,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Apple+AirPods+Pro+2+with+USB-C&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Apple AirPods Pro 2 with USB-C',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL300_.jpg',
   },
   {
     id: 'hp-003',
@@ -55,7 +55,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Bose+QuietComfort+Ultra+Wireless+NC+Headphones&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Bose QuietComfort Ultra Wireless NC Headphones',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/51revx-zToL._AC_SL300_.jpg',
   },
   {
     id: 'hp-004',
@@ -69,7 +69,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=JBL+Quantum+100+Wired+Over-Ear+Gaming+Headphones&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'JBL Quantum 100 Wired Over-Ear Gaming Headphones',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71wXaRKevmL._AC_SL300_.jpg',
   },
 
   // SPEAKERS
@@ -85,7 +85,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Philips+S1509+Portable+Bluetooth+Speaker&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'Philips S1509 Portable Bluetooth Speaker',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81AWnsjXuTL._AC_SL300_.jpg',
   },
   {
     id: 'sp-002',
@@ -99,7 +99,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Philips+S2108+Portable+Bluetooth+Speaker+5W+TWS+LED&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Philips S2108 Portable Bluetooth Speaker 5W TWS LED',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81AWnsjXuTL._AC_SL300_.jpg',
   },
   {
     id: 'sp-003',
@@ -113,7 +113,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Anker+Soundcore+Boom+Go+3i+Waterproof+Speaker&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Anker Soundcore Boom Go 3i Waterproof Speaker',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71VK3QZTr7L._AC_SL300_.jpg',
   },
   {
     id: 'sp-004',
@@ -127,7 +127,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=LG+SC9S+3.1.3+Channel+Soundbar+with+Dolby+Atmos&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'LG SC9S 3.1.3 Channel Soundbar with Dolby Atmos',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61gC+hJwcrL._AC_SL300_.jpg',
   },
 
   // MONITORS
@@ -143,7 +143,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=SAMSUNG+Viewfinity+S65UA+34+Inch+Ultrawide+QHD+Curved+Monitor&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'SAMSUNG Viewfinity S65UA 34 Inch Ultrawide QHD Curved Monitor',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/91h5HRAzGKL._AC_SL300_.jpg',
   },
   {
     id: 'mn-002',
@@ -157,7 +157,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=AOC+27+Inch+QHD+300Hz+Curved+Gaming+Monitor&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'AOC 27 Inch QHD 300Hz Curved Gaming Monitor',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81HHjFbLWrL._AC_SL300_.jpg',
   },
   {
     id: 'mn-003',
@@ -171,7 +171,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Samsung+Odyssey+G7+40+Inch+180Hz+Curved+Gaming+Monitor&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Samsung Odyssey G7 40 Inch 180Hz Curved Gaming Monitor',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81fOkgIm2-L._AC_SL300_.jpg',
   },
   {
     id: 'mn-004',
@@ -185,7 +185,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=LG+32+Inch+UltraGear+QHD+Curved+Gaming+Monitor+180Hz&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'LG 32 Inch UltraGear QHD Curved Gaming Monitor 180Hz',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/81pumDl4YHL._AC_UY218_.jpg',
   },
 
   // KEYBOARDS
@@ -201,7 +201,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Razer+BlackWidow+V4+75+Percent+Mechanical+Gaming+Keyboard&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Razer BlackWidow V4 75 Percent Mechanical Gaming Keyboard',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/815XJdl7fXL._AC_UY218_.jpg',
   },
   {
     id: 'kb-002',
@@ -215,7 +215,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=8BitDo+Retro+87+RGB+Wireless+Mechanical+Keyboard&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: '8BitDo Retro 87 RGB Wireless Mechanical Keyboard',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/716LOjB0T6L._AC_UY218_.jpg',
   },
   {
     id: 'kb-003',
@@ -229,7 +229,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Logitech+G413+TKL+SE+Wired+Mechanical+Keyboard&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'Logitech G413 TKL SE Wired Mechanical Keyboard',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61U-zlxQmWL._AC_UY218_.jpg',
   },
   {
     id: 'kb-004',
@@ -243,7 +243,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Razer+Huntsman+V2+Analog+Gaming+Keyboard&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Razer Huntsman V2 Analog Gaming Keyboard',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/514YQ-r7HfL._AC_UY218_.jpg',
   },
 
   // MICE
@@ -259,7 +259,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Razer+Basilisk+V3+Pro+Wireless+Mouse&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Razer Basilisk V3 Pro Wireless Mouse',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71QGU-U1u9L._AC_UY218_.jpg',
   },
   {
     id: 'mc-002',
@@ -273,7 +273,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Logitech+G305+Lightspeed+Wireless+Mouse&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Logitech G305 Lightspeed Wireless Mouse',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/51sg9BLSMTL._AC_UY218_.jpg',
   },
   {
     id: 'mc-003',
@@ -287,7 +287,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Logitech+MX+Master+3S+Wireless+Productivity+Mouse&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Logitech MX Master 3S Wireless Productivity Mouse',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/51sg9BLSMTL._AC_UY218_.jpg',
   },
   {
     id: 'mc-004',
@@ -301,7 +301,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=SteelSeries+Aerox+5+Wireless+Ultra+Lightweight+Mouse&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'SteelSeries Aerox 5 Wireless Ultra Lightweight Mouse',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61PYdTz9YoL._AC_UY218_.jpg',
   },
 
   // WEBCAMS
@@ -317,7 +317,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Logitech+Brio+101+1080p+USB+Webcam&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'Logitech Brio 101 1080p USB Webcam',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71A0Pp767BL._AC_UY218_.jpg',
   },
   {
     id: 'wc-002',
@@ -331,7 +331,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Razer+Kiyo+Pro+X+Streaming+Webcam&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Razer Kiyo Pro X Streaming Webcam',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71p2sEz+dvL._AC_UY218_.jpg',
   },
   {
     id: 'wc-003',
@@ -345,7 +345,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Anker+PowerConf+C200+2K+USB+Webcam&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Anker PowerConf C200 2K USB Webcam',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71Z9T0VgGyL._AC_UY218_.jpg',
   },
   {
     id: 'wc-004',
@@ -359,7 +359,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Elgato+Facecam+Pro+1080p60+Webcam&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Elgato Facecam Pro 1080p60 Webcam',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61oCmJJGbPL._AC_UY218_.jpg',
   },
 
   // POWER BANKS
@@ -375,7 +375,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=INIU+Carry+P55L-E2+Portable+Power+Bank&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'INIU Carry P55L-E2 Portable Power Bank',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/7124QwrpCPL._AC_UY218_.jpg',
   },
   {
     id: 'pb-002',
@@ -389,7 +389,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Anker+633+Magnetic+Battery+MagSafe+Power+Bank&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Anker 633 Magnetic Battery MagSafe Power Bank',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/51ScnQNj18L._AC_UY218_.jpg',
   },
   {
     id: 'pb-003',
@@ -403,7 +403,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Anker+PowerCore+Ultra+200W+Power+Bank&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'Anker PowerCore Ultra 200W Power Bank',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61B8Mnv4zHL._AC_UY218_.jpg',
   },
   {
     id: 'pb-004',
@@ -417,7 +417,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Baseus+10000mAh+Slim+Power+Bank+with+USB-C&tag=rogeti02-20',
     timeLeft: 'Ends today',
     imageAlt: 'Baseus 10000mAh Slim Power Bank with USB-C',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61krGOxii0L._AC_UY218_.jpg',
   },
 
   // TRAVEL ADAPTERS
@@ -433,7 +433,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Anker+PowerExpand+USB+C+Hub+7-in-1&tag=rogeti02-20',
     timeLeft: '12h left',
     imageAlt: 'Anker PowerExpand USB C Hub 7-in-1',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71Z9T0VgGyL._AC_UY218_.jpg',
   },
   {
     id: 'ta-002',
@@ -447,7 +447,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Belkin+USB-C+Multiport+Hub+5-in-1&tag=rogeti02-20',
     timeLeft: 'Spring Sale',
     imageAlt: 'Belkin USB-C Multiport Hub 5-in-1',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61GaqCsQwIL._AC_UY218_.jpg',
   },
   {
     id: 'ta-003',
@@ -461,7 +461,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=Anker+637+Universal+Travel+Adapter&tag=rogeti02-20',
     timeLeft: '6h left',
     imageAlt: 'Anker 637 Universal Travel Adapter',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/610m4VbnhJL._AC_UL320_.jpg',
   },
   {
     id: 'ta-004',
@@ -475,6 +475,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/s?k=TESSAN+International+Plug+Adapter+with+4+USB+Ports&tag=rogeti02-20',
     timeLeft: '2d left',
     imageAlt: 'TESSAN International Plug Adapter with 4 USB Ports',
-    imageUrl: 'https://m.media-amazon.com/images/I/placeholder._AC_SL300_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71QzVP4U3zL._AC_UY218_.jpg',
   },
 ];
