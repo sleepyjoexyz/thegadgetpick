@@ -72,6 +72,7 @@ export default function DealCard({
             alt={imageAlt}
             className="w-full h-full object-contain p-2"
             loading="lazy"
+            referrerPolicy="no-referrer"
             onError={() => setImgError(true)}
           />
         ) : (
