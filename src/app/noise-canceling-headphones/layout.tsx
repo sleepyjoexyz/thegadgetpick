@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     description: 'Compare top noise-canceling headphones with specs and ratings. Premium ANC technology.',
     type: 'website',
     url: 'https://www.thegadgetpick.com/noise-canceling-headphones',
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
   },
 };
 

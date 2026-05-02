@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     description: 'Compare top microphones with specs and ratings. Streaming to studio-quality recording.',
     type: 'website',
     url: 'https://www.thegadgetpick.com/microphones',
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
   },
 };
 

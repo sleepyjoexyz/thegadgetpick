@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     description: 'Compare top turntables with specs, prices, and ratings. Entry-level to audiophile vinyl players.',
     type: 'website',
     url: 'https://www.thegadgetpick.com/turntables',
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
   },
 };
 

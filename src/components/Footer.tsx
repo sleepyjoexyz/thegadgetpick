@@ -87,7 +87,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/nc-headphones" className="text-gray-400 hover:text-blue-400 transition">
+                <Link href="/noise-canceling-headphones" className="text-gray-400 hover:text-blue-400 transition">
                   Noise-Canceling Headphones
                 </Link>
               </li>

@@ -22,6 +22,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${cat.name} Deals — Save Today | The Gadget Pick`,
     description: cat.description,
     alternates: { canonical: `https://www.thegadgetpick.com/deals/${slug}` },
+    openGraph: {
+      title: `${cat.name} Deals — Save Today | The Gadget Pick`,
+      description: cat.description,
+      type: 'website',
+      url: `https://www.thegadgetpick.com/deals/${slug}`,
+      images: [
+        {
+          url: 'https://www.thegadgetpick.com/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'The Gadget Pick',
+        },
+      ],
+      locale: 'en_US',
+      siteName: 'The Gadget Pick',
+    },
   };
 }
 

@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     description: 'Compare top headphones side-by-side with detailed specs, prices, and ratings. Audiophile to budget options.',
     type: 'website',
     url: 'https://www.thegadgetpick.com/headphones',
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
   },
 };
 

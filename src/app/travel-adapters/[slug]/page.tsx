@@ -49,6 +49,17 @@ export async function generateMetadata(
       description: article.excerpt,
       type: "article",
       url: `https://www.thegadgetpick.com/travel-adapters/${slug}`,
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
     },
   };
 }

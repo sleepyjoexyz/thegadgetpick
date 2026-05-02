@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     description: 'Compare top webcams with specs and ratings. Video conferencing, streaming, and professional.',
     type: 'website',
     url: 'https://www.thegadgetpick.com/webcams',
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
   },
 };
 

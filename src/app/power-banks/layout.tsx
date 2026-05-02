@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     description: 'Compare top power banks with specs and ratings. Fast charging, portable, and high-capacity options.',
     type: 'website',
     url: 'https://www.thegadgetpick.com/power-banks',
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
   },
 };
 

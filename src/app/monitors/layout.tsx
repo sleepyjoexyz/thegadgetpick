@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     description: 'Compare top monitors with specs and ratings. Gaming, editing, and productivity displays.',
     type: 'website',
     url: 'https://www.thegadgetpick.com/monitors',
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
   },
 };
 

@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thegadgetpick.com/privacy',
   },
+  openGraph: {
+    title: 'Privacy Policy | The Gadget Pick',
+    description: 'Learn how The Gadget Pick collects, uses, and protects your personal information.',
+    type: 'website',
+    url: 'https://www.thegadgetpick.com/privacy',
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
+  },
 };
 
 export default function PrivacyPolicy() {

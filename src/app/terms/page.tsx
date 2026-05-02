@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thegadgetpick.com/terms',
   },
+  openGraph: {
+    title: 'Terms of Service | The Gadget Pick',
+    description: 'Read the terms and conditions for using The Gadget Pick website.',
+    type: 'website',
+    url: 'https://www.thegadgetpick.com/terms',
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
+  },
 };
 
 export default function TermsOfService() {

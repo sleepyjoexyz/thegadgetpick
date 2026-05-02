@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     description: 'Compare top speakers with detailed specs, prices, and ratings. Portable to studio-quality.',
     type: 'website',
     url: 'https://www.thegadgetpick.com/speakers',
+
+    images: [
+      {
+        url: 'https://www.thegadgetpick.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Gadget Pick',
+      },
+    ],
+    locale: 'en_US',
+    siteName: 'The Gadget Pick',
   },
 };
 
