@@ -57,7 +57,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B09CY995KT?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Bluetooth Headphones Over Ear, 60 Hours Playtime',
-    imageUrl: 'https://m.media-amazon.com/images/I/71-0U8z-ZL._AC_SL1500_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/71-%2B0U8z-ZL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -132,7 +132,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B016XTADG2?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Anker Soundcore Upgraded Bluetooth Speaker with',
-    imageUrl: 'https://m.media-amazon.com/images/I/61y-b4M0RZL._AC_SL1500_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61y%2Bb4M0RZL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -237,7 +237,7 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FPRDTVMD?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'acer KB220Q H2bi 21.5 Full HD (1920 x 1080)',
-    imageUrl: 'https://m.media-amazon.com/images/I/61S--hUR7iL._AC_SL1500_.jpg',
+    imageUrl: 'https://m.media-amazon.com/images/I/61S%2B-hUR7iL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
