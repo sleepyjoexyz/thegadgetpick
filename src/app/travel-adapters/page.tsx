@@ -8,6 +8,7 @@ import { travelAdapterArticles } from "@/data/travel-adapter-articles";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 function formatPrice(price: number): string {
   return `$${price.toFixed(0)}`;
@@ -412,37 +413,12 @@ export default function TravelAdaptersContent() {
         </div>
       </section>
 
-      {/* Featured Articles */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Expert Guides</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {travelAdapterArticles.map((article) => (
-            <div
-              key={article.slug}
-              className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                <Link
-                  href={`/travel-adapters/${article.slug}`}
-                  className="hover:text-blue-600"
-                >
-                  {article.title}
-                </Link>
-              </h3>
-              <p className="text-gray-600 mb-4 text-sm">{article.excerpt}</p>
-              <div className="flex items-center justify-between">
-                <Link
-                  href={`/travel-adapters/${article.slug}`}
-                  className="text-blue-600 hover:underline font-medium text-sm"
-                >
-                  Read guide →
-                </Link>
-                <span className="text-xs text-gray-500">{article.readingTime} min read</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Featured Articles — dynamic, links every article in travel-adapter-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/travel-adapters"
+        categoryName="Travel Adapter"
+        articles={travelAdapterArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">

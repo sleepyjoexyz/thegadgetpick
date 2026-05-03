@@ -3,11 +3,13 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { powerBanks } from "@/data/power-banks";
+import { powerBankArticles } from "@/data/power-bank-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function PowerBanksContent() {
   const [capacityMin, setCapacityMin] = useState<string>("0");
@@ -489,48 +491,12 @@ export default function PowerBanksContent() {
         </p>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Articles</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Link
-            href="/power-banks/capacity-guide"
-            className="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition"
-          >
-            <h3 className="font-bold text-gray-900 mb-2">Capacity Guide</h3>
-            <p className="text-sm text-gray-600">
-              Understand mAh vs. Wh and how many charges you actually get.
-            </p>
-          </Link>
-          <Link
-            href="/power-banks/fast-charging-explained"
-            className="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition"
-          >
-            <h3 className="font-bold text-gray-900 mb-2">Fast Charging Standards</h3>
-            <p className="text-sm text-gray-600">
-              USB PD, Quick Charge, PPS explained.
-            </p>
-          </Link>
-          <Link
-            href="/power-banks/airline-rules"
-            className="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition"
-          >
-            <h3 className="font-bold text-gray-900 mb-2">Airline Rules</h3>
-            <p className="text-sm text-gray-600">
-              TSA limits, 100Wh rule, and international policies.
-            </p>
-          </Link>
-          <Link
-            href="/power-banks/best-for-laptops"
-            className="block p-4 border border-gray-200 rounded-lg hover:shadow-lg transition"
-          >
-            <h3 className="font-bold text-gray-900 mb-2">Best for Laptops</h3>
-            <p className="text-sm text-gray-600">
-              Which power banks charge MacBooks and Windows laptops.
-            </p>
-          </Link>
-        </div>
-      </section>
+      {/* Bottom CTA — dynamic, links every article in power-bank-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/power-banks"
+        categoryName="Power Bank"
+        articles={powerBankArticles}
+      />
     </div>
   );
 }

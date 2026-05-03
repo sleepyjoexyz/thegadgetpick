@@ -3,12 +3,14 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { headphones } from "@/data/headphones";
+import { headphoneArticles } from "@/data/headphone-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import ProductImage from "@/components/ProductImage";
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function HeadphonesContent() {
   const [typeFilter, setTypeFilter] = useState<string>("all");
@@ -493,73 +495,12 @@ export default function HeadphonesContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Headphone Guides & Analysis
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/headphones/open-back-vs-closed-back-headphones">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Open-Back vs Closed-Back Headphones
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand soundstage, noise isolation, and which design suits your listening
-                environment. A deep dive into acoustic design and listening experience.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/headphones/best-headphones-under-200">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Headphones Under $200
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                The sweet spot for audio quality and value. Compare wireless, studio-quality,
-                and audiophile options without premium pricing.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/headphones/headphone-driver-types-explained">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Headphone Driver Types Explained
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Dynamic, planar magnetic, balanced armature, and electrostatic drivers. How
-                they work, trade-offs, and which matters for your use case.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/headphones/wireless-vs-wired-headphones-sound-quality">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Wireless vs Wired Headphones: Sound Quality Truth
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Do wireless headphones sacrifice audio quality? An audiophile analysis of
-                Bluetooth codecs, latency, and transparency.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in headphone-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/headphones"
+        categoryName="Headphone"
+        articles={headphoneArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

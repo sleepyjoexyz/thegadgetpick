@@ -3,12 +3,14 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { mice } from "@/data/mice";
+import { mouseArticles } from "@/data/mouse-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import ProductImage from "@/components/ProductImage";
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function MiceContent() {
   const [mouseTypeFilter, setMouseTypeFilter] = useState<string>("all");
@@ -472,73 +474,12 @@ export default function MiceContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Mouse Guides & Analysis
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/mice/gaming-vs-productivity">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Gaming vs Productivity Mice
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand the fundamental differences between gaming and productivity mice.
-                Learn how design, sensors, and ergonomics diverge based on use case.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/mice/best-ergonomic-mice">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Ergonomic Mice for Long Work Days
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Find the perfect ergonomic mouse to reduce wrist strain and RSI. Compare
-                vertical, trackball, and contoured designs.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/mice/dpi-sensitivity-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                DPI and Sensitivity Guide
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Master DPI and mouse sensitivity settings. Learn why higher isn't always better
-                and find your optimal sensitivity.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/mice/wireless-latency-myth">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Wireless vs Wired: Latency Reality Check
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Wireless mice latency isn't a barrier anymore. Compare modern 2.4GHz and
-                Bluetooth technology performance.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in mouse-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/mice"
+        categoryName="Mouse"
+        articles={mouseArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

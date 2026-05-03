@@ -3,12 +3,14 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { microphones } from "@/data/microphones";
+import { microphoneArticles } from "@/data/microphone-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import ProductImage from "@/components/ProductImage";
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function MicrophonesContent() {
   const [micTypeFilter, setMicTypeFilter] = useState<string>("all");
@@ -449,73 +451,12 @@ export default function MicrophonesContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Microphone Guides & Analysis
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/microphones/usb-vs-xlr">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                USB vs XLR Microphones
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand the difference between USB and XLR connections, when to use each,
-                and how to choose the right setup for your needs.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/microphones/best-for-podcasting">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Microphones for Podcasting
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Discover the top microphones for podcasting across all budget levels, from
-                budget USB options to professional broadcast equipment.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/microphones/condenser-vs-dynamic">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Condenser vs Dynamic Microphones
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand the key differences between condenser and dynamic microphones,
-                their strengths, and which type suits your needs.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/microphones/room-treatment-tips">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Room Treatment Tips for Better Audio
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Improve your recording quality with practical room treatment solutions.
-                Learn how to reduce echo and background noise.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in microphone-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/microphones"
+        categoryName="Microphone"
+        articles={microphoneArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

@@ -4,11 +4,12 @@ import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { keyboards } from "@/data/keyboards";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
-import { getKeyboardArticleSlugs } from "@/data/keyboard-articles";
+import { keyboardArticles } from "@/data/keyboard-articles";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function KeyboardsContent() {
   const [keyboardTypeFilter, setKeyboardTypeFilter] = useState<string>("all");
@@ -65,7 +66,6 @@ export default function KeyboardsContent() {
     return result;
   }, [keyboardTypeFilter, layoutFilter, wirelessFilter, hotSwappableFilter, priceMin, priceMax, sortBy]);
 
-  const articleSlugs = getKeyboardArticleSlugs();
 
   return (
     <div className="bg-white">
@@ -423,36 +423,12 @@ export default function KeyboardsContent() {
         )}
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Keyboard Guides & Articles</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {articleSlugs.map((slug) => {
-            // Map article slugs to titles
-            const articleTitles: Record<string, string> = {
-              "mechanical-vs-membrane": "Mechanical vs Membrane Keyboards",
-              "best-for-programming": "Best Keyboards for Programming in 2025",
-              "switch-types-explained": "Keyboard Switch Types Explained",
-              "hot-swappable-guide": "Hot-Swappable Keyboards: A Beginner's Guide",
-            };
-
-            return (
-              <Link
-                key={slug}
-                href={`/keyboards/${slug}`}
-                className="block p-6 border border-gray-200 rounded-lg hover:border-blue-500 hover:shadow-lg transition-all"
-              >
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {articleTitles[slug] || slug}
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Read our comprehensive guide on {articleTitles[slug]?.toLowerCase() || slug}
-                </p>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in keyboard-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/keyboards"
+        categoryName="Keyboard"
+        articles={keyboardArticles}
+      />
     </div>
   );
 }

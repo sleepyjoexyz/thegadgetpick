@@ -4,11 +4,12 @@ import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { ncHeadphones } from "@/data/noise-canceling-headphones";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
-import { getNCHeadphoneArticleSlugs } from "@/data/nc-headphone-articles";
+import { ncHeadphoneArticles } from "@/data/nc-headphone-articles";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function NoiseCancelingHeadphonesContent() {
   const [formFactorFilter, setFormFactorFilter] = useState<string>("all");
@@ -75,7 +76,6 @@ export default function NoiseCancelingHeadphonesContent() {
     sortBy,
   ]);
 
-  const articleSlugs = getNCHeadphoneArticleSlugs();
 
   return (
     <div className="bg-white">
@@ -438,56 +438,12 @@ export default function NoiseCancelingHeadphonesContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      {articleSlugs.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Essential Reading
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {articleSlugs.map((slug) => {
-              const articleTitles: Record<string, string> = {
-                "how-anc-works": "How Active Noise Cancellation Actually Works",
-                "best-for-flying":
-                  "Best Noise-Canceling Headphones for Flying in 2025",
-                "earbuds-vs-over-ear":
-                  "ANC Earbuds vs Over-Ear: Which Cancel More Noise?",
-                "hearing-health-guide":
-                  "Noise Cancellation and Hearing Health: What Science Says",
-              };
-
-              const articleExcerpts: Record<string, string> = {
-                "how-anc-works":
-                  "Discover the science behind ANC technology and how it eliminates ambient noise in modern headphones.",
-                "best-for-flying":
-                  "Find the perfect noise-canceling headphones for air travel with our expert recommendations covering comfort, battery life, and ANC performance.",
-                "earbuds-vs-over-ear":
-                  "Compare noise cancellation performance, comfort, and portability between earbud and over-ear styles to find your ideal travel headphone.",
-                "hearing-health-guide":
-                  "Understand how noise cancellation affects hearing health, safe listening levels, and best practices for protecting your hearing while using ANC headphones.",
-              };
-
-              return (
-                <Link
-                  key={slug}
-                  href={`/noise-canceling-headphones/${slug}`}
-                  className="p-6 border border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition"
-                >
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {articleTitles[slug] || slug}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {articleExcerpts[slug] || "Read the article for more information."}
-                  </p>
-                  <div className="mt-4 text-blue-600 font-semibold text-sm">
-                    Read Article →
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-      )}
+      {/* Articles Section — dynamic, links every article in nc-headphone-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/noise-canceling-headphones"
+        categoryName="Noise-Canceling Headphone"
+        articles={ncHeadphoneArticles}
+      />
     </div>
   );
 }

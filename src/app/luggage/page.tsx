@@ -4,11 +4,13 @@ import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { luggage } from "@/data/luggage";
 import { Luggage } from "@/data/luggage";
+import { luggageArticles } from "@/data/luggage-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function LuggageContent() {
   const [luggageType, setLuggageType] = useState<string>("all");
@@ -409,69 +411,12 @@ export default function LuggageContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Luggage Guides & Tips
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/luggage/hardside-vs-softside">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Hardside vs Softside Luggage
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand the real differences between rigid and flexible luggage construction.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/luggage/carry-on-size-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Carry-On Size Guide
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Learn airline carry-on rules and avoid gate checks with our comprehensive size guide.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/luggage/packing-tips">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Smart Packing Tips
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Master efficient packing techniques to fit 5 days into carry-on luggage.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/luggage/best-for-business-travel">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best for Business Travel
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Find luggage built for business travelers with executive features.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in luggage-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/luggage"
+        categoryName="Luggage"
+        articles={luggageArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">

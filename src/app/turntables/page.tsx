@@ -3,12 +3,14 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { turntables } from "@/data/turntables";
+import { turntableArticles } from "@/data/turntable-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import ProductImage from "@/components/ProductImage";
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function TurntablesContent() {
   const [driveTypeFilter, setDriveTypeFilter] = useState<string>("all");
@@ -446,73 +448,12 @@ export default function TurntablesContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Turntable Guides & Analysis
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/turntables/belt-drive-vs-direct-drive">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Belt-Drive vs Direct-Drive Turntables
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand the differences between motor designs, sound quality
-                implications, and which type suits your listening needs.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/turntables/best-under-300">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Turntables Under $300
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Discover the sweet spot for vinyl playback value. Premium sound
-                quality without luxury pricing.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/turntables/vinyl-setup-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Complete Vinyl Setup Guide for Beginners
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Everything needed to set up your first vinyl system. Turntable
-                selection, speakers, and proper record care.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/turntables/cartridge-upgrade-guide">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                When and How to Upgrade Your Turntable Cartridge
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Learn why cartridge upgrades matter and how to choose the right
-                replacement for your turntable.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in turntable-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/turntables"
+        categoryName="Turntable"
+        articles={turntableArticles}
+      />
     </div>
   );
 }

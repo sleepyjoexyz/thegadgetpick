@@ -4,11 +4,12 @@ import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { webcams } from "@/data/webcams";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
-import { getWebcamArticleSlugs } from "@/data/webcam-articles";
+import { webcamArticles } from "@/data/webcam-articles";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 export default function WebcamsContent() {
   const [resolutionFilter, setResolutionFilter] = useState<string>("all");
@@ -65,7 +66,6 @@ export default function WebcamsContent() {
     return result;
   }, [resolutionFilter, fpsFilter, autofocusFilter, hdrFilter, priceMin, priceMax, sortBy]);
 
-  const articleSlugs = getWebcamArticleSlugs();
 
   return (
     <div className="bg-white">
@@ -417,36 +417,12 @@ export default function WebcamsContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Webcam Guides & Articles</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {articleSlugs.map((slug) => {
-            // Map slug to title
-            const slugTitles: Record<string, string> = {
-              "4k-vs-1080p": "4K vs 1080p Webcams: Is the Upgrade Worth It?",
-              "best-for-streaming": "Best Webcams for Streaming in 2025",
-              "lighting-tips": "Webcam Lighting Tips for Professional Video Calls",
-              "privacy-security-guide": "Webcam Privacy and Security: What You Need to Know",
-            };
-
-            return (
-              <Link
-                key={slug}
-                href={`/webcams/${slug}`}
-                className="block p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow"
-              >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {slugTitles[slug] || slug}
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  Read our in-depth guide →
-                </p>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in webcam-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/webcams"
+        categoryName="Webcam"
+        articles={webcamArticles}
+      />
     </div>
   );
 }

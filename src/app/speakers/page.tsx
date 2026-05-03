@@ -3,11 +3,13 @@
 import { useState, useMemo } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { speakers, Speaker } from "@/data/speakers";
+import { speakerArticles } from "@/data/speaker-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { getAmazonLink, formatPrice, formatRating } from "@/lib/utils";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
+import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
 type SpeakerType = "bookshelf" | "portable" | "soundbar" | "studio-monitor" | "smart";
 
@@ -531,73 +533,12 @@ export default function SpeakersContent() {
         </div>
       </section>
 
-      {/* Articles Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Speaker Guides & Comparisons
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/speakers/bookshelf-vs-portable-speakers">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Bookshelf vs Portable Speakers
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Compare home audio speakers vs on-the-go listening. Learn when
-                each makes sense for your lifestyle.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/speakers/best-speakers-under-300">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Best Speakers Under $300
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Budget audiophile picks across portable, smart, and bookshelf
-                categories. Quality doesn't require premium prices.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/speakers/bluetooth-vs-wifi-speakers">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Bluetooth vs WiFi Speakers
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Understand latency, audio quality, and multi-room capabilities.
-                Learn which is best for your use case.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/speakers/studio-monitors-vs-regular-speakers">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <h3 className="font-bold text-lg text-gray-900 mb-2">
-                Studio Monitors vs Regular Speakers
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                When accuracy matters. Learn the difference between mixing and
-                listening speakers.
-              </p>
-              <div className="flex items-center gap-2 text-blue-600 font-medium text-sm">
-                Read Guide <span>→</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
+      {/* Articles Section — dynamic, links every article in speaker-articles.ts */}
+      <CategoryArticleGuides
+        categoryPath="/speakers"
+        categoryName="Speaker"
+        articles={speakerArticles}
+      />
 
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
