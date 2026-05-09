@@ -257,7 +257,7 @@ No matter your choice, every speaker on this list represents genuine value. You'
 
   "bluetooth-vs-wifi-speakers": {
     slug: "bluetooth-vs-wifi-speakers",
-    title: "Bluetooth vs WiFi Speakers: Latency, Quality, and",
+    title: "Bluetooth vs WiFi Speakers: Latency & Quality",
     description:
       "Compare Bluetooth and WiFi speakers to understand latency, audio quality, and multi-room capabilities.",
     category: "speakers",
@@ -420,7 +420,7 @@ The best approach depends on your use case. If you're primarily listening at hom
 
   "studio-monitors-vs-regular-speakers": {
     slug: "studio-monitors-vs-regular-speakers",
-    title: "Studio Monitors vs Regular Speakers: Mixing, Mastering,",
+    title: "Studio Monitors vs Regular Speakers: Mixing & More",
     description:
       "Compare studio monitors and regular speakers to understand accuracy, coloration, and when each is appropriate.",
     category: "speakers",

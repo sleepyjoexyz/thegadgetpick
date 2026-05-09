@@ -935,7 +935,7 @@ The most common mistake: buying oversized power banks for simple vacations. A 20
   },
   {
     slug: "best-portable-power-bank-summer-festival-camping-2026",
-    title: "Best Portable Power Banks for Summer Festivals and Camping (2026)",
+    title: "Best Power Banks for Festivals & Camping 2026",
     excerpt: "Rugged, high-capacity power banks for music festivals, camping trips, and outdoor summer adventures. TSA-compliant options for flying to events.",
     publishedAt: "2026-03-16",
     updatedAt: "2026-03-16",

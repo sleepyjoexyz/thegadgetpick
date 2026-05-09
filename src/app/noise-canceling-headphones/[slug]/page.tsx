@@ -38,7 +38,7 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${article.title} | The Gadget Pick`,
+    title: article.title,
     description: article.excerpt,
     alternates: {
       canonical: `https://www.thegadgetpick.com/noise-canceling-headphones/${slug}`,

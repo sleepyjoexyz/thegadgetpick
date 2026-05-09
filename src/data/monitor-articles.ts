@@ -1347,7 +1347,7 @@ Professional calibration does not require breaking the bank. Here are the most e
   },
   "monitor-buying-guide-resolution-panels-2026": {
     slug: "monitor-buying-guide-resolution-panels-2026",
-    title: "Monitor Buying Guide 2026: Resolution, Panel Types, and",
+    title: "Monitor Buying Guide 2026: Resolution & Panels",
     description: "Complete monitor buying guide — 4K vs 1440p, IPS vs OLED vs VA, refresh rates, USB-C connectivity, monitor arms, and buying recommendations for work, creative, and gaming use.",
     category: "monitors",
     content: `## Introduction

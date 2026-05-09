@@ -929,7 +929,7 @@ All four options will serve you professionally for 5-10 years. Choose based on t
 
   "best-carry-on-luggage-for-frequent-travelers": {
     slug: "best-carry-on-luggage-for-frequent-travelers",
-    title: "Best Carry-On Luggage for Frequent Travelers: Comfort, Durability & Design",
+    title: "Best Carry-On Luggage for Frequent Travelers",
     excerpt:
       "Find the perfect carry-on luggage for frequent travel. Compare size, weight, durability, and features to match your travel style and airline requirements.",
     publishedAt: "2025-03-28",

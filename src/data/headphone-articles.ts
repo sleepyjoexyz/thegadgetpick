@@ -9,7 +9,7 @@ export interface HeadphoneArticle {
 export const headphoneArticles: Record<string, HeadphoneArticle> = {
   "open-back-vs-closed-back-headphones": {
     slug: "open-back-vs-closed-back-headphones",
-    title: "Open-Back vs Closed-Back Headphones: Soundstage,",
+    title: "Open-Back vs Closed-Back Headphones",
     description:
       "Compare open-back and closed-back headphone designs. Understand soundstage, noise isolation, and which design suits your listening needs.",
     category: "headphones",
@@ -167,7 +167,7 @@ For portable, everyday use: closed-back wins. For critical listening and soundst
   },
   "best-headphones-under-200": {
     slug: "best-headphones-under-200",
-    title: "Best Headphones Under $200: Studio Quality Without the",
+    title: "Best Headphones Under $200: Studio Quality Picks",
     description:
       "Top headphone picks under $200. Compare wireless, studio-quality, and audiophile options for music, work, and gaming.",
     category: "headphones",
@@ -326,7 +326,7 @@ Spending more than $200 on headphones is a luxury choice, not a necessity. This 
   },
   "headphone-driver-types-explained": {
     slug: "headphone-driver-types-explained",
-    title: "Headphone Driver Types Explained: Dynamic, Planar, BA,",
+    title: "Headphone Driver Types: Dynamic, Planar, BA",
     description:
       "Understand headphone driver technology. Compare dynamic, planar magnetic, balanced armature, and electrostatic drivers. Which matters for your listening?",
     category: "headphones",

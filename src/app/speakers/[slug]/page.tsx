@@ -39,7 +39,7 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${article.title} | The Gadget Pick`,
+    title: article.title,
     description: article.description,
     alternates: {
       canonical: `https://www.thegadgetpick.com/speakers/${slug}`,

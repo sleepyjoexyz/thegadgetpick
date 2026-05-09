@@ -593,7 +593,7 @@ Choose wireless or wired based on preference, ergonomics, and ecosystem compatib
 
     "best-wireless-mouse-mac-windows-2026": {
     slug: "best-wireless-mouse-mac-windows-2026",
-    title: "Best Wireless Mouse for Mac and Windows 2026: Ergonomic Picks",
+    title: "Best Wireless Mouse for Mac & Windows 2026",
     description: "Find the best cross-platform wireless mice for Mac and Windows. Compare ergonomic options, connectivity, and features for productivity and gaming in 2026.",
     category: "mice",
     content: `## Introduction
@@ -811,7 +811,7 @@ Stop tolerating a mediocre mouse. A great wireless mouse is one of the cheapest 
   },
   "logitech-mx-master-vs-apple-magic-mouse-2026": {
     slug: "logitech-mx-master-vs-apple-magic-mouse-2026",
-    title: "Logitech MX Master 3S vs Apple Magic Mouse: Ergonomics,",
+    title: "Logitech MX Master 3S vs Apple Magic Mouse",
     description: "Compare the Logitech MX Master 3S and Apple Magic Mouse for Mac users. Covers ergonomics, gesture support, battery life, multi-device switching, and workflow efficiency.",
     category: "mice",
     content: `## The Mac User's Mouse Decision

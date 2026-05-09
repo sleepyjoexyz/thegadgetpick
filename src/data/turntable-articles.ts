@@ -465,7 +465,7 @@ Most people land in the mid-range. Most vinyl enthusiasts never need the expensi
 
   "cartridge-upgrade-guide": {
     slug: "cartridge-upgrade-guide",
-    title: "When and How to Upgrade Your Turntable Cartridge:",
+    title: "When and How to Upgrade Your Turntable Cartridge",
     excerpt:
       "Learn why cartridge upgrades matter, how to choose the right cartridge, and step-by-step installation instructions.",
     publishedAt: "2025-02-15",
@@ -891,7 +891,7 @@ If budget is constraint, start under $300. If you plan regular listening and fut
 
   "vinyl-record-care-complete-guide": {
     slug: "vinyl-record-care-complete-guide",
-    title: "Vinyl Record Care: Complete Guide to Preserving Your Collection",
+    title: "Vinyl Record Care Guide: Preserve Your Collection",
     excerpt:
       "Learn how to properly care for vinyl records. Includes cleaning, storage, handling, and maintenance techniques to maximize record lifespan and sound quality.",
     publishedAt: "2025-03-28",

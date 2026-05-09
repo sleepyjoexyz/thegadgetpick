@@ -9,7 +9,7 @@ export interface PetCameraArticle {
 export const petCameraArticles: Record<string, PetCameraArticle> = {
   "pet-camera-with-treat-dispenser-guide": {
     slug: "pet-camera-with-treat-dispenser-guide",
-    title: "Pet Cameras with Treat Dispensers: Are They Worth the",
+    title: "Pet Cameras with Treat Dispensers: Worth the Cost?",
     description:
       "Understand whether interactive pet cameras with built-in treat dispensers justify the higher cost. Compare features, training tips, and when this technology actually helps your pet.",
     category: "pet-cameras",

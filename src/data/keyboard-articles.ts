@@ -475,7 +475,7 @@ Starting with hot-swappable keyboards positions you within this vibrant ecosyste
   },
   "best-mechanical-keyboard-for-programming": {
     slug: "best-mechanical-keyboard-for-programming",
-    title: "Best Mechanical Keyboard for Programming in 2026: Quiet, Comfortable, and Productive",
+    title: "Best Mechanical Keyboards for Programming 2026",
     description: "Discover the best mechanical keyboards for programming. Learn why tactile switches excel for coding, compare top picks, and find the perfect keyboard for developer productivity.",
     category: "keyboards",
     content: `## Why Mechanical Keyboards Excel for Programming
@@ -712,7 +712,7 @@ Quiet mechanical keyboards are no longer a luxury—they're a professional neces
   },
   "how-to-choose-first-mechanical-keyboard": {
     slug: "how-to-choose-first-mechanical-keyboard",
-    title: "How to Choose Your First Mechanical Keyboard: A",
+    title: "How to Choose Your First Mechanical Keyboard",
     description: "Learn how to select your first mechanical keyboard by understanding switch types, layouts, materials, and budgets. A complete guide for beginners.",
     category: "Keyboards",
     content: `## Understanding Switch Types
@@ -983,7 +983,7 @@ Stop hiding your love of mechanical keyboards. Upgrade to silent switches, and y
   },
   "mechanical-keyboard-buying-guide-switches-layouts-2026": {
     slug: "mechanical-keyboard-buying-guide-switches-layouts-2026",
-    title: "Mechanical Keyboard Buying Guide 2026: Switches, Layouts,",
+    title: "Mechanical Keyboard Buying Guide 2026: Switches & Layouts",
     description: "Complete guide to mechanical keyboards — switch types explained (linear, tactile, clicky), hot-swap vs soldered, layouts (full, TKL, 75%, 65%), keycaps, and recommendations for typing, programming, and gaming.",
     category: "keyboards",
     content: `## Introduction
