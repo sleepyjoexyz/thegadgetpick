@@ -28,7 +28,7 @@ export const webcams: Webcam[] = [
     model: "C920x HD Pro",
     price: 59,
     rating: 4.5,
-    amazonAsin: null,
+    amazonAsin: "B085TFF7M1",
     imageUrl: "https://placeholder-webcams.com/logitech-c920x-hd-pro.jpg",
     summary:
       "Reliable 1080p webcam with autofocus and built-in microphone. Industry standard for online meetings and streaming with proven durability.",

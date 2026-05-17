@@ -27,7 +27,7 @@ export const microphones: Microphone[] = [
     model: "Yeti",
     price: 129,
     rating: 4.6,
-    amazonAsin: null,
+    amazonAsin: "B00N1YPXW2",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/41sMZFLpTKL.jpg",
     summary:
       "Industry-standard USB condenser microphone with four polar patterns. Perfect for streaming, podcasting, and recording. Built-in tap-to-mute and headphone jack with volume control.",
@@ -49,7 +49,7 @@ export const microphones: Microphone[] = [
     model: "SM7B",
     price: 399,
     rating: 4.8,
-    amazonAsin: null,
+    amazonAsin: "B0002E4Z8M",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/51r3Z5VpF6L.jpg",
     summary:
       "Professional-grade dynamic microphone with exceptional isolation and presence peak. Industry standard for podcasting, voiceovers, and broadcast. Requires XLR connection and preamp.",
@@ -71,7 +71,7 @@ export const microphones: Microphone[] = [
     model: "AT2020",
     price: 99,
     rating: 4.7,
-    amazonAsin: null,
+    amazonAsin: "B0006H92QK",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/51xw3Vox5HL.jpg",
     summary:
       "Legendary condenser microphone for studio recording and voiceovers. Cardioid pattern with minimal off-axis coloration. Requires XLR and preamp but offers exceptional audio quality.",

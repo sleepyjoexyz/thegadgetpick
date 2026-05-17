@@ -27,7 +27,7 @@ export const mice: Mouse[] = [
     model: "MX Master 3S",
     price: 99,
     rating: 4.7,
-    amazonAsin: null,
+    amazonAsin: "B0B11LJ69K",
     imageUrl: "https://placeholder-mice.com/logitech-mx-master-3s.jpg",
     summary:
       "Premium productivity mouse with advanced gesture controls, multi-device switching, and exceptional comfort for all-day work.",
@@ -49,7 +49,7 @@ export const mice: Mouse[] = [
     model: "DeathAdder V3 Pro",
     price: 149,
     rating: 4.7,
-    amazonAsin: null,
+    amazonAsin: "B0B6XZLNHQ",
     imageUrl: "https://placeholder-mice.com/razer-deathadder-v3-pro.jpg",
     summary:
       "Competitive gaming mouse with lightning-fast Focus Pro 30K sensor, ergonomic design, and premium build quality.",
@@ -71,7 +71,7 @@ export const mice: Mouse[] = [
     model: "G PRO X Superlight 2",
     price: 159,
     rating: 4.7,
-    amazonAsin: null,
+    amazonAsin: "B09NBWQDKX",
     imageUrl: "https://placeholder-mice.com/logitech-g-pro-x-superlight-2.jpg",
     summary:
       "Ultra-lightweight esports mouse trusted by professional players worldwide. Feather-light at 63g with elite sensor technology.",

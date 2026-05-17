@@ -51,7 +51,7 @@ export const powerBanks: PowerBank[] = [
     model: "737 PowerCore 24K",
     price: 89,
     rating: 4.6,
-    amazonAsin: null,
+    amazonAsin: "B09VPHVT2Z",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/placeholder.jpg",
     summary:
       "24000mAh capacity with 140W output. Three USB ports with simultaneous charging support. Fast charging for phones, tablets, and small laptops. Compact and durable design.",

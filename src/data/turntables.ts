@@ -27,7 +27,7 @@ export const turntables: Turntable[] = [
     model: "AT-LP120XUSB",
     price: 249,
     rating: 4.7,
-    amazonAsin: null,
+    amazonAsin: "B09XM7MTB3",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/placeholder.jpg",
     summary:
       "Professional direct-drive turntable with USB output and built-in preamp. Three-speed platter with excellent speed stability for critical listening and recording.",

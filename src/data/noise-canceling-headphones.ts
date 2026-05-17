@@ -30,7 +30,7 @@ export const ncHeadphones: NCHeadphone[] = [
     model: "WH-1000XM5",
     price: 399,
     rating: 4.7,
-    amazonAsin: null,
+    amazonAsin: "B09XS7JWHH",
     imageUrl: "https://via.placeholder.com/300x300?text=Sony+WH-1000XM5",
     summary:
       "Industry-leading noise cancellation with 30-hour battery life. LDAC codec supports Hi-Res audio. Lightweight design and Multipoint connection for seamless switching between devices.",
@@ -55,7 +55,7 @@ export const ncHeadphones: NCHeadphone[] = [
     model: "QuietComfort Ultra",
     price: 429,
     rating: 4.6,
-    amazonAsin: null,
+    amazonAsin: "B0CCZ1L489",
     imageUrl: "https://via.placeholder.com/300x300?text=Bose+QC+Ultra",
     summary:
       "Bose's flagship with industry-best noise cancellation and warm, balanced sound. CustomTune technology personalizes audio. Premium build and excellent call quality.",

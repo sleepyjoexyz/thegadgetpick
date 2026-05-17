@@ -51,7 +51,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "Universal Travel Adapter",
     price: 22,
     rating: 4.6,
-    amazonAsin: null,
+    amazonAsin: "B078S3M2NX",
     imageUrl: "/images/travel-adapters/epicka-universal-adapter.jpg",
     summary:
       "Universal adapter with 4 USB-A + 1 USB-C ports. Works in 150 countries with compact design.",
@@ -74,7 +74,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "Universal Travel Adapter",
     price: 19,
     rating: 4.5,
-    amazonAsin: null,
+    amazonAsin: "B0DHQLZV2W",
     imageUrl: "/images/travel-adapters/tessan-universal-adapter.jpg",
     summary:
       "Budget universal adapter with 3 USB-A + 1 USB-C. Perfect for multiple devices in any country.",
