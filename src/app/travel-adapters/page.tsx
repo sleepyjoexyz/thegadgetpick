@@ -10,10 +10,7 @@ import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import CategoryArticleGuides from "@/components/CategoryArticleGuides";
 
-import { getPriceTier } from "@/lib/utils";
-function formatPrice(price: number): string {
-  return `$${price.toFixed(0)}`;
-}
+import { formatPrice } from "@/lib/utils";
 
 export default function TravelAdaptersContent() {
   const [adapterType, setAdapterType] = useState<string>("all");
@@ -402,7 +399,7 @@ export default function TravelAdaptersContent() {
                     {product.ganTech ? "✓" : "—"}
                   </td>
                   <td className="border border-gray-300 px-4 py-3 text-right font-medium">
-                    {getPriceTier(product.price)}
+                    {formatPrice(product.price)}
                   </td>
                   <td className="border border-gray-300 px-4 py-3 text-right">
                     {product.rating}★
@@ -528,7 +525,7 @@ export default function TravelAdaptersContent() {
                 <p className="text-sm text-gray-600 mt-1">{product.summary}</p>
                 <div className="flex justify-between items-center mt-4">
                   <span className="text-lg font-bold text-gray-700">
-                    {getPriceTier(product.price)}
+                    {formatPrice(product.price)}
                   </span>
                   <span className="text-sm font-semibold text-yellow-500">
                     ★ {product.rating.toFixed(1)}

@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { speakers, Speaker } from "@/data/speakers";
 import { speakerArticles } from "@/data/speaker-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
-import { getAmazonLink, formatRating, getPriceTier } from "@/lib/utils";
+import { getAmazonLink, formatRating, formatPrice } from "@/lib/utils";
 import Link from "next/link";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
@@ -356,7 +356,7 @@ export default function SpeakersContent() {
                       </span>
                     </td>
                     <td className="border border-gray-300 px-4 py-3 text-right text-gray-900 font-medium">
-                      {getPriceTier(speaker.price)}
+                      {formatPrice(speaker.price)}
                     </td>
                     <td className="border border-gray-300 px-4 py-3 text-center text-gray-700">
                       <div className="text-yellow-500 font-bold">
@@ -457,7 +457,7 @@ export default function SpeakersContent() {
                       <div className="flex justify-between">
                         <span>Price:</span>
                         <span className="font-bold text-gray-900">
-                          {getPriceTier(speaker.price)}
+                          {formatPrice(speaker.price)}
                         </span>
                       </div>
                       <div className="flex justify-between">
