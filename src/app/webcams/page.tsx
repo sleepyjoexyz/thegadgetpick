@@ -6,7 +6,7 @@ import { webcams } from "@/data/webcams";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { webcamArticles } from "@/data/webcam-articles";
 import Link from "next/link";
-import { formatPrice } from "@/lib/utils";
+import { getPriceTier } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import CategoryArticleGuides from "@/components/CategoryArticleGuides";
@@ -402,7 +402,7 @@ export default function WebcamsContent() {
                     )}
                   </td>
                   <td className="px-6 py-4 text-sm font-semibold text-gray-900">
-                    {formatPrice(webcam.price)}
+                    {getPriceTier(webcam.price)}
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-900">
                     <span className="inline-flex items-center gap-1">

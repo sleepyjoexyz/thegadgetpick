@@ -6,7 +6,7 @@ import { powerBanks } from "@/data/power-banks";
 import { powerBankArticles } from "@/data/power-bank-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
-import { formatPrice } from "@/lib/utils";
+import { getPriceTier } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import CategoryArticleGuides from "@/components/CategoryArticleGuides";
@@ -475,7 +475,7 @@ export default function PowerBanksContent() {
                       {product.airlineApproved ? "✓ Yes" : "No"}
                     </td>
                     <td className="px-6 py-4 text-sm font-semibold text-gray-900">
-                      {formatPrice(product.price)}
+                      {getPriceTier(product.price)}
                     </td>
                     <td className="px-6 py-4 text-sm text-gray-600">
                       ★ {product.rating}

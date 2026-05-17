@@ -7,7 +7,7 @@ import { Luggage } from "@/data/luggage";
 import { luggageArticles } from "@/data/luggage-articles";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import Link from "next/link";
-import { formatPrice } from "@/lib/utils";
+import { getPriceTier } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import CategoryArticleGuides from "@/components/CategoryArticleGuides";
@@ -399,7 +399,7 @@ export default function LuggageContent() {
                     {product.tsa_lock ? "✓" : "—"}
                   </td>
                   <td className="border border-gray-300 px-4 py-2 text-right font-bold">
-                    {formatPrice(product.price)}
+                    {getPriceTier(product.price)}
                   </td>
                   <td className="border border-gray-300 px-4 py-2 text-right font-bold">
                     {product.rating.toFixed(1)}

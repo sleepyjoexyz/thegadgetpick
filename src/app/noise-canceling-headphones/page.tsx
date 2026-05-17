@@ -6,7 +6,7 @@ import { ncHeadphones } from "@/data/noise-canceling-headphones";
 import ProductFinder, { FinderStep, FinderResultConfig } from "@/components/ProductFinder";
 import { ncHeadphoneArticles } from "@/data/nc-headphone-articles";
 import Link from "next/link";
-import { formatPrice } from "@/lib/utils";
+import { getPriceTier } from "@/lib/utils";
 import { ProductListSchema, BreadcrumbSchema } from "@/components/JsonLd";
 import DealsBanner from '@/components/DealsBanner';
 import CategoryArticleGuides from "@/components/CategoryArticleGuides";
@@ -414,7 +414,7 @@ export default function NoiseCancelingHeadphonesContent() {
                       {product.codec}
                     </td>
                     <td className="border border-gray-300 px-4 py-3 text-right font-semibold">
-                      {formatPrice(product.price)}
+                      {getPriceTier(product.price)}
                     </td>
                     <td className="border border-gray-300 px-4 py-3 text-center">
                       <span className="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded font-semibold">
