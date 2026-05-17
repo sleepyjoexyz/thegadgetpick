@@ -4,11 +4,13 @@ export interface HeadphoneArticle {
   description: string;
   content: string;
   category: string;
+  related?: string[];
 }
 
 export const headphoneArticles: Record<string, HeadphoneArticle> = {
   "open-back-vs-closed-back-headphones": {
     slug: "open-back-vs-closed-back-headphones",
+    related: ["complete-guide-headphones-types-features-2026", "sony-wh1000xm5-vs-bose-qc-ultra-2026", "headphone-driver-types-explained", "best-headphones-under-200"],
     title: "Open-Back vs Closed-Back Headphones",
     description:
       "Compare open-back and closed-back headphone designs. Understand soundstage, noise isolation, and which design suits your listening needs.",
@@ -326,6 +328,7 @@ Spending more than $200 on headphones is a luxury choice, not a necessity. This 
   },
   "headphone-driver-types-explained": {
     slug: "headphone-driver-types-explained",
+    related: ["complete-guide-headphones-types-features-2026", "sony-wh1000xm5-vs-bose-qc-ultra-2026", "open-back-vs-closed-back-headphones", "wireless-vs-wired-headphones-sound-quality"],
     title: "Headphone Driver Types: Dynamic, Planar, BA",
     description:
       "Understand headphone driver technology. Compare dynamic, planar magnetic, balanced armature, and electrostatic drivers. Which matters for your listening?",
@@ -562,6 +565,7 @@ Understand the physics. Listen to multiple types. Buy the driver type that match
   },
   "wireless-vs-wired-headphones-sound-quality": {
     slug: "wireless-vs-wired-headphones-sound-quality",
+    related: ["sony-wh1000xm5-vs-bose-qc-ultra-2026", "complete-guide-headphones-types-features-2026", "open-back-vs-closed-back-headphones", "best-headphones-under-200"],
     title: "Wireless vs Wired Headphones: The Sound Quality Truth",
     description:
       "Do wireless headphones compromise sound quality? Analyze the technical differences, codec compression, and whether wired still wins for audio fidelity.",

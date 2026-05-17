@@ -3,6 +3,7 @@ export interface TurntableArticle {
   title: string;
   excerpt: string;
   content: string;
+  related?: string[];
   publishedAt: string;
   updatedAt: string;
   author: string;
@@ -12,6 +13,7 @@ export interface TurntableArticle {
 export const turntableArticles: Record<string, TurntableArticle> = {
   "belt-drive-vs-direct-drive": {
     slug: "belt-drive-vs-direct-drive",
+    related: ["best-budget-turntables-under-300", "vinyl-record-care-complete-guide", "vinyl-setup-guide", "cartridge-upgrade-guide"],
     title: "Belt-Drive vs Direct-Drive Turntables: Performance, Sound",
     excerpt:
       "Understanding the fundamental differences between belt-drive and direct-drive turntables. Which motor design is right for your listening needs?",
@@ -250,6 +252,7 @@ All of these turntables will deliver satisfying vinyl playback for years. The be
 
   "vinyl-setup-guide": {
     slug: "vinyl-setup-guide",
+    related: ["vinyl-record-care-complete-guide", "best-budget-turntables-under-300", "belt-drive-vs-direct-drive", "cartridge-upgrade-guide"],
     title: "Complete Vinyl Setup Guide for Beginners: From Turntable",
     excerpt:
       "Everything you need to know to set up your first vinyl system. Turntable selection, cartridge basics, speakers, and proper vinyl care.",
@@ -465,6 +468,7 @@ Most people land in the mid-range. Most vinyl enthusiasts never need the expensi
 
   "cartridge-upgrade-guide": {
     slug: "cartridge-upgrade-guide",
+    related: ["vinyl-record-care-complete-guide", "best-budget-turntables-under-300", "belt-drive-vs-direct-drive", "vinyl-setup-guide"],
     title: "When and How to Upgrade Your Turntable Cartridge",
     excerpt:
       "Learn why cartridge upgrades matter, how to choose the right cartridge, and step-by-step installation instructions.",

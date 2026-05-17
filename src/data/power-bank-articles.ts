@@ -3,6 +3,7 @@ export interface PowerBankArticle {
   title: string;
   excerpt: string;
   content: string;
+  related?: string[];
   publishedAt: string;
   updatedAt: string;
   author: string;
@@ -280,6 +281,7 @@ USB Power Delivery at 30W+ is the standard you need. For laptops, look for 100W+
   },
   {
     slug: "airline-rules",
+    related: ["best-portable-power-bank-summer-festival-camping-2026", "best-power-banks-for-travel-summer-2026", "capacity-guide", "fast-charging-explained"],
     title: "Power Banks on Planes: TSA Rules and Airline Limits",
     excerpt: "Navigate TSA restrictions and airline policies for power banks. Learn which capacities are allowed in carry-on, and which banks get flagged at security.",
     publishedAt: "2024-02-20",
@@ -694,6 +696,7 @@ Always verify your laptop's power requirements before purchasing. A 45W power ba
   },
   {
     slug: "best-power-banks-for-travel-summer-2026",
+    related: ["best-portable-power-bank-summer-festival-camping-2026", "airline-rules", "capacity-guide", "best-for-laptops"],
     title: "Best Power Banks for Travel Summer 2026: TSA Approved",
     excerpt:
       "Find TSA-compliant power banks perfect for summer travel. Learn about watt-hour limits, airline rules, fast charging, and capacity recommendations for phones.",

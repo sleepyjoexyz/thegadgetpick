@@ -3,6 +3,7 @@ export interface Article {
   title: string;
   description: string;
   content: string;
+  related?: string[];
   category: string;
 }
 
@@ -257,6 +258,7 @@ No matter your choice, every speaker on this list represents genuine value. You'
 
   "bluetooth-vs-wifi-speakers": {
     slug: "bluetooth-vs-wifi-speakers",
+    related: ["best-bluetooth-speaker-pool-beach-waterproof-2026", "best-outdoor-bluetooth-speakers-summer-2026", "bookshelf-vs-portable-speakers", "studio-monitors-vs-regular-speakers"],
     title: "Bluetooth vs WiFi Speakers: Latency & Quality",
     description:
       "Compare Bluetooth and WiFi speakers to understand latency, audio quality, and multi-room capabilities.",
@@ -601,6 +603,7 @@ If you produce audio professionally or seriously, investing in studio monitors i
   },
   "best-outdoor-bluetooth-speakers-summer-2026": {
     slug: "best-outdoor-bluetooth-speakers-summer-2026",
+    related: ["best-bluetooth-speaker-pool-beach-waterproof-2026", "bluetooth-vs-wifi-speakers", "bookshelf-vs-portable-speakers", "best-speakers-under-300"],
     title: "Best Outdoor Bluetooth Speakers for Summer 2026",
     description:
       "Find the best outdoor Bluetooth speakers for summer 2026. Learn about IP ratings, battery life, party mode pairing, and rugged designs for backyard.",

@@ -3,6 +3,7 @@ export interface MicrophoneArticle {
   title: string;
   excerpt: string;
   content: string;
+  related?: string[];
   publishedAt: string;
   updatedAt: string;
   author: string;
@@ -12,6 +13,7 @@ export interface MicrophoneArticle {
 export const microphoneArticles: Record<string, MicrophoneArticle> = {
   "usb-vs-xlr": {
     slug: "usb-vs-xlr",
+    related: ["best-microphones-for-streaming", "how-to-record-podcast-at-home", "best-for-podcasting", "condenser-vs-dynamic"],
     title: "USB vs XLR Microphones: Which Setup Is Right for You?",
     excerpt:
       "Understand the difference between USB and XLR microphone connections, when to use each, and how to choose the right setup for your recording needs.",
@@ -156,6 +158,7 @@ Many successful podcasters use USB microphones. Many others use professional XLR
   },
   "best-for-podcasting": {
     slug: "best-for-podcasting",
+    related: ["how-to-record-podcast-at-home", "best-microphones-for-streaming", "usb-vs-xlr", "condenser-vs-dynamic"],
     title: "Best Microphones for Podcasting in 2025",
     excerpt:
       "Discover the top microphones for podcasting, from budget USB options to professional broadcast-quality equipment. Compare features and find your perfect match.",
@@ -336,6 +339,7 @@ The best podcast microphone is the one you'll consistently use. Start simple, re
   },
   "condenser-vs-dynamic": {
     slug: "condenser-vs-dynamic",
+    related: ["how-to-record-podcast-at-home", "best-microphones-for-streaming", "usb-vs-xlr", "room-treatment-tips"],
     title: "Condenser vs Dynamic Microphones Explained",
     excerpt:
       "Understand the key differences between condenser and dynamic microphones, their strengths, limitations, and which type suits your recording needs.",

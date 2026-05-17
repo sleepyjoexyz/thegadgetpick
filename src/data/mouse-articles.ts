@@ -4,11 +4,13 @@ export interface MouseArticle {
   description: string;
   content: string;
   category: string;
+  related?: string[];
 }
 
 export const mouseArticles: Record<string, MouseArticle> = {
   "gaming-vs-productivity": {
     slug: "gaming-vs-productivity",
+    related: ["logitech-mx-master-vs-apple-magic-mouse-2026", "best-ergonomic-mouse-wrist-pain-2026", "best-wireless-mouse-mac-windows-2026", "dpi-sensitivity-guide"],
     title: "Gaming Mice vs Productivity Mice: What's the Difference?",
     description:
       "Understand the fundamental differences between gaming and productivity mice. Learn how design, sensors, and ergonomics diverge based on use case.",
@@ -123,6 +125,7 @@ The fundamental truth: productivity mice make terrible gaming mice, and gaming m
   },
   "best-ergonomic-mice": {
     slug: "best-ergonomic-mice",
+    related: ["best-ergonomic-mouse-wrist-pain-2026", "logitech-mx-master-vs-apple-magic-mouse-2026", "gaming-vs-productivity", "wireless-latency-myth"],
     title: "Best Ergonomic Mice for Long Work Days",
     description:
       "Find the perfect ergonomic mouse to reduce wrist strain and RSI. Compare vertical, trackball, and contoured designs for all-day comfort.",
@@ -593,6 +596,7 @@ Choose wireless or wired based on preference, ergonomics, and ecosystem compatib
 
     "best-wireless-mouse-mac-windows-2026": {
     slug: "best-wireless-mouse-mac-windows-2026",
+    related: ["logitech-mx-master-vs-apple-magic-mouse-2026", "gaming-vs-productivity", "best-ergonomic-mice", "dpi-sensitivity-guide"],
     title: "Best Wireless Mouse for Mac & Windows 2026",
     description: "Find the best cross-platform wireless mice for Mac and Windows. Compare ergonomic options, connectivity, and features for productivity and gaming in 2026.",
     category: "mice",

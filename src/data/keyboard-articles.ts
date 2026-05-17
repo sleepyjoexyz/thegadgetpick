@@ -4,11 +4,13 @@ export interface KeyboardArticle {
   description: string;
   content: string;
   category: string;
+  related?: string[];
 }
 
 export const keyboardArticles: Record<string, KeyboardArticle> = {
   "mechanical-vs-membrane": {
     slug: "mechanical-vs-membrane",
+    related: ["best-mechanical-keyboard-programming", "how-to-choose-first-mechanical-keyboard", "mechanical-keyboard-buying-guide-switches-layouts-2026", "switch-types-explained"],
     title: "Mechanical vs Membrane Keyboards: What's the Difference?",
     description:
       "Compare mechanical and membrane keyboards. Understand switch technology, typing feel, durability, and which is best for gaming, programming, and typing.",
@@ -110,6 +112,7 @@ For most people serious about keyboards, mechanical keyboards deliver superior v
   },
   "best-for-programming": {
     slug: "best-for-programming",
+    related: ["best-mechanical-keyboard-programming", "mechanical-keyboard-too-loud-office", "switch-types-explained", "hot-swappable-guide"],
     title: "Best Keyboards for Programming in 2025",
     description:
       "Find the ideal keyboard for programming. Compare mechanical switches, layouts, ergonomics, and features that boost coding productivity and comfort.",
@@ -186,6 +189,7 @@ Your fingers are your primary programming tool. Invest in supporting them with a
   },
   "switch-types-explained": {
     slug: "switch-types-explained",
+    related: ["how-to-choose-first-mechanical-keyboard", "mechanical-keyboard-too-loud-office", "mechanical-keyboard-buying-guide-switches-layouts-2026", "mechanical-vs-membrane"],
     title: "Keyboard Switch Types Explained: Linear, Tactile & Clicky",
     description:
       "Learn the differences between mechanical keyboard switch types. Understand linear vs tactile vs clicky and find the perfect switch for your needs.",
@@ -334,6 +338,7 @@ The perfect switch exists somewhere in the linear-tactile-clicky spectrum. Findi
   },
   "hot-swappable-guide": {
     slug: "hot-swappable-guide",
+    related: ["mechanical-keyboard-buying-guide-switches-layouts-2026", "best-quiet-mechanical-keyboard-office-2026", "switch-types-explained", "mechanical-vs-membrane"],
     title: "Hot-Swappable Keyboards: A Beginner's Guide",
     description:
       "Learn what hot-swappable keyboards are, how they work, and why they matter. Complete guide for keyboard customization beginners.",
@@ -475,6 +480,7 @@ Starting with hot-swappable keyboards positions you within this vibrant ecosyste
   },
   "best-mechanical-keyboard-for-programming": {
     slug: "best-mechanical-keyboard-for-programming",
+    related: ["best-quiet-mechanical-keyboard-office-2026", "best-mechanical-keyboard-programming", "mechanical-keyboard-too-loud-office", "how-to-choose-first-mechanical-keyboard"],
     title: "Best Mechanical Keyboards for Programming 2026",
     description: "Discover the best mechanical keyboards for programming. Learn why tactile switches excel for coding, compare top picks, and find the perfect keyboard for.",
     category: "keyboards",

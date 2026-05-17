@@ -4,11 +4,13 @@ export interface MonitorArticle {
   description: string;
   content: string;
   category: string;
+  related?: string[];
 }
 
 export const monitorArticles: Record<string, MonitorArticle> = {
   "ips-vs-va-vs-oled-monitors": {
     slug: "ips-vs-va-vs-oled-monitors",
+    related: ["best-usb-c-monitor-macbook-under-500", "monitor-buying-guide-resolution-panels-2026", "best-monitor-for-macbook-usb-c-2026", "ultrawide-vs-dual-monitor-setup"],
     title: "IPS vs VA vs OLED: Best Monitor Panel Technology",
     description:
       "Compare IPS, VA, and OLED monitor panels. Understand color accuracy, contrast, gaming performance. Choose the best technology for your needs.",
@@ -157,6 +159,7 @@ IPS dominates for professionals and office work because color consistency matter
 
   "best-monitors-for-programming": {
     slug: "best-monitors-for-programming",
+    related: ["best-usb-c-monitor-macbook-under-500", "how-to-calibrate-monitor-for-accurate-colors", "ips-vs-va-vs-oled-monitors", "monitor-refresh-rate-guide"],
     title: "Best Monitors for Programming: 2026 Guide",
     description:
       "Top monitors for coding and development. See resolution, size, font clarity recommendations. Find your ideal coding setup.",
@@ -373,6 +376,7 @@ The best monitor for programming is a 27" IPS @ 1440p or a 34" IPS ultrawide @ 3
 
   "ultrawide-vs-dual-monitor-setup": {
     slug: "ultrawide-vs-dual-monitor-setup",
+    related: ["how-to-calibrate-monitor-for-accurate-colors", "best-monitor-for-macbook-usb-c-2026", "ips-vs-va-vs-oled-monitors", "best-monitors-for-programming"],
     title: "Ultrawide vs Dual Monitors: Productivity Comparison",
     description:
       "Ultrawide or dual monitors? Compare productivity, cost, setup complexity. See which configuration works best for you.",
@@ -608,6 +612,7 @@ For most knowledge workers, a single large monitor (27-32") is sufficient, and t
 
   "monitor-refresh-rate-guide": {
     slug: "monitor-refresh-rate-guide",
+    related: ["monitor-buying-guide-resolution-panels-2026", "samsung-m8-vs-lg-27-usb-c-monitor-2026", "ips-vs-va-vs-oled-monitors", "best-monitors-for-programming"],
     title: "Monitor Refresh Rate Guide: 60Hz vs 144Hz vs 240Hz - What",
     description:
       "Complete guide to monitor refresh rates. Learn the difference between 60Hz, 144Hz, and 240Hz, and whether the upgrade is worth the cost for gaming, work, and.",
@@ -826,6 +831,7 @@ For most people, **144Hz is the right answer.** It's the point where everyday mo
 Prioritize your use case over blind spec-chasing: a 60Hz 4K monitor is better than a 240Hz 1080p if you're not gaming. A 144Hz 1440p is better than a 240Hz 1080p for everything except esports.`,
   },
   "best-usb-c-monitor-for-macbook-pro": { slug: "best-usb-c-monitor-for-macbook-pro", title: "Best USB-C Monitor for MacBook Pro Under $500 in 2026", description: "Find the best USB-C monitor for MacBook Pro under $500. We compare resolution, color accuracy, power delivery, and macOS compatibility.", category: "monitors", content: `## Why USB-C Matters for Mac Users
+    related: ["samsung-m8-vs-lg-27-usb-c-monitor-2026", "best-monitor-for-macbook-usb-c-2026", "ips-vs-va-vs-oled-monitors", "monitor-refresh-rate-guide"],
 
 MacBook Pro users have a unique advantage: USB-C (Thunderbolt) lets you connect a monitor with a single cable that carries video, audio, data, and power simultaneously. No dongles, no adapters, no separate charger. Plug in one cable and your MacBook gets a big screen plus charging.
 

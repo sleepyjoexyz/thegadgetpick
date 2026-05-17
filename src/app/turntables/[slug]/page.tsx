@@ -120,9 +120,7 @@ export default async function ArticlePage({ params }: PageProps) {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {getTurntableArticleSlugs()
-            .filter((s) => s !== slug)
-            .slice(0, 4)
+          {(article.related ?? getTurntableArticleSlugs().filter((s) => s !== slug).slice(0, 4))
             .map((relatedSlug) => {
               const related = getTurntableArticle(relatedSlug);
               if (!related) return null;
