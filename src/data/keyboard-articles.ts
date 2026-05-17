@@ -476,7 +476,7 @@ Starting with hot-swappable keyboards positions you within this vibrant ecosyste
   "best-mechanical-keyboard-for-programming": {
     slug: "best-mechanical-keyboard-for-programming",
     title: "Best Mechanical Keyboards for Programming 2026",
-    description: "Discover the best mechanical keyboards for programming. Learn why tactile switches excel for coding, compare top picks, and find the perfect keyboard for developer productivity.",
+    description: "Discover the best mechanical keyboards for programming. Learn why tactile switches excel for coding, compare top picks, and find the perfect keyboard for.",
     category: "keyboards",
     content: `## Why Mechanical Keyboards Excel for Programming
 
@@ -532,7 +532,7 @@ Not essential unless you want to experiment with different switch types.`,
   },  "best-mechanical-keyboard-programming": {
     slug: "best-mechanical-keyboard-programming",
     title: "Best Mechanical Keyboard for Programming (Quiet Switches)",
-    description: "Discover the quietest mechanical keyboards perfect for programming work. Our guide compares silent switches, ergonomics, and typing feel for focused coding sessions.",
+    description: "Discover the quietest mechanical keyboards perfect for programming work. Our guide compares silent switches, ergonomics, and typing feel for focused coding.",
     category: "keyboards",
     content: `## Best Mechanical Keyboard for Programming (Quiet Switches)
 
@@ -785,7 +785,7 @@ Only if your keyboard is hot-swappable. If soldered, you need a soldering iron. 
     slug: "mechanical-keyboard-too-loud-office",
     title: "Mechanical Keyboard Too Loud for the Office — Quietest",
     description:
-      "Silence your mechanical keyboard for office use. Discover the quietest switches, sound dampening solutions, and recommended quiet boards that don't sacrifice the typing feel.",
+      "Silence your mechanical keyboard for office use. Discover the quietest switches, sound dampening solutions, and recommended quiet boards that don't sacrifice.",
     category: "keyboards",
     content: `## The Problem: Why Mechanical Keyboards Are Loud
 
@@ -984,7 +984,7 @@ Stop hiding your love of mechanical keyboards. Upgrade to silent switches, and y
   "mechanical-keyboard-buying-guide-switches-layouts-2026": {
     slug: "mechanical-keyboard-buying-guide-switches-layouts-2026",
     title: "Mechanical Keyboard Buying Guide 2026: Switches & Layouts",
-    description: "Complete guide to mechanical keyboards — switch types explained (linear, tactile, clicky), hot-swap vs soldered, layouts (full, TKL, 75%, 65%), keycaps, and recommendations for typing, programming, and gaming.",
+    description: "Complete guide to mechanical keyboards — switch types explained (linear, tactile, clicky), hot-swap vs soldered, layouts (full, TKL, 75%, 65%), keycaps, and.",
     category: "keyboards",
     content: `## Introduction
 

@@ -696,7 +696,7 @@ Always verify your laptop's power requirements before purchasing. A 45W power ba
     slug: "best-power-banks-for-travel-summer-2026",
     title: "Best Power Banks for Travel Summer 2026: TSA Approved",
     excerpt:
-      "Find TSA-compliant power banks perfect for summer travel. Learn about watt-hour limits, airline rules, fast charging, and capacity recommendations for phones and laptops.",
+      "Find TSA-compliant power banks perfect for summer travel. Learn about watt-hour limits, airline rules, fast charging, and capacity recommendations for phones.",
     publishedAt: "2026-03-15",
     updatedAt: "2026-03-15",
     author: "TheGadgetPick",

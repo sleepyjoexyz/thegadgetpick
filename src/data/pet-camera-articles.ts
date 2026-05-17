@@ -11,7 +11,7 @@ export const petCameraArticles: Record<string, PetCameraArticle> = {
     slug: "pet-camera-with-treat-dispenser-guide",
     title: "Pet Cameras with Treat Dispensers: Worth the Cost?",
     description:
-      "Understand whether interactive pet cameras with built-in treat dispensers justify the higher cost. Compare features, training tips, and when this technology actually helps your pet.",
+      "Understand whether interactive pet cameras with built-in treat dispensers justify the higher cost. Compare features, training tips, and when this technology.",
     category: "pet-cameras",
     content: `## Introduction
 
@@ -213,7 +213,7 @@ Start with a basic camera to establish a baseline. If your pet does fine, save t
     slug: "best-pet-cameras-under-100",
     title: "Best Pet Cameras Under $100: Budget Picks That Don't",
     description:
-      "Find excellent pet cameras for under $100. Compare resolution, night vision, two-way audio, and app features. Don't pay premium prices when budget models deliver the essentials.",
+      "Find excellent pet cameras for under $100. Compare resolution, night vision, two-way audio, and app features. Don't pay premium prices when budget models.",
     category: "pet-cameras",
     content: `## Introduction
 
@@ -522,7 +522,7 @@ Start with a budget model. If you love it and want more features, upgrade later.
     slug: "pet-camera-vs-security-camera",
     title: "Pet Camera vs Security Camera: What's Actually Different?",
     description:
-      "Pet cameras and security cameras look similar but serve different purposes. Understand the key differences in features, reliability, and design that make each suited for its job.",
+      "Pet cameras and security cameras look similar but serve different purposes. Understand the key differences in features, reliability, and design that make each.",
     category: "pet-cameras",
     content: `## Introduction
 
@@ -761,7 +761,7 @@ For most pet owners working full time, a single pet camera ($50-100) is all you 
     slug: "pet-separation-anxiety-monitoring",
     title: "Using Pet Cameras to Monitor Separation Anxiety: What You",
     description:
-      "Understand how to use pet cameras to identify separation anxiety, what signs to look for in video footage, and how camera data can help your vet or trainer develop a treatment plan.",
+      "Understand how to use pet cameras to identify separation anxiety, what signs to look for in video footage, and how camera data can help your vet or trainer.",
     category: "pet-cameras",
     content: `## Introduction
 

@@ -610,7 +610,7 @@ For most knowledge workers, a single large monitor (27-32") is sufficient, and t
     slug: "monitor-refresh-rate-guide",
     title: "Monitor Refresh Rate Guide: 60Hz vs 144Hz vs 240Hz - What",
     description:
-      "Complete guide to monitor refresh rates. Learn the difference between 60Hz, 144Hz, and 240Hz, and whether the upgrade is worth the cost for gaming, work, and everyday use.",
+      "Complete guide to monitor refresh rates. Learn the difference between 60Hz, 144Hz, and 240Hz, and whether the upgrade is worth the cost for gaming, work, and.",
     category: "monitors",
     content: `## Introduction
 
@@ -1348,7 +1348,7 @@ Professional calibration does not require breaking the bank. Here are the most e
   "monitor-buying-guide-resolution-panels-2026": {
     slug: "monitor-buying-guide-resolution-panels-2026",
     title: "Monitor Buying Guide 2026: Resolution & Panels",
-    description: "Complete monitor buying guide — 4K vs 1440p, IPS vs OLED vs VA, refresh rates, USB-C connectivity, monitor arms, and buying recommendations for work, creative, and gaming use.",
+    description: "Complete monitor buying guide — 4K vs 1440p, IPS vs OLED vs VA, refresh rates, USB-C connectivity, monitor arms, and buying recommendations for work, creative.",
     category: "monitors",
     content: `## Introduction
 
@@ -1467,7 +1467,7 @@ For most people in 2026, a **27" 4K IPS monitor with USB-C** ($300–$500) is th
   "samsung-m8-vs-lg-27-usb-c-monitor-2026": {
     slug: "samsung-m8-vs-lg-27-usb-c-monitor-2026",
     title: "Samsung Smart Monitor M8 vs LG 27UP850-W: Best 27-Inch",
-    description: "Compare the Samsung M8 and LG 27UP850-W 4K USB-C monitors for remote work and creative tasks. Covers display quality, USB-C power delivery, smart features, and color accuracy.",
+    description: "Compare the Samsung M8 and LG 27UP850-W 4K USB-C monitors for remote work and creative tasks. Covers display quality, USB-C power delivery, smart features, and.",
     category: "monitors",
     content: `## Two 4K USB-C Monitors, Different Philosophies
 

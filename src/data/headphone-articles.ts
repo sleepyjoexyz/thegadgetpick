@@ -1073,7 +1073,7 @@ Running earbuds are a worthwhile investment for serious athletes. Quality fit (s
   "complete-guide-headphones-types-features-2026": {
     slug: "complete-guide-headphones-types-features-2026",
     title: "Headphones in 2026: Types, Features, and What to Buy",
-    description: "Everything you need to know about headphones — over-ear vs on-ear vs earbuds, wired vs wireless, noise cancelling explained, codec differences, and buying recommendations for every use case.",
+    description: "Everything you need to know about headphones — over-ear vs on-ear vs earbuds, wired vs wireless, noise cancelling explained, codec differences, and buying.",
     category: "headphones",
     content: `## Introduction
 
@@ -1189,7 +1189,7 @@ Most people should buy true wireless earbuds as their primary headphones — the
   "sony-wh1000xm5-vs-bose-qc-ultra-2026": {
     slug: "sony-wh1000xm5-vs-bose-qc-ultra-2026",
     title: "Sony WH-1000XM5 vs Bose QuietComfort Ultra: Which ANC",
-    description: "Compare the Sony WH-1000XM5 and Bose QuietComfort Ultra across noise cancellation, sound quality, comfort, battery life, and features for commuters and remote workers.",
+    description: "Compare the Sony WH-1000XM5 and Bose QuietComfort Ultra across noise cancellation, sound quality, comfort, battery life, and features for commuters and remote.",
     category: "headphones",
     content: `## The Two Flagships
 

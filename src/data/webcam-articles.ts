@@ -294,7 +294,7 @@ Professional lighting is one of the highest-ROI investments you can make in your
     slug: "privacy-security-guide",
     title: "Webcam Privacy and Security: What You Need to Know",
     description:
-      "Learn essential webcam privacy and security practices. Understand privacy shutters, VPN usage, software security, and best practices for protecting your privacy.",
+      "Learn essential webcam privacy and security practices. Understand privacy shutters, VPN usage, software security, and best practices for protecting your.",
     category: "webcams",
     content: `## The Webcam Privacy Landscape
 
@@ -410,7 +410,7 @@ Combining these practices reduces risk to a level where paranoia isn't justified
     slug: "best-webcam-for-remote-work-summer-2026",
     title: "Best Webcams for Remote Work 2026: Video Call Quality Guide",
     description:
-      "Find the best webcams for remote work and video calls. Learn about 4K vs 1080p, auto-framing, background blur, lighting in bright summer rooms, and USB-C compatibility.",
+      "Find the best webcams for remote work and video calls. Learn about 4K vs 1080p, auto-framing, background blur, lighting in bright summer rooms, and USB-C.",
     category: "webcams",
     content: `## Introduction
 

@@ -597,7 +597,7 @@ export const ncHeadphoneArticles: Record<string, NCHeadphoneArticle> = {
     slug: "best-noise-canceling-headphones-for-summer-travel-2026",
     title: "Best Noise Canceling Headphones for Summer Travel 2026",
     excerpt:
-      "Find the best noise-canceling headphones for summer travel. Discover flight comfort, battery life for long-haul flights, fold-friendly designs, and multipoint Bluetooth features.",
+      "Find the best noise-canceling headphones for summer travel. Discover flight comfort, battery life for long-haul flights, fold-friendly designs, and multipoint.",
     publishedAt: "2026-03-15",
     updatedAt: "2026-03-15",
     author: "TheGadgetPick",

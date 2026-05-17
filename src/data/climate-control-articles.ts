@@ -206,7 +206,7 @@ Space heaters work for large rooms when expectations are realistic. A single 150
     slug: "portable-ac-vs-window-ac",
     title: "Portable AC vs Window AC: Which Should You Buy?",
     description:
-      "Compare portable and window air conditioners on efficiency, installation, noise, portability, and restrictions. Find out which is truly better and when portable is your only option.",
+      "Compare portable and window air conditioners on efficiency, installation, noise, portability, and restrictions. Find out which is truly better and when.",
     category: "climate-control",
     content: `## Introduction
 
