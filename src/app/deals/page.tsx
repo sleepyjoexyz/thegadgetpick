@@ -3,8 +3,6 @@ import type { Metadata } from 'next';
 import DealCard from '@/components/DealCard';
 import { mockDeals } from '@/data/mockDeals';
 import { dealCategories } from '@/lib/dealCategories';
-import { DealSchema } from '@/components/DealSchema';
-
 export const metadata: Metadata = {
   title: "Today's Best Tech Deals | The Gadget Pick",
   description: "Browse today's best deals on headphones, monitors, keyboards, and more. Updated daily with the biggest savings.",
@@ -36,7 +34,6 @@ export const metadata: Metadata = {
 export default function DealsPage() {
   return (
     <main className="bg-white min-h-screen">
-      <DealSchema deals={mockDeals} pageUrl="https://www.thegadgetpick.com/deals" />
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-4">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Today's Deals</h1>
         <p className="text-gray-600 mb-6">{mockDeals.length} deals across {dealCategories.length} categories — updated daily.</p>

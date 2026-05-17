@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { DealSchema } from '@/components/DealSchema';
 import DealCard from '@/components/DealCard';
 import { mockDeals } from '@/data/mockDeals';
 import { dealCategories, getCategoryBySlug, getAllCategorySlugs } from '@/lib/dealCategories';
@@ -51,7 +50,6 @@ export default async function CategoryDealsPage({ params }: Props) {
 
   return (
     <main className="bg-white min-h-screen">
-      <DealSchema deals={categoryDeals} categoryName={cat.name} pageUrl={`https://www.thegadgetpick.com/deals/${slug}`} />
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
         <ol className="flex items-center gap-1.5 text-sm text-gray-500">
           <li><Link href="/" className="hover:text-gray-700">Home</Link></li>
