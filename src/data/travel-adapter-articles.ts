@@ -14,7 +14,7 @@ export const travelAdapterArticles: TravelAdapterArticle[] = [
     slug: "voltage-guide",
     title: "World Voltage Guide: Do You Need a Converter or Just an",
     excerpt:
-      "Understanding global voltage differences and when you need a converter vs. a simple plug adapter.",
+      "Understand global voltage differences and learn when you need a converter vs. a plug adapter. Covers 110V vs 240V, dual-voltage devices, and country lists.",
     publishedAt: "2025-02-01",
     updatedAt: "2025-02-28",
     author: "The Gadget Pick Team",

@@ -13,7 +13,7 @@ export const powerBankArticles: PowerBankArticle[] = [
   {
     slug: "capacity-guide",
     title: "Power Bank Capacity Guide: How Many Charges Do You",
-    excerpt: "Understanding mAh, Wh, and how to calculate real-world charging cycles for your devices.",
+    excerpt: "Understand mAh, Wh, and how to calculate real-world charging cycles. Learn what capacity you actually need for phones, tablets, and laptops.",
     publishedAt: "2024-02-15",
     updatedAt: "2025-02-28",
     author: "The Gadget Pick Team",
@@ -134,7 +134,7 @@ Choose your power bank based on realistic capacity calculations, not advertised 
   {
     slug: "fast-charging-explained",
     title: "Fast Charging Standards Explained: PD, QC, PPS, and More",
-    excerpt: "Decoding USB Power Delivery, Quick Charge, Programmable Power Supply, and proprietary standards.",
+    excerpt: "Decode USB Power Delivery, Quick Charge, and Programmable Power Supply standards to pick a power bank that actually fast-charges your device.",
     publishedAt: "2024-02-18",
     updatedAt: "2025-02-28",
     author: "The Gadget Pick Team",
@@ -281,7 +281,7 @@ USB Power Delivery at 30W+ is the standard you need. For laptops, look for 100W+
   {
     slug: "airline-rules",
     title: "Power Banks on Planes: TSA Rules and Airline Limits",
-    excerpt: "Navigate TSA restrictions, battery capacities, and airline policies for traveling with power banks.",
+    excerpt: "Navigate TSA restrictions and airline policies for power banks. Learn which capacities are allowed in carry-on, and which banks get flagged at security.",
     publishedAt: "2024-02-20",
     updatedAt: "2025-02-28",
     author: "The Gadget Pick Team",
@@ -437,7 +437,7 @@ Avoid large power stations (EcoFlow, Goal Zero 100W+) for air travel. They excee
   {
     slug: "best-for-laptops",
     title: "Best Power Banks for Laptop Charging in 2025",
-    excerpt: "How to choose a power bank that actually charges your MacBook, ThinkPad, or Dell laptop.",
+    excerpt: "Choose a power bank that genuinely charges your MacBook, ThinkPad, or Dell. We cover wattage requirements, USB-C PD output, and top-tested picks.",
     publishedAt: "2024-02-22",
     updatedAt: "2025-02-28",
     author: "The Gadget Pick Team",
