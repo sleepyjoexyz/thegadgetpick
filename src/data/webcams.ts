@@ -166,7 +166,7 @@ export const webcams: Webcam[] = [
     model: "PowerConf C200",
     price: 59,
     rating: 4.4,
-    amazonAsin: null,
+    amazonAsin: "B09YPRY6TB",
     imageUrl: "https://placeholder-webcams.com/anker-powerconf-c200.jpg",
     summary:
       "Budget-friendly 2K/1440p webcam with 95-degree field of view. Wide-angle lens perfect for group video calls and team meetings.",

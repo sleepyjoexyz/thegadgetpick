@@ -132,7 +132,7 @@ export const luggage: Luggage[] = [
     model: "Baseline 22 inch",
     price: 599,
     rating: 4.7,
-    amazonAsin: null,
+    amazonAsin: "B075FCF32G",
     imageUrl: "https://via.placeholder.com/300x300?text=Briggs+Riley+Baseline",
     summary: "Premium spinner with 2-wheel design, premium build, and lifetime warranty.",
     luggageType: "carry-on",
