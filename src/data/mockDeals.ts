@@ -19,7 +19,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0GTLTF26K?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Hybrid Active Noise Cancelling',
-    imageUrl: 'https://m.media-amazon.com/images/I/71Xwww4damL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -30,7 +29,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0C3HCD34R?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Soundcore by Anker Q20i',
-    imageUrl: 'https://m.media-amazon.com/images/I/51CnDMbXZzL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -41,7 +39,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0G9L2TNYZ?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Pointcinco Hybrid Active Noise',
-    imageUrl: 'https://m.media-amazon.com/images/I/71Y9JmwNr7L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -52,7 +49,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0F53L8J78?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'TOZO T6 Wireless Earbuds,',
-    imageUrl: 'https://m.media-amazon.com/images/I/71k5FBbNioL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -63,7 +59,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B09LYF2ST7?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'BERIBES Bluetooth Headphones Over',
-    imageUrl: 'https://m.media-amazon.com/images/I/71F2ccIPPLL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -74,7 +69,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B08CC3D4NS?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'comiso Bluetooth Speaker, Portable',
-    imageUrl: 'https://m.media-amazon.com/images/I/71Q6XdcmJzL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -85,7 +79,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B016XTADG2?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Anker Soundcore Upgraded Bluetooth',
-    imageUrl: 'https://m.media-amazon.com/images/I/61y+b4M0RZL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -96,7 +89,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0BVZLS5GZ?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'EMEET Conference Speakerphone M0',
-    imageUrl: 'https://m.media-amazon.com/images/I/71fUCtgWRfL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -107,7 +99,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B07QK2SPP7?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'JBL FLIP 5, Waterproof',
-    imageUrl: 'https://m.media-amazon.com/images/I/71XPqtugdsL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -118,7 +109,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0CTNTFBNX?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'JBL Go 4 -',
-    imageUrl: 'https://m.media-amazon.com/images/I/71yLyiSmJRL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -129,7 +119,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B09VD9P2Q3?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'KOORUI 24-inch Computer Monitor',
-    imageUrl: 'https://m.media-amazon.com/images/I/81rz-Km40PL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -140,7 +129,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DK468KVS?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Samsung 24\" (S30GD) Essential',
-    imageUrl: 'https://m.media-amazon.com/images/I/61ReaNcCHwL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -151,7 +139,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0CP7XRW9S?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Ingnok Portable Monitor, Ultra',
-    imageUrl: 'https://m.media-amazon.com/images/I/71-vtAaSBZL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -162,7 +149,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B07MTRQ6B3?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Sceptre Curved 27-inch Prime',
-    imageUrl: 'https://m.media-amazon.com/images/I/71ZttmZzG1L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -173,7 +159,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FPRDTVMD?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'acer KB220Q H2bi 21.5\"',
-    imageUrl: 'https://m.media-amazon.com/images/I/61S+-hUR7iL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -184,7 +169,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B08Z6X4NK3?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Logitech G413 SE Full-Size',
-    imageUrl: 'https://m.media-amazon.com/images/I/61thTSgqWOL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -195,7 +179,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0BLYKTL78?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Redragon K556 PRO Upgraded',
-    imageUrl: 'https://m.media-amazon.com/images/I/61DL2OmIAxL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -206,7 +189,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FLVJQ66S?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Mechanical Gaming Keyboard with',
-    imageUrl: 'https://m.media-amazon.com/images/I/71-UmOra9JL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -217,7 +199,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B01NAI2TXC?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Redragon K556 RGB LED',
-    imageUrl: 'https://m.media-amazon.com/images/I/71KBeJ1nz6L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -228,7 +209,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FNRJNHW8?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'YUNZII B87 Wireless Mechanical',
-    imageUrl: 'https://m.media-amazon.com/images/I/61c+if67yLL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -239,7 +219,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0916N2LPZ?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Razer Orochi V2 Mobile',
-    imageUrl: 'https://m.media-amazon.com/images/I/61GOts9RwEL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -250,7 +229,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B015NBTAOW?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'TECKNET Wireless Mouse, 2.4G',
-    imageUrl: 'https://m.media-amazon.com/images/I/71tqvuHgIlL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -261,7 +239,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B004YAVF8I?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Logitech M185 Wireless Mouse,',
-    imageUrl: 'https://m.media-amazon.com/images/I/51WN5aXZWIL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -272,7 +249,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DJH1DPCC?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Lenovo WL310 Bluetooth Silent',
-    imageUrl: 'https://m.media-amazon.com/images/I/61grsE2rE4L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -283,7 +259,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0F9WK9FTF?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Redragon Wireless Mouse BT5.0/3.0',
-    imageUrl: 'https://m.media-amazon.com/images/I/61Uyuf30FqL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -294,7 +269,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DRTTSZGT?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Gozvrpus USB HD Webcam',
-    imageUrl: 'https://m.media-amazon.com/images/I/7112TSJT4vL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -305,7 +279,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0BXGFFSL1?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Logitech Brio 101 Full',
-    imageUrl: 'https://m.media-amazon.com/images/I/71A0Pp767BL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -316,7 +289,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0CZ6XY78Y?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'OBSBOT Tiny 2 Lite',
-    imageUrl: 'https://m.media-amazon.com/images/I/51WarvcFlCL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -327,7 +299,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B088TSR6YJ?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'NexiGo N60 1080P Webcam',
-    imageUrl: 'https://m.media-amazon.com/images/I/51EPhWPDRhL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -338,7 +309,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0CYQ5P6T7?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'EMEET S600 4K Webcam',
-    imageUrl: 'https://m.media-amazon.com/images/I/61exJWcysXL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -349,7 +319,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FHQ9LPF2?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'S22 Portable Charger, Mini',
-    imageUrl: 'https://m.media-amazon.com/images/I/41yOfDoC3RL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -360,7 +329,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B08T8TDS8S?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Miady 2-Pack 5000mAh Mini',
-    imageUrl: 'https://m.media-amazon.com/images/I/71dTXme3sRL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -371,7 +339,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FDX2B53K?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: '[2 Pack]Small Portable Charger',
-    imageUrl: 'https://m.media-amazon.com/images/I/51CFs3uKq9L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -382,7 +349,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0CJ4Z9VCJ?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Portable Charger, 10000mAh PD20W',
-    imageUrl: 'https://m.media-amazon.com/images/I/61KMMbgz44L._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -393,7 +359,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0CQBYTT3W?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'VRURC Portable Charger, 22.5W',
-    imageUrl: 'https://m.media-amazon.com/images/I/61IOABz3GuL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -404,7 +369,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0BHQNMDNC?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'MOMAX Universal Travel Adapter',
-    imageUrl: 'https://m.media-amazon.com/images/I/61N1ocLV0XL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -415,7 +379,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DCYW5M8D?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'MOMAX Universal Travel Adapter',
-    imageUrl: 'https://m.media-amazon.com/images/I/71JPThBPuPL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -426,7 +389,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0DHVNW1CN?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Anker Nano Travel Adapter,',
-    imageUrl: 'https://m.media-amazon.com/images/I/61YSuy6Q8UL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -437,7 +399,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B0FSKNG3Q1?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'TESSAN Travel Adapter PD',
-    imageUrl: 'https://m.media-amazon.com/images/I/71oOcgxnELL._AC_SL1500_.jpg',
     coupon: '',
   },
   {
@@ -448,7 +409,6 @@ export const mockDeals: Deal[] = [
     amazonUrl: 'https://www.amazon.com/dp/B06XSJ14CX?tag=rogeti02-20',
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Ceptics 35W Universal Travel',
-    imageUrl: 'https://m.media-amazon.com/images/I/61aabcCP6LL._AC_SL1500_.jpg',
     coupon: '',
   },
 ];
