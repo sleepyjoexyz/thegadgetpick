@@ -55,7 +55,7 @@ export const mockDeals: Deal[] = [
     source: 'Amazon',
     amazonUrl: 'https://www.amazon.com/dp/B0FQFB8FMG?tag=rogeti02-20',
     imageUrl: 'https://m.media-amazon.com/images/I/61solmQSSlL._AC_SL1500_.jpg',
-    price: 199.0,
+    price: 199.99,
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Apple AirPods Pro 3 Wireless',
     coupon: '',
