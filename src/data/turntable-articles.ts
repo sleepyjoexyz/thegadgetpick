@@ -695,7 +695,7 @@ Phase 1: Turntable + speakers + cleaning brush. Phase 2: Better turntable and ex
 
 Not removing shipping bolts. Setting tracking force too high. Placing turntable on a resonant surface. Using wrong phono/line setting. Dropping tonearm manually. Not cleaning records before playing.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Do I need an expensive turntable for good sound?**
 Not for beginners. A $200-300 turntable sounds great when properly set up. Placement and setup matter more than price.

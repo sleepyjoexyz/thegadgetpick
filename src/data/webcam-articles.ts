@@ -636,7 +636,7 @@ If your laptop has USB-C only (no USB-A), USB-C webcam eliminates the need for a
 
 **Neewer LED Panel** ($60) — Bi-color (3200-5600K), dimmable, more affordable
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Does webcam quality matter if video conferencing compresses everything?**
 Yes. Higher quality input means better compression output. 1080p compressed looks better than 720p compressed. 4K compressed looks better than 1080p. The advantage is subtle but real in recordings.

@@ -898,7 +898,7 @@ USB-C delivers 96W with a full hub (RJ45, USB-A ports, USB-C daisy-chain). The P
 | Ethernet | Yes (RJ45) | No | Yes (RJ45) |
 | Factory Cal | Delta E < 2 | No | Delta E < 2 (Calman) |
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Will a 4K monitor make my MacBook run hotter?**
 A: Slightly — driving a 4K display requires more GPU power than the built-in Retina screen. On Apple Silicon Macs (M1/M2/M3/M4), the impact is minimal. Older Intel MacBooks may run warmer.
@@ -1129,7 +1129,7 @@ Professional photo editing for prints or color-critical clients, multi-monitor s
 
 Calibrating in wrong lighting conditions. Setting brightness too low. Ignoring color temperature shifts from room lighting. Forgetting to save and load your profile. Comparing to uncalibrated monitors (that's success, not a problem).
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: How often should I recalibrate?**
 Every 3-4 months for color-critical work. Monthly for older monitors. Casual use: yearly.
@@ -1299,7 +1299,7 @@ Optimal calibration depends on what you're creating.
 **Fix**: In NVIDIA Control Panel (Windows) or System Preferences (Mac), set color management to "Let display decide" or "Use system color profile."
 **Why it matters**: GPUs apply their own color transforms. Make sure the monitor's profile is respected.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: How accurate do I need to be?**
 A: For casual photo viewing, rough calibration is fine. For professional work (print, video, photography), aim for Delta E < 2 (use a colorimeter). Web design can use Delta E < 3.

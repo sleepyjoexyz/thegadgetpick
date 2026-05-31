@@ -823,7 +823,7 @@ Outdoor acoustics differ dramatically from indoor:
 | Anker Soundcore Motion Boom | $79 | IP67 | 13h | 15W | Yes |
 | JBL Flip 6 | $129 | IP67 | 12h | 12W | Yes |
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Can I leave an outdoor speaker in the rain?**
 IP65 and above can handle rain. IP54 should be brought inside during heavy rain. No outdoor speaker should be submerged unless IP67-rated.

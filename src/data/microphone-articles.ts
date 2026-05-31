@@ -768,7 +768,7 @@ If you record two-person podcasts in the same room, capture live instruments, or
 - Budget is tight ($20 less than Wave 3)
 - You prefer the classic, iconic microphone aesthetic
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Do I need a boom arm with these microphones?**
 A: Both include desk stands, but a boom arm dramatically improves sound quality by positioning the mic closer to your mouth (reducing room noise and gain requirements). The Elgato Wave Mic Arm or Rode PSA1+ are excellent options for either mic.
@@ -862,7 +862,7 @@ Record and save raw audio. Apply noise reduction, compression, normalization. Ex
 
 Recording in the wrong room (kitchens with tile are worst). Gain too high (clipping is permanent). Using earbuds instead of headphones. Skipping noise reduction. Not preheating the mic (run it 5 minutes before recording for consistent levels).
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Do I need a USB microphone or XLR?**
 Start with USB ($80-150). If you need flexibility or multiple microphones later, upgrade to XLR.

@@ -908,7 +908,7 @@ TSA PreCheck does NOT change power bank rules. Limits are identical whether you 
 - **Never checked:** Even 100Wh banks are prohibited in checked baggage per TSA (changed 2022)
 - **Declaration:** If carrying 100-160Wh, mention at security; prepare specs
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Can I bring multiple power banks through TSA?**
 100Wh or less: Unlimited quantity. Over 100Wh: Maximum 2 per passenger.

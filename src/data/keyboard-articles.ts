@@ -522,7 +522,7 @@ Clicky switches (Cherry MX Blue) produce audible clicks. Great for solo work but
 
 **Keychron K2 Pro** (\$84) — Budget-friendly 75% wireless. Solid entry point.
 
-## FAQ
+## Frequently Asked Questions
 
 ### Is a mechanical keyboard worth the cost?
 
@@ -769,7 +769,7 @@ Choose based on your desk space and work style. Unsure? Start with TKL or 75%.
 
 Buying based on RGB lighting alone. Choosing clicky if you share a workspace. Going too small (60%) without experience with layers. Not checking key rollover for gaming. Ignoring stabilizer quality on large keys.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Are mechanical keyboards worth it for typing?**
 Yes. The tactile feedback, customizable feel, and build quality result in faster, more accurate typing for most people.
@@ -947,7 +947,7 @@ Press keys decisively but release them more slowly. Avoid rapid key bouncing, wh
 
 **Practical context:** 40dB is a quiet library. 50dB is a normal conversation at a distance. A silent mechanical keyboard at 40–45dB is barely noticeable in an office environment.
 
-## FAQ
+## Frequently Asked Questions
 
 **Q: Can I make a loud keyboard quiet without replacing switches?**
 
