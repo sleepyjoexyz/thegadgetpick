@@ -79,7 +79,7 @@ export const mockDeals: Deal[] = [
     source: 'Amazon',
     amazonUrl: 'https://www.amazon.com/dp/B0CVL1K7DX?tag=rogeti02-20',
     imageUrl: 'https://m.media-amazon.com/images/I/61t6uKPIumL._AC_SL1129_.jpg',
-    price: 319.0,
+    price: 399.0,
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Bose SoundLink Max Portable Bluetooth Speaker Black',
     coupon: '',
