@@ -5,6 +5,7 @@ import Link from 'next/link';
 import DealCard from '@/components/DealCard';
 import { mockDeals } from '@/data/mockDeals';
 import { dealCategories } from '@/lib/dealCategories';
+import QuickPicksBand from "@/components/QuickPicksBand";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -25,6 +26,7 @@ export default function Home() {
 
 
       {/* Deals by Category */}
+      <QuickPicksBand />
       {dealCategories.map((cat) => {
         const categoryDeals = mockDeals.filter((d) => d.category === cat.name).slice(0, 6);
         if (categoryDeals.length === 0) return null;
