@@ -28,7 +28,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "World Travel Adapter Kit",
     price: 24,
     rating: 4.6,
-    amazonAsin: null,
+    amazonAsin: "B06XSJ14CX",
     imageUrl: "/images/travel-adapters/ceptics-world-travel-adapter-kit.jpg",
     summary:
       "Universal adapter kit with plug converters for 200+ countries. Lightweight and budget-friendly.",
@@ -97,7 +97,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "65W GaN Charger",
     price: 35,
     rating: 4.7,
-    amazonAsin: null,
+    amazonAsin: "B08T5QN2TR",
     imageUrl: "/images/travel-adapters/anker-65w-gan-charger.jpg",
     summary:
       "Compact 65W multi-port USB charger with GaN technology. Perfect for laptops, phones, and tablets.",
@@ -166,7 +166,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "Travel Voltage Converter",
     price: 36,
     rating: 4.3,
-    amazonAsin: null,
+    amazonAsin: "B0G5XNTT3J",
     imageUrl: "/images/travel-adapters/bestek-travel-voltage-converter.jpg",
     summary:
       "Step-down voltage converter for 220V to 110V. Includes 2 USB ports and 2 AC outlets.",
@@ -189,7 +189,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "Power Step Down Converter",
     price: 29,
     rating: 4.4,
-    amazonAsin: null,
+    amazonAsin: "B074QLCKW6",
     imageUrl: "/images/travel-adapters/foval-power-step-down-converter.jpg",
     summary:
       "Compact step-down 220V to 110V converter with USB ports. Great for US travelers in Europe.",
@@ -212,7 +212,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "65W GaN5 Pro",
     price: 39,
     rating: 4.6,
-    amazonAsin: null,
+    amazonAsin: "B0CQYTHWFH",
     imageUrl: "/images/travel-adapters/baseus-65w-gan5-pro.jpg",
     summary:
       "Affordable 65W charger with 2 USB-C + 1 USB-A. GaN5 technology for maximum efficiency.",
@@ -235,7 +235,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "Travel Power Strip",
     price: 25,
     rating: 4.5,
-    amazonAsin: null,
+    amazonAsin: "B0CJ2LFX6P",
     imageUrl: "/images/travel-adapters/trond-travel-power-strip.jpg",
     summary:
       "Travel power strip with 3 AC outlets + 3 USB-A + 1 USB-C. Perfect for hotel rooms.",
@@ -258,7 +258,7 @@ export const travelAdapters: TravelAdapter[] = [
     model: "Travel Power Strip",
     price: 19,
     rating: 4.4,
-    amazonAsin: null,
+    amazonAsin: "B073ZDH43X",
     imageUrl: "/images/travel-adapters/ntonpower-travel-power-strip.jpg",
     summary:
       "Budget-friendly power strip with 2 AC outlets + 3 USB-A. Works in US and basic travel.",
