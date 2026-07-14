@@ -281,7 +281,7 @@ export const webcams: Webcam[] = [
     model: "C270 HD",
     price: 24,
     rating: 4.3,
-    amazonAsin: null,
+    amazonAsin: "B005KKHA0S",
     imageUrl: "https://placeholder-webcams.com/logitech-c270-hd.jpg",
     summary:
       "Ultra-budget 720p webcam with fixed focus and basic microphone. Lightweight option for casual video calls and basic streaming.",

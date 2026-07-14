@@ -269,7 +269,7 @@ export const microphones: Microphone[] = [
     model: "K669B",
     price: 27,
     rating: 4.4,
-    amazonAsin: null,
+    amazonAsin: "B06XCKGLTP",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/41QW5eWUa0L.jpg",
     summary:
       "Ultra-budget USB condenser microphone. Perfect for ASMR, casual streaming, and voice chat. Basic but functional plug-and-play option.",
