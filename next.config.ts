@@ -2,6 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  redirects: async () => {
+    return [
+      {
+        // Old path Google still holds (GSC 404, S3002); live route is /noise-canceling-headphones
+        source: "/nc-headphones",
+        destination: "/noise-canceling-headphones",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
