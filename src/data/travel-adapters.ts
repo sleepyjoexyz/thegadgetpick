@@ -5,6 +5,7 @@ export interface TravelAdapter {
   price: number;
   rating: number;
   amazonAsin: string | null;
+  quickPickImg?: string;
   imageUrl: string;
   summary: string;
   adapterType: "universal" | "voltage-converter" | "usb-hub" | "power-strip";
@@ -29,6 +30,7 @@ export const travelAdapters: TravelAdapter[] = [
     price: 24,
     rating: 4.6,
     amazonAsin: "B06XSJ14CX",
+    quickPickImg: "https://m.media-amazon.com/images/I/61aabcCP6LL._AC_SL1500_.jpg",
     imageUrl: "/images/travel-adapters/ceptics-world-travel-adapter-kit.jpg",
     summary:
       "Universal adapter kit with plug converters for 200+ countries. Lightweight and budget-friendly.",
@@ -52,6 +54,7 @@ export const travelAdapters: TravelAdapter[] = [
     price: 22,
     rating: 4.6,
     amazonAsin: "B078S3M2NX",
+    quickPickImg: "https://m.media-amazon.com/images/I/71jSEg9ULcL._AC_SL1500_.jpg",
     imageUrl: "/images/travel-adapters/epicka-universal-adapter.jpg",
     summary:
       "Universal adapter with 4 USB-A + 1 USB-C ports. Works in 150 countries with compact design.",
@@ -75,6 +78,7 @@ export const travelAdapters: TravelAdapter[] = [
     price: 19,
     rating: 4.5,
     amazonAsin: "B0DHQLZV2W",
+    quickPickImg: "https://m.media-amazon.com/images/I/61Zm0VYtB2L._AC_SL1500_.jpg",
     imageUrl: "/images/travel-adapters/tessan-universal-adapter.jpg",
     summary:
       "Budget universal adapter with 3 USB-A + 1 USB-C. Perfect for multiple devices in any country.",
@@ -98,6 +102,7 @@ export const travelAdapters: TravelAdapter[] = [
     price: 35,
     rating: 4.7,
     amazonAsin: "B08T5QN2TR",
+    quickPickImg: "https://m.media-amazon.com/images/I/61PRvw0FyDL._AC_SL1500_.jpg",
     imageUrl: "/images/travel-adapters/anker-65w-gan-charger.jpg",
     summary:
       "Compact 65W multi-port USB charger with GaN technology. Perfect for laptops, phones, and tablets.",
@@ -190,6 +195,7 @@ export const travelAdapters: TravelAdapter[] = [
     price: 29,
     rating: 4.4,
     amazonAsin: "B074QLCKW6",
+    quickPickImg: "https://m.media-amazon.com/images/I/61W-AOPVnxL._AC_SL1500_.jpg",
     imageUrl: "/images/travel-adapters/foval-power-step-down-converter.jpg",
     summary:
       "Compact step-down 220V to 110V converter with USB ports. Great for US travelers in Europe.",
@@ -236,6 +242,7 @@ export const travelAdapters: TravelAdapter[] = [
     price: 25,
     rating: 4.5,
     amazonAsin: "B0CJ2LFX6P",
+    quickPickImg: "https://m.media-amazon.com/images/I/51qNVm8eACL._AC_SL1500_.jpg",
     imageUrl: "/images/travel-adapters/trond-travel-power-strip.jpg",
     summary:
       "Travel power strip with 3 AC outlets + 3 USB-A + 1 USB-C. Perfect for hotel rooms.",
@@ -259,6 +266,7 @@ export const travelAdapters: TravelAdapter[] = [
     price: 19,
     rating: 4.4,
     amazonAsin: "B073ZDH43X",
+    quickPickImg: "https://m.media-amazon.com/images/I/51VWDsuxICL._AC_SL1500_.jpg",
     imageUrl: "/images/travel-adapters/ntonpower-travel-power-strip.jpg",
     summary:
       "Budget-friendly power strip with 2 AC outlets + 3 USB-A. Works in US and basic travel.",

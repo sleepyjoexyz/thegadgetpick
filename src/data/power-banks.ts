@@ -5,6 +5,7 @@ export interface PowerBank {
   price: number;
   rating: number;
   amazonAsin: string | null;
+  quickPickImg?: string;
   imageUrl: string;
   summary: string;
   capacityMah: number;
@@ -98,6 +99,7 @@ export const powerBanks: PowerBank[] = [
     price: 29,
     rating: 4.4,
     amazonAsin: "B0B466YTT3",
+    quickPickImg: "https://m.media-amazon.com/images/I/61wNCQ0NdgL._AC_SL1500_.jpg",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/placeholder.jpg",
     summary:
       "Compact 5000mAh with 7.5W wireless charging via MagSafe. Perfect for iPhone users. Magnetic attachment for convenient portability. Small and lightweight design.",
@@ -259,6 +261,7 @@ export const powerBanks: PowerBank[] = [
     price: 19,
     rating: 4.4,
     amazonAsin: "B0CH829X5R",
+    quickPickImg: "https://m.media-amazon.com/images/I/515bv5JCUBL._AC_SL1000_.jpg",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/placeholder.jpg",
     summary:
       "Ultra-compact 4500mAh with built-in Lightning and USB-C connectors. No cables needed. Perfect pocket-sized backup for daily use.",

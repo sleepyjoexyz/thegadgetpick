@@ -18,6 +18,7 @@ export interface QuickPick {
   categorySlug: string;
   amazonUrl: string;
   imageAlt: string;
+  quickPickImg?: string;
 }
 
 interface CatItem {
@@ -27,6 +28,7 @@ interface CatItem {
   price: number;
   amazonAsin: string | null;
   imageAlt?: string;
+  quickPickImg?: string;
 }
 
 interface Source {
@@ -68,6 +70,7 @@ export function getQuickPicks(maxPrice = 40, limit = 12): QuickPick[] {
         categorySlug: src.slug,
         amazonUrl: url,
         imageAlt: p.imageAlt ?? `${p.brand} ${p.model}`,
+        quickPickImg: p.quickPickImg,
         price: p.price,
       });
     }

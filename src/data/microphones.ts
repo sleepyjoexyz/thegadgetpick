@@ -5,6 +5,7 @@ export interface Microphone {
   price: number;
   rating: number;
   amazonAsin: string | null;
+  quickPickImg?: string;
   imageUrl: string;
   summary: string;
   micType: "condenser" | "dynamic" | "ribbon" | "usb";
@@ -270,6 +271,7 @@ export const microphones: Microphone[] = [
     price: 27,
     rating: 4.4,
     amazonAsin: "B06XCKGLTP",
+    quickPickImg: "https://m.media-amazon.com/images/I/51frr1QHyZL._AC_SL1200_.jpg",
     imageUrl: "https://images-na.ssl-images-amazon.com/images/I/41QW5eWUa0L.jpg",
     summary:
       "Ultra-budget USB condenser microphone. Perfect for ASMR, casual streaming, and voice chat. Basic but functional plug-and-play option.",

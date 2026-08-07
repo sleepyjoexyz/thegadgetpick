@@ -5,6 +5,7 @@ export interface Webcam {
   price: number;
   rating: number;
   amazonAsin: string | null;
+  quickPickImg?: string;
   imageUrl: string;
   summary: string;
   resolution: "4K" | "1440p" | "1080p" | "720p";
@@ -282,6 +283,7 @@ export const webcams: Webcam[] = [
     price: 24,
     rating: 4.3,
     amazonAsin: "B005KKHA0S",
+    quickPickImg: "https://m.media-amazon.com/images/I/51m9RLsGHLL._AC_SL1500_.jpg",
     imageUrl: "https://placeholder-webcams.com/logitech-c270-hd.jpg",
     summary:
       "Ultra-budget 720p webcam with fixed focus and basic microphone. Lightweight option for casual video calls and basic streaming.",
