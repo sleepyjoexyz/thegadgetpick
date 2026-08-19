@@ -30,6 +30,7 @@ export const mockDeals: Deal[] = [
     category: 'Headphones',
     source: 'Amazon',
     amazonUrl: 'https://www.amazon.com/dp/B0G6LCC42J?tag=gadgetpick0a-20',
+    imageUrl: 'https://m.media-amazon.com/images/I/71obo45RWxL._AC_SL1500_.jpg',
     price: 159.0,
     timeLeft: 'Limited Time Deal',
     imageAlt: 'Nothing Headphone (a) ANC Wireless Headphones Black',
